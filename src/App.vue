@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition name="route" mode="in-out">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  mounted() {
+    document.title = 'Mateusz Słotwiński'
+  },
+})
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(2em);
 }
 
-nav {
-  padding: 30px;
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-2em);
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.route-enter-active,
+.route-leave-active {
+  transition: 0.3s all ease;
 }
 </style>

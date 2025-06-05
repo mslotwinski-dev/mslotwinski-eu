@@ -1,0 +1,23 @@
+@import './root.scss';
+
+h2.header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $dark;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+h2.header:before,
+h2.header:after {
+  content: '';
+  flex-grow: 1;
+  margin: 0 20px;
+  border: 1px solid #262626;
+}
+

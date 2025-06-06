@@ -4,7 +4,7 @@ import { Education } from './types/interfaces'
 export default [
   {
     Name: 'Politechnika Warszawska',
-    Place: 'Warsaw, Poland',
+    Place: 'Warszawa, Polska',
     Field: 'Fizyka Techniczna',
     Details: [
       {
@@ -24,7 +24,7 @@ export default [
     Place: 'Rzeszow, Poland',
     Details: [
       {
-        Spec: 'Mathematics • Physics • IT',
+        Spec: 'Matematyka • Fizyka • Informatyka',
         Year: '2019 - 2023',
         Degree: Degree.FINAL,
         Desc: `<div class="matura">

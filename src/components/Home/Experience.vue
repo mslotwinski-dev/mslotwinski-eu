@@ -1,6 +1,6 @@
 <template>
+  <h2 class="header">Doświadczenie</h2>
   <div class="container">
-    <h2 class="header">Doświadczenie</h2>
     <article v-for="work in works" :key="work">
       <div class="header">
         <div class="name" v-html="work.Name" />

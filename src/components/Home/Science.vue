@@ -1,6 +1,6 @@
 <template>
+  <h2 class="header">Działalność naukowa</h2>
   <div class="container">
-    <h2 class="header">Działalność naukowa</h2>
     <article v-for="proj in sp" :key="proj">
       <div class="header">
         <div class="name">

@@ -46,7 +46,6 @@ export default defineComponent({
 .edu-item {
   margin: 15px 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
 }
 
 .edu-main {
@@ -58,19 +57,19 @@ export default defineComponent({
   .edu-name {
     font-size: 19px;
     font-weight: 500;
-    color: #222;
+    color: $dark;
     margin: 0;
   }
 
   .edu-place {
     font-size: 14px;
-    color: #666;
+    color: $dark_gray;
   }
 }
 
 .edu-field {
   font-size: 17px;
-  color: #004466;
+  color: $main;
   margin-bottom: 5px;
 }
 
@@ -78,7 +77,6 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   gap: 6px;
-  font-family: 'Inter', sans-serif;
 
   .edu-detail {
     display: flex;
@@ -89,6 +87,7 @@ export default defineComponent({
     .spec-and-degree {
       display: flex;
       flex-direction: column;
+      font-family: 'Inter', sans-serif;
 
       .spec {
         font-weight: 500;
@@ -97,7 +96,7 @@ export default defineComponent({
     }
 
     .year {
-      color: #888;
+      color: $dark_gray;
       font-size: 13.5px;
     }
   }

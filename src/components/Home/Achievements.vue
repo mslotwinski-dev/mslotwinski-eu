@@ -1,6 +1,6 @@
 <template>
+  <h2 class="header">Osiągnięcia</h2>
   <div class="container global-achievements-class">
-    <h2 class="header">Osiągnięcia</h2>
     <article v-for="a in achievements" :key="a">
       <div class="header">
         <div class="flex">

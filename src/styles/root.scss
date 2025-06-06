@@ -12,6 +12,8 @@ $dark_gray: #7c888c;
 $dark: #28353a;
 $black: #1b2023;
 $bg: #09151e;
+$green: #007F46;
+$gold: #e28c00;
 
 
 *,
@@ -40,7 +42,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background-color: #ebeaed;
-  color: #262626;
+  color: $dark;
 }
 
 a {

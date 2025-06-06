@@ -37,6 +37,12 @@ export default [
     flag: 'https://flagcdn.com/w40/jp.png',
   },
   // {
+  //   name: 'Chorwacki',
+  //   level: 'A1',
+  //   percent: 10,
+  //   flag: 'https://flagcdn.com/w40/hr.png',
+  // },
+  // {
   //   name: 'Rosyjski',
   //   level: 'A1',
   //   percent: 10,

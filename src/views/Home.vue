@@ -7,8 +7,8 @@
       <Education />
       <Science />
       <Skills />
-      <Projects />
       <Languages />
+      <Projects />
       <Achievements />
       <Interests />
       <!-- <Contact /> -->

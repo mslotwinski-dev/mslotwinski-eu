@@ -88,6 +88,7 @@ export default defineComponent({
 
   top: 0;
   left: 0;
+  user-select: none;
 
   transition: all 0.3s ease-in-out;
   transform: scaleX(0);

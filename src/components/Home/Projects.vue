@@ -23,7 +23,7 @@
       <div class="header">
         <div class="iconcont">
           <img :src="proj.icon" alt="Project Image" />
-          <div class="name" v-html="proj.title" />
+          <div class="name" v-html="proj.title" @click="open(proj.github)" />
         </div>
         <div class="langs">
           <div v-for="lang in proj.langs" :key="lang" class="lang">
@@ -59,6 +59,11 @@ export default defineComponent({
       activecategory: 0,
     }
   },
+  methods: {
+    open(a: string) {
+      window.open(a, '_blank')
+    },
+  },
 })
 </script>
 
@@ -84,6 +89,7 @@ article {
     font-weight: 500;
     font-size: 19px;
     color: $dark;
+    cursor: pointer;
   }
   .langs {
     font-size: 15px;
@@ -128,7 +134,7 @@ img {
   margin: auto;
   margin-bottom: 20px;
   color: $light;
-  max-width: 900px;
+  max-width: 1050px;
   border-radius: 5px;
   overflow: hidden;
   user-select: none;

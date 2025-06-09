@@ -170,7 +170,7 @@ export default [
       },
       {
         title: 'BlackJack',
-        description: `A simple BlackJack game developed using TypeScript, HTML, and JavaScript. The project implements the classic card game logic, allowing users to play against the computer.`,
+        description: `A simple BlackJack game developed using TypeScript and Webpack. The project implements the classic card game logic, allowing users to play against the computer.`,
         github: 'https://github.com/mslotwinski-dev/BlackJack',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/BlackJack/refs/heads/main/public/readme_icon.png',
         langs: ['TypeScript'],

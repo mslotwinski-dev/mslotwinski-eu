@@ -44,10 +44,12 @@
       </div>
     </article>
   </section>
+  <Languages />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Languages from '@/components/Details/Languages.vue'
 import projects from '@/data/projects'
 import { colors } from '@/data/colors'
 
@@ -63,6 +65,9 @@ export default defineComponent({
     open(a: string) {
       window.open(a, '_blank')
     },
+  },
+  components: {
+    Languages,
   },
 })
 </script>

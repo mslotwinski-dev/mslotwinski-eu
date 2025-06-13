@@ -127,6 +127,7 @@ img {
   height: 40px;
   margin-right: 10px;
   vertical-align: middle;
+  border-radius: 8px;
 }
 
 .description {

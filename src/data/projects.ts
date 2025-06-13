@@ -139,6 +139,13 @@ export default [
         langs: ['Vue', 'TypeScript'],
       },
       {
+        title: 'Polistats',
+        description: `Interactive map of Poland with custom election results and many ways to explore statistics about them.`,
+        github: 'https://github.com/mslotwinski-dev/Polistats',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Polistats/refs/heads/main/public/readme_icon.png',
+        langs: ['TypeScript', 'Vue'],
+      },
+      {
         title: 'Resizer',
         description: `Simply resizes your icons.`,
         github: 'https://github.com/mslotwinski-dev/Resizer',
@@ -168,13 +175,7 @@ export default [
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Actually-SudokuSolver/refs/heads/main/public/readme_icon.png',
         langs: ['C#'],
       },
-      {
-        title: 'BlackJack',
-        description: `A simple BlackJack game developed using TypeScript and Webpack. The project implements the classic card game logic, allowing users to play against the computer.`,
-        github: 'https://github.com/mslotwinski-dev/BlackJack',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/BlackJack/refs/heads/main/public/readme_icon.png',
-        langs: ['TypeScript'],
-      },
+
       {
         title: 'Multiply',
         description:
@@ -190,6 +191,13 @@ export default [
         github: 'https://github.com/mslotwinski-dev/RacistTheGame',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/RacistTheGame/refs/heads/main/public/readme_icon.png',
         langs: ['Vue'],
+      },
+      {
+        title: 'Zeus Cassino',
+        description: `Simple parody of cheap cassino pages. Including black jack game.`,
+        github: 'https://github.com/mslotwinski-dev/BlackJack',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/BlackJack/refs/heads/main/public/readme_icon.png',
+        langs: ['Vue', 'TypeScript'],
       },
     ],
   },
@@ -217,13 +225,14 @@ export default [
       'Projekty stworzone w trakcie studiów, odzwierciedlające wiedzę teoretyczną i jej praktyczne zastosowanie.',
     projects: [
       {
-        title: 'Nuclear Bomb',
+        title: 'Engineering Physics',
         description:
-          'Physical simulation of a nuclear bomb, providing a model to simulate and analyze its effects. It is implemented in Java and comes with instructions for setup and running the simulation.',
-        github: 'https://github.com/mslotwinski-dev/eDirac',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NuclearBomb/refs/heads/main/public/readme_icon.png',
-        langs: ['Java'],
+          'This repository contains code from computer laboratory courses during my studies. It likely includes various assignments and experiments related to engineering physics.',
+        github: 'https://github.com/mslotwinski-dev/EngineeringPhysics',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/EngineeringPhysics/refs/heads/main/public/readme_icon.png',
+        langs: ['C', 'C++', 'Java'],
       },
+
       {
         title: 'Laplace',
         description:
@@ -233,12 +242,19 @@ export default [
         langs: ['Python'],
       },
       {
-        title: 'Engineering Physics',
+        title: 'Nuclear Bomb',
         description:
-          'This repository contains code from computer laboratory courses during my studies. It likely includes various assignments and experiments related to engineering physics.',
-        github: 'https://github.com/mslotwinski-dev/EngineeringPhysics',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/EngineeringPhysics/refs/heads/main/public/readme_icon.png',
-        langs: ['C', 'C++', 'Java'],
+          'Physical simulation of a nuclear bomb, providing a model to simulate and analyze its effects. It is implemented in Java and comes with instructions for setup and running the simulation.',
+        github: 'https://github.com/mslotwinski-dev/eDirac',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NuclearBomb/refs/heads/main/public/readme_icon.png',
+        langs: ['Java'],
+      },
+      {
+        title: 'Quantum Waves',
+        description: 'Simple simulation of quantum waves in custom potentials.',
+        github: 'https://github.com/mslotwinski-dev/QuantumWave',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/QuantumWave/refs/heads/main/public/readme_icon.png',
+        langs: ['Python'],
       },
     ],
   },

@@ -110,6 +110,13 @@ export default [
       'Szybkie, pomysłowe projekty skupione na rozwiązywaniu problemów i swobodnym eksperymentowaniu.',
     projects: [
       {
+        title: 'Boson',
+        description: `Boson is a flexible cellular automaton simulator with configurable rules, enabling the modeling of complex phenomena such as fires, crystallization, or pattern evolution.`,
+        github: 'https://github.com/mslotwinski-dev/Boson',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Boson/refs/heads/main/public/readme_icon.png',
+        langs: ['C'],
+      },
+      {
         title: 'eWybory',
         description: `eWybory is an application designed to record voting data and keep track of how users voted in elections. It provides a secure and organized way to document election results for personal use.`,
         github: 'https://github.com/mslotwinski-dev/eWybory',
@@ -165,7 +172,7 @@ export default [
     title: 'Pixel Zone',
     icon: 'ghost',
     description:
-      'Szybkie projekty z gier, gdzie liczy się przede wszystkim dobra zabawa i kreatywność.',
+      'Szybkie projekty w tematyce gier, gdzie liczy się przede wszystkim dobra zabawa i kreatywność.',
     projects: [
       {
         title: 'Actually',

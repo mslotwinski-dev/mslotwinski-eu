@@ -8,7 +8,7 @@ export default [
     Field: 'Fizyka Techniczna',
     Details: [
       {
-        Spec: 'Specjalizacja: Fizyka Medyczna',
+        Spec: 'Specjalizacja: Materiały i Nanostruktury',
         Year: '2023 - 2027',
         Degree: Degree.BACHELOR,
       },

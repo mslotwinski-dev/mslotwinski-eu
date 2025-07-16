@@ -22,10 +22,11 @@
       <div class="me">
         Jestem studentem drugiego roku fizyki technicznej na Politechnice
         Warszawskiej. Na co dzień programuję, zarządzam projektami oraz uczę
-        się, jak wykorzystać fizykę w technologii. Interesuję się w
-        szczególności fizyką jądrową i jej zastosowaniami, a po godzinach gotuję
-        i zgłębiam wiedzę o świecie – od języków obcych, przez ekonomię i
-        politykę różnych państw, aż po ich faunę i ekosystemy.
+        się, jak wykorzystać fizykę we współczesnej technologii. Interesuję się
+        w szczególności fizyką jądrową i jej zastosowaniami w badaniach
+        materiałów. Po godzinach gotuję i zgłębiam wiedzę o świecie – od języków
+        obcych, przez ekonomię i politykę różnych państw, aż po ich faunę i
+        ekosystemy.
       </div>
     </div>
   </div>

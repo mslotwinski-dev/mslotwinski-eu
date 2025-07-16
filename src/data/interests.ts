@@ -34,4 +34,22 @@ export default [
     icon: 'code',
     image: 'physics',
   },
+  // {
+  //   name: 'Gotowanie',
+  //   description: '',
+  //   icon: 'code',
+  //   image: 'physics',
+  // },
+  //   {
+  //   name: 'Fantasy',
+  //   description: '',
+  //   icon: 'code',
+  //   image: 'physics',
+  // },
+  //   {
+  //   name: 'Gry',
+  //   description: '',
+  //   icon: 'code',
+  //   image: 'physics',
+  // },
 ]

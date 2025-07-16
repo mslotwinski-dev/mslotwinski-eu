@@ -6,10 +6,10 @@ export const works: Work[] = [
     Position: 'Praktykant w dziale aparatury jądrowej',
     HowLong: '2025',
     Tasks: [
-      'Zapoznanie się z tworzeniem, weryfikacją i walidacją dokumentacji technologicznej',
-      'Elektronika maszynowa – poznanie podstaw programowania sterowników PLC Siemens i Beckchoff',
-      'Tworzenie oprogramowania w językach programowania C++ i C#',
-      'Praktyczne zajęcia przy montażu i uruchomieniu podzespołów elektrycznych akceleratora',
+      'Zapoznanie się z tworzeniem, weryfikacją i walidacją dokumentacji technologicznej.',
+      'Poznanie podstaw programowania sterowników PLC Siemens i Beckchoff.',
+      'Tworzenie i testowanie oprogramowania do akceleratora AQURE w językach programowania C++ i C#.',
+      'Montaż i uruchamienie podzespołów elektrycznych akceleratorów. Przeprowadzanie testów funkcjonalnych.',
     ],
   },
   {

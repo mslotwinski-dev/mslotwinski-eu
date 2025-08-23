@@ -1,9 +1,12 @@
 <template>
   <header>
     <Hero />
+    <Navbar />
     <h2>Mateusz Słotwiński</h2>
     <h3>Scroll down</h3>
-    <Scroll />
+    <a href="#cv" v-smooth-scroll>
+      <Scroll />
+    </a>
   </header>
 </template>
 
@@ -11,12 +14,14 @@
 import { defineComponent } from 'vue'
 import Scroll from '@/components/Shared/styled/Scroll.vue'
 import Hero from '@/components/Shared/styled/Hero.vue'
+import Navbar from '@/components/Shared/Navbar.vue'
 
 export default defineComponent({
   name: 'Start',
   components: {
     Scroll,
     Hero,
+    Navbar,
   },
 })
 </script>

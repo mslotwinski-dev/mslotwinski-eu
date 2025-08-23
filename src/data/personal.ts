@@ -8,4 +8,5 @@ export const personal = {
   home: new Home('Warszawa', 'Poland'),
   age: Math.floor((today - born) / 31557600000),
   github: 'https://github.com/mslotwinski-dev',
+  linkedin: 'https://www.linkedin.com/in/mslotwinski/',
 }

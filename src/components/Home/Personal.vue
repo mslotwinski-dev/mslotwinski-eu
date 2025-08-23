@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex" id="cv">
     <img src="@/assets/logo.png" />
 
     <div>
@@ -17,23 +17,28 @@
           <div class="item brand" @click="github()">
             <ic icon="fa-brands fa-github" />
           </div>
+          <div class="item" @click="linkedin()">
+            <ic icon="fa-brands fa-linkedin" />
+          </div>
         </div>
       </div>
       <div class="me">
-        Jestem studentem drugiego roku fizyki technicznej na Politechnice
-        Warszawskiej. Na co dzień programuję, zarządzam projektami oraz uczę
-        się, jak wykorzystać fizykę we współczesnej technologii. Interesuję się
-        w szczególności fizyką jądrową i jej zastosowaniami w badaniach
-        materiałów. Po godzinach gotuję i zgłębiam wiedzę o świecie – od języków
-        obcych, przez ekonomię i politykę różnych państw, aż po ich faunę i
-        ekosystemy.
+        Student fizyki technicznej i wszechstronny programista, łączący dogłębną
+        wiedzę naukową z praktyką w tworzeniu nowoczesnych rozwiązań IT. Dzięki
+        szerokiemu T-shaped profile mogę łączyć fizykę, elektronikę i sztuczną
+        inteligencję, by tworzyć systemy, które potrafią mierzyć, analizować i
+        reagować oraz efektywnie komunikować się z ekspertami z innych dziedzin
+        i integrować ich pracę. Szukam wyzwań, w których mogę wykorzystać swoje
+        interdyscyplinarne umiejętności do budowania innowacyjnych produktów.
       </div>
     </div>
   </div>
+  <TShaped />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import TShaped from './TShaped.vue'
 import { personal } from '@/data/personal'
 
 export default defineComponent({
@@ -42,12 +47,18 @@ export default defineComponent({
       personal,
     }
   },
+  components: {
+    TShaped,
+  },
   methods: {
     mailme() {
       window.open(`mailto:${this.personal.email}`, '_blank')
     },
     github() {
       window.open(this.personal.github, '_blank')
+    },
+    linkedin() {
+      window.open(this.personal.linkedin, '_blank')
     },
   },
 })

@@ -1,5 +1,5 @@
 <template>
-  <h2 class="header">Projekty</h2>
+  <h2 class="header" id="projects">Projekty</h2>
   <section class="container">
     <div class="filter">
       <div

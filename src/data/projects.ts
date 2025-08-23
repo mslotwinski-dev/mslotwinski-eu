@@ -52,6 +52,13 @@ export default [
         icon: 'https://avatars.githubusercontent.com/u/98991330?s=200&v=4',
         langs: ['Vue', 'Go'],
       },
+      {
+        title: 'HorizonAI',
+        description: 'Simple App for keeping and shorting your links',
+        github: 'https://github.com/mslotwinski-dev/HorizonAI',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/HorizonAI/refs/heads/main/public/readme_icon.png',
+        langs: ['Vue', 'TypeScript', 'Python'],
+      },
     ],
   },
 

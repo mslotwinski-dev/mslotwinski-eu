@@ -35,12 +35,12 @@ export default defineComponent({
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 
   gap: 0.75rem;
   max-width: 1000px;
   margin: auto;
-  min-height: 400px;
+  min-height: 450px;
 }
 
 .item {
@@ -61,12 +61,17 @@ export default defineComponent({
 
     top: 0;
     left: 0;
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
   }
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.025);
+    img {
+      opacity: 0;
+    }
     .text {
       transform: scaleX(1);
     }
@@ -139,6 +144,22 @@ export default defineComponent({
   grid-row: 2 / 4;
   .text {
     transform-origin: right;
+  }
+}
+
+.item-6 {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  .text {
+    transform-origin: left;
+  }
+}
+
+.item-7 {
+  grid-column: 4 / 8;
+  grid-row: 4;
+  .text {
+    transform-origin: left;
   }
 }
 </style>

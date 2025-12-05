@@ -42,7 +42,7 @@ export default defineComponent({
       ['Python', 12193],
     ]
 
-    // await this.updateArray()
+    await this.updateArray()
   },
   methods: {
     async updateArray() {
@@ -53,7 +53,7 @@ export default defineComponent({
         [key: string]: number
       }
       let done = [] as string[]
-      let token = ''
+      let token = process.env.VUE_APP_TOKEN
       const username = 'mslotwinski-dev'
       const organizations = [
         'Genesis-Organization',
@@ -62,7 +62,7 @@ export default defineComponent({
         'Analyse-Me',
         'Ampere-Engine',
         'Note-Keeper',
-        'URLeaf',
+        'Bullet-link',
         'AirLanguage',
         'Lewe-Korki',
       ]

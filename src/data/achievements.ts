@@ -1,4 +1,8 @@
 export default [
+  {
+    text: 'Członkostwo w <a href="https://home.cern/about/who-we-are/our-governance">CERN</a> przez wakacje 2024 roku.',
+    year: '2024',
+  },
   { text: 'Certyfikat Acert B2 z języka angielskiego', year: '2024' },
   {
     text: 'Stypendium w ramach programu <a href="https://www.stypendia-pomostowe.pl">Stypendia pomostowe</a>.',

@@ -5,7 +5,12 @@
       <div class="header">
         <div class="name">
           <span v-html="proj.name" />
-          <span v-if="proj.label" v-html="proj.label.text" class="label" />
+          <span
+            v-if="proj.label"
+            v-html="proj.label.text"
+            class="label"
+            :style="{ backgroundColor: proj.label.color }"
+          />
         </div>
         <div class="year" v-html="proj.time" />
       </div>

@@ -23,33 +23,66 @@
           class="listitem"
           v-for="(skill, index) in skills.programming.list"
           :key="index"
+          :style="{
+            marginTop: skills.programming.space.includes(index) ? '0.5em' : '0',
+          }"
         >
           <div class="dot">
             <ic icon="star" />
           </div>
-          {{ skill }}
+          <span v-html="skill" />
         </div>
-      </div>
-      <div class="uxui">
-        <div class="dot">
-          <ic icon="chart-simple" />
-          <!-- <div class="red">/</div> -->
-        </div>
-        {{ skills.programming.uxui }}
       </div>
     </article>
     <article>
-      <h3>NAUKOWO-TECHNICZNE</h3>
+      <h3>TECHNICZNE</h3>
       <div class="list">
         <div
           class="listitem"
-          v-for="(skill, index) in skills.science"
+          v-for="(skill, index) in skills.technical.list"
           :key="index"
+          :style="{
+            marginTop: skills.technical.space.includes(index) ? '0.5em' : '0',
+          }"
         >
           <div class="dot gold">
             <ic icon="star" />
           </div>
-          {{ skill }}
+          <span v-html="skill" />
+        </div>
+      </div>
+    </article>
+    <article>
+      <h3>NAUKOWE</h3>
+      <div class="list">
+        <div
+          class="listitem"
+          v-for="(skill, index) in skills.science.list"
+          :key="index"
+          :style="{
+            marginTop: skills.science.space.includes(index) ? '0.5em' : '0',
+          }"
+        >
+          <div class="dot red">
+            <ic icon="star" />
+          </div>
+          <span v-html="skill" />
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <h3>MIĘKKIE</h3>
+      <div class="list">
+        <div
+          class="listitem"
+          v-for="(skill, index) in skills.soft.list"
+          :key="index"
+        >
+          <div class="dot green">
+            <ic icon="star" />
+          </div>
+          <span v-html="skill" />
         </div>
       </div>
     </article>
@@ -78,7 +111,7 @@ export default defineComponent({
 }
 article {
   margin: 15px auto;
-  width: 900px;
+  width: 950px;
 }
 
 .languages {

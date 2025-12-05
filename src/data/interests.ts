@@ -38,7 +38,7 @@ export default [
   {
     name: 'Fantasy, gry i relaks',
     description:
-      'Nikt o zdrowych zmysłach nie wraca z pracy do kolejnej pracy, bo każdemu potrzebny na relaks i czas na oderwanie się od codzienności. A gdy to robię to zazwyczaj oglądam filmy, zgłębiam fantastykę, robię tripy samochodem albo gram w najróżniejsze gry ze znajomymi.',
+      'Nikt o zdrowych zmysłach nie wraca z pracy do kolejnej pracy, bo każdemu potrzebny na relaks i czas na oderwanie się od codzienności. A gdy to robię to zazwyczaj oglądam filmy, zgłębiam (oraz piszę) fantastykę, robię tripy samochodem albo gram w najróżniejsze gry ze znajomymi.',
     image: 'relax',
   },
 ]

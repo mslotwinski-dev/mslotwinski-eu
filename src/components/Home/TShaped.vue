@@ -26,6 +26,8 @@
           top: item.y + 'px',
           width: item.bubble_size + 'px',
           height: item.bubble_size + 'px',
+          animationDuration: item.duration,
+          animationDelay: item.delay,
         }"
       >
         <img
@@ -43,7 +45,6 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      i: 0,
       items: [
         {
           icon: 'physics',
@@ -51,46 +52,70 @@ export default defineComponent({
           y: 0,
           size: 50,
           bubble_size: 90,
+          duration: '0s',
+          delay: '0s',
         },
-
         {
           icon: 'electronics',
           x: 200,
           y: 5,
           size: 45,
           bubble_size: 70,
+          duration: '0s',
+          delay: '0s',
         },
-
         {
           icon: 'telecommunications',
           x: 180,
           y: 80,
           size: 30,
           bubble_size: 50,
+          duration: '0s',
+          delay: '0s',
         },
-
         {
           icon: 'informatics',
           x: 30,
           y: 60,
           size: 38,
           bubble_size: 70,
+          duration: '0s',
+          delay: '0s',
         },
-
         {
           icon: 'ai',
           x: 110,
           y: 100,
           size: 30,
           bubble_size: 50,
+          duration: '0s',
+          delay: '0s',
         },
       ],
     }
+  },
+  mounted() {
+    this.items.forEach((item) => {
+      item.duration = `${3 + Math.random() * 4}s`
+      item.delay = `${Math.random() * -5}s`
+    })
   },
 })
 </script>
 
 <style lang="scss" scoped>
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .flex {
   display: flex;
   justify-content: space-evenly;
@@ -111,6 +136,7 @@ export default defineComponent({
   width: 320px;
   height: 150px;
   background-size: cover;
+  position: relative;
 
   > img {
     width: 100%;
@@ -136,6 +162,10 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   transition: 0.2s all ease-in-out;
+
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 
   img {
     width: 45px;

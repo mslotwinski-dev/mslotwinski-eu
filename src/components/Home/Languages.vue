@@ -20,9 +20,10 @@
         </div>
         <div
           class="cert"
-          v-html="'Certyfikat'"
-          v-if="lang.cert"
-          @click="open(lang.cert)"
+          v-html="`Certyfikat ${cert.level}`"
+          v-for="cert in lang.certs"
+          :key="cert"
+          @click="open(cert.link)"
         />
       </div>
     </div>
@@ -111,6 +112,7 @@ export default defineComponent({
   color: #666;
   font-size: 0.9rem;
   margin-top: 10px;
+  margin-right: 20px;
   cursor: pointer;
 }
 </style>

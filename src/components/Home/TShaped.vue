@@ -8,7 +8,7 @@
         przyszłości.
       </div>
       <div class="text">
-        Na codzień zajmuje się fizyką zaawansowanych materiałów badając ich
+        Na co dzień zajmuje się fizyką zaawansowanych materiałów badając ich
         właściwości pod kątem zastosowania w nowoczesnych technologiach.
         Specjalizuję się w fizyce procesów jonowych i metalami ziem rzadkich.
         Interesują mnie także fizyka półprzewodników i układów

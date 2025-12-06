@@ -9,7 +9,7 @@ export default [
     Details: [
       {
         Spec: 'Specjalizacja: Materiały i Nanostruktury',
-        Year: '2023 - 2027',
+        Year: '2023 - obecnie',
         Degree: Degree.BACHELOR,
       },
       // {

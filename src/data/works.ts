@@ -4,7 +4,7 @@ export const works: Work[] = [
   {
     Name: 'Alfabit',
     Position: 'Specjalista ds. Aplikacji IT',
-    HowLong: '12.2024 - 12.2026',
+    HowLong: '12.2024 - obecnie',
     Tasks: [
       'Programowanie usług i aplikacji sieciowych oraz stron internetowych dla klientów i biznesu.',
       'Implementacja technologii bezprzewodowych i chmurowych (automatyzacja).',

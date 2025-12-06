@@ -10,7 +10,7 @@ export default [
     level: 'C1',
     percent: 80,
     flag: 'https://flagcdn.com/w40/us.png',
-    certs: [{ level: 'B2', link: '/certs/english-b2.pdf' }],
+    certs: [{ level: '', link: '/certs/english-b2.pdf' }],
   },
   // {
   //   name: 'Norweski',

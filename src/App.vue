@@ -1,6 +1,6 @@
 <template>
   <router-view v-slot="{ Component }">
-    <transition name="route" mode="in-out">
+    <transition name="route" mode="out-in">
       <component :is="Component" />
     </transition>
   </router-view>
@@ -19,12 +19,12 @@ export default defineComponent({
 <style lang="scss">
 .route-enter-from {
   opacity: 0;
-  transform: translateX(2em);
+  transform: translateX(4em);
 }
 
 .route-leave-to {
   opacity: 0;
-  transform: translateX(-2em);
+  transform: translateX(-4em);
 }
 
 .route-enter-active,

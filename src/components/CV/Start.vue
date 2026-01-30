@@ -1,0 +1,57 @@
+<template>
+  <header>
+    <Hero />
+    <Navbar />
+    <h2>Mateusz Słotwiński</h2>
+    <h3>CV</h3>
+    <a href="#cv" v-smooth-scroll>
+      <Scroll />
+    </a>
+  </header>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Scroll from '@/components/Shared/styled/Scroll.vue'
+import Hero from '@/components/Shared/styled/Hero.vue'
+import Navbar from '@/components/Shared/Navbar.vue'
+
+export default defineComponent({
+  name: 'Start',
+  components: {
+    Scroll,
+    Hero,
+    Navbar,
+  },
+})
+</script>
+
+<style scoped lang="scss">
+header {
+  width: calc(100vw + 4em);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $dark;
+}
+
+h2 {
+  font-size: calc(20px + 2vw);
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+  font-size: calc(10px + 1vw);
+  font-weight: 500;
+  margin: 0;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+</style>

@@ -10,10 +10,11 @@
       <div class="text">
         Na co dzień zajmuje się fizyką zaawansowanych materiałów badając ich
         właściwości pod kątem zastosowania w nowoczesnych technologiach.
-        Specjalizuję się w fizyce procesów jonowych i metalami ziem rzadkich.
-        Interesują mnie także fizyka półprzewodników i układów
-        mikroprocesorowych, technologie przetwarzania energii oraz materiały
-        organiczne i 2D, a także stosowana fizyka i technika jądrowa.
+        Interesuje mnie fizyka procesów jonowych, szczególnie w kontekście
+        metali ziem rzadkich oraz technologii przetwarzania i magazynowania
+        energii. Do innych moich zainteresowań naukowych należą fizyka
+        półprzewodników i układów mikroprocesorowych, oraz materiały organiczne
+        i 2D, a także stosowana fizyka i technika jądrowa.
       </div>
     </div>
     <div class="graph">

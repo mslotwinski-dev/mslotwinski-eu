@@ -1,27 +1,23 @@
 <template>
   <div>
     <Start />
-    <main><Blog /></main>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Start from '@/components/Home/Start.vue'
-import Blog from '@/components/Home/Blog.vue'
+import Start from '@/components/Projects/Start.vue'
 
 export default defineComponent({
+  name: 'Projects',
   components: {
     Start,
-    Blog,
   },
 })
 </script>
 
 <style>
 main {
-  margin: 0 auto !important;
-  top: -10vh !important;
-  max-width: 1300px !important;
+  margin: 10vh auto;
 }
 </style>

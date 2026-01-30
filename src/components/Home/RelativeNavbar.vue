@@ -15,22 +15,18 @@ export default defineComponent({})
 
 <style lang="scss" scoped>
 nav {
-  position: absolute;
-  top: 80px;
-  right: 150px;
   display: flex;
-  gap: 30px; // równy odstęp między linkami
+  gap: 30px;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
 
   a {
-    color: $dark;
+    color: $light;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
 
-    // delikatny underline animowany
     &::after {
       content: '';
       position: absolute;
@@ -38,12 +34,12 @@ nav {
       bottom: -4px;
       width: 0%;
       height: 2px;
-      background: $dark;
+      background: $light;
       transition: width 0.3s ease;
     }
 
     &:hover {
-      color: lighten($dark, 10%);
+      color: lighten($light, 10%);
     }
 
     &:hover::after {

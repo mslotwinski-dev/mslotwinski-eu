@@ -29,20 +29,20 @@ export default defineComponent({
   },
   async mounted() {
     this.langarray = [
-      ['Vue', 1985943],
-      ['TypeScript', 691718],
-      ['Go', 120133],
-      ['C++', 109972],
-      ['JavaScript', 79735],
+      ['Vue', 1367279],
+      ['TypeScript', 658013],
+      ['Rust', 189785],
+      ['Go', 151636],
+      ['C++', 122416],
+      ['JavaScript', 75490],
       ['Java', 48729],
-      ['C', 39714],
-      ['C#', 35132],
-      ['Dart', 14229],
-      ['Rust', 14195],
-      ['Python', 12193],
+      ['C', 46433],
+      ['C#', 40725],
+      ['Python', 26560],
+      ['Dart', 11420],
     ]
 
-    await this.updateArray()
+    // await this.updateArray()
   },
   methods: {
     async updateArray() {

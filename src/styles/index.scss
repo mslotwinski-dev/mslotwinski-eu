@@ -1,5 +1,10 @@
 @import './root.scss';
 
+@font-face {
+  font-family: 'One';
+  src:  url('~@/styles/poestenone.ttf') format('truetype'); 
+}
+
 h2.header {
   text-align: center;
   font-size: 28px;

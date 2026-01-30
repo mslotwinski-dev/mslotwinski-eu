@@ -12,6 +12,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/eDirac/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
+        main: true,
       },
       {
         title: 'Cloudy',
@@ -20,6 +21,7 @@ export default [
         github: 'https://github.com/Cloudy-APP',
         icon: 'https://avatars.githubusercontent.com/u/95831075?s=400&u=b908e3c984b3068a4fa0dd3d0bfde5f9fe054aab&v=4',
         langs: ['Vue', 'TypeScript'],
+        main: true,
       },
       {
         title: 'mLib',
@@ -36,6 +38,7 @@ export default [
         github: 'https://github.com/Analyse-Me',
         icon: 'https://avatars.githubusercontent.com/u/95831259?s=200&v=4',
         langs: ['Vue', 'C#'],
+        main: true,
       },
       {
         title: 'Note Keeper',
@@ -46,7 +49,7 @@ export default [
         langs: ['Vue', 'TypeScript', 'Go'],
       },
       {
-        title: 'URLeaf',
+        title: 'Bullet',
         description: 'Simple App for keeping and shorting your links',
         github: 'https://github.com/URLeaf',
         icon: 'https://avatars.githubusercontent.com/u/98991330?s=200&v=4',
@@ -58,6 +61,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/HorizonAI',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/HorizonAI/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript', 'Python'],
+        main: true,
       },
     ],
   },
@@ -69,12 +73,22 @@ export default [
       'Rozbudowane i skomplikowane projekty, które wymagają dużo planowania, wysiłku oraz użycia zaawansowanych narzędzi.',
     projects: [
       {
+        title: 'Aero',
+        description:
+          'Console game developed in C++ where players control a capybara navigating through a jungle. The game involves various challenges and interactions set in a jungle environment, providing an engaging and fun experience.',
+        github: 'https://github.com/mslotwinski-dev/Aero',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Aero/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+        main: true,
+      },
+      {
         title: 'Ancient Paws',
         description:
           'Console game developed in C++ where players control a capybara navigating through a jungle. The game involves various challenges and interactions set in a jungle environment, providing an engaging and fun experience.',
         github: 'https://github.com/mslotwinski-dev/AncientPaws',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/AncientPaws/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
+        main: true,
       },
       {
         title: 'PiWo',
@@ -82,6 +96,21 @@ export default [
         github: 'https://github.com/mslotwinski-dev/PiWo',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PiWo/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
+      },
+      {
+        title: 'Pixel',
+        description: 'Ja liczę sprawozdania ty pijesz piwo.',
+        github: 'https://github.com/mslotwinski-dev/Pixel',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Pixel/refs/heads/main/public/readme_icon.png',
+        langs: ['Rust'],
+        main: true,
+      },
+      {
+        title: 'Triply',
+        description: 'Ja liczę sprawozdania ty pijesz piwo.',
+        github: 'https://github.com/mslotwinski-dev/Triply',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Triply/refs/heads/main/public/readme_icon.png',
+        langs: ['Vue', 'TypeScript'],
       },
       {
         title: 'QDot',
@@ -98,6 +127,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Shin',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Shin/refs/heads/main/public/readme_icon.png',
         langs: ['Vue'],
+        main: true,
       },
       {
         title: 'YT Downloader',
@@ -129,6 +159,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/eWybory',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/eWybory/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
+        main: true,
       },
 
       {
@@ -151,6 +182,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/PastoLatarnia',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PastoLatarnia/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
+        main: true,
       },
       {
         title: 'Polistats',
@@ -158,6 +190,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Polistats',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Polistats/refs/heads/main/public/readme_icon.png',
         langs: ['TypeScript', 'Vue'],
+        main: true,
       },
       {
         title: 'Resizer',
@@ -165,6 +198,15 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Resizer',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resizer/refs/heads/main/public/readme_icon.png',
         langs: ['C'],
+        main: true,
+      },
+      {
+        title: 'Volt',
+        description: `Simply resizes your icons.`,
+        github: 'https://github.com/mslotwinski-dev/Volt',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Volt/refs/heads/main/public/readme_icon.png',
+        langs: ['C'],
+        main: true,
       },
       {
         title: 'vQuery',
@@ -207,11 +249,12 @@ export default [
         langs: ['Vue'],
       },
       {
-        title: 'Zeus Cassino',
-        description: `Simple parody of cheap cassino pages. Including black jack game.`,
+        title: 'Zeus Casino',
+        description: `Simple parody of cheap casino pages. Including black jack game.`,
         github: 'https://github.com/mslotwinski-dev/BlackJack',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/BlackJack/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
+        main: true,
       },
     ],
   },
@@ -227,6 +270,66 @@ export default [
           'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/CodeHub/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+        main: true,
+      },
+      {
+        title: 'Milk',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/Milk',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Milk/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+        main: true,
+      },
+      {
+        title: 'Dash',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/Dash',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Dash/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+        main: true,
+      },
+      {
+        title: 'Iceberg',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/Iceberg',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Iceberg/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+      },
+      {
+        title: 'LabSYNC',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/LabSYNC',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/LabSYNC/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+      },
+      {
+        title: 'Neon',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/Neon',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Neon/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+      },
+
+      {
+        title: 'PandaDB',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/PandaDB',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PandaDB/refs/heads/main/public/readme_icon.png',
+        langs: ['Go'],
+      },
+      {
+        title: 'Shield',
+        description:
+          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+        github: 'https://github.com/mslotwinski-dev/Shield',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Shield/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
       },
     ],
@@ -246,6 +349,33 @@ export default [
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/EngineeringPhysics/refs/heads/main/public/readme_icon.png',
         langs: ['C', 'C++', 'Java'],
       },
+      {
+        title: 'NumC',
+        description:
+          'This repository contains code from computer laboratory courses during my studies. It likely includes various assignments and experiments related to engineering physics.',
+        github: 'https://github.com/mslotwinski-dev/NumC',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NumC/refs/heads/main/public/readme_icon.png',
+        langs: ['C++'],
+        main: true,
+      },
+
+      {
+        title: 'Echo',
+        description:
+          'This repository contains code from computer laboratory courses during my studies. It likely includes various assignments and experiments related to engineering physics.',
+        github: 'https://github.com/mslotwinski-dev/Echo',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Echo/refs/heads/main/public/readme_icon.png',
+        langs: ['C++'],
+      },
+
+      {
+        title: 'Resist',
+        description:
+          'This repository contains code from computer laboratory courses during my studies. It likely includes various assignments and experiments related to engineering physics.',
+        github: 'https://github.com/mslotwinski-dev/Resist',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resist/refs/heads/main/public/readme_icon.png',
+        langs: ['Rust'],
+      },
 
       {
         title: 'Laplace',
@@ -262,6 +392,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NuclearBomb/refs/heads/main/public/readme_icon.png',
         langs: ['Java'],
+        main: true,
       },
       {
         title: 'Quantum Waves',
@@ -269,6 +400,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/QuantumWave',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/QuantumWave/refs/heads/main/public/readme_icon.png',
         langs: ['Python'],
+        main: true,
       },
     ],
   },

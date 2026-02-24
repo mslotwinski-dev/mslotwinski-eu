@@ -13,8 +13,9 @@ export default defineComponent({
 <style scoped>
 div {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('../../../assets/start.png');
   background-size: cover;
   background-position: center;

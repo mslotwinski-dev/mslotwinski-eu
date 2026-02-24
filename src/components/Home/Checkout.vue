@@ -1,0 +1,11 @@
+<template>
+  <div>Sprawdź moje wpisy na blogu!</div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({})
+</script>
+
+<style lang="scss" scoped></style>

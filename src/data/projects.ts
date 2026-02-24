@@ -21,7 +21,6 @@ export default [
         github: 'https://github.com/Cloudy-APP',
         icon: 'https://avatars.githubusercontent.com/u/95831075?s=400&u=b908e3c984b3068a4fa0dd3d0bfde5f9fe054aab&v=4',
         langs: ['Vue', 'TypeScript'],
-        main: true,
       },
       {
         title: 'mLib',
@@ -61,7 +60,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/HorizonAI',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/HorizonAI/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript', 'Python'],
-        main: true,
       },
     ],
   },
@@ -79,7 +77,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Aero',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Aero/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
-        main: true,
       },
       {
         title: 'Ancient Paws',
@@ -88,7 +85,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/AncientPaws',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/AncientPaws/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
-        main: true,
       },
       {
         title: 'PiWo',
@@ -103,7 +99,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Pixel',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Pixel/refs/heads/main/public/readme_icon.png',
         langs: ['Rust'],
-        main: true,
       },
       {
         title: 'Triply',
@@ -127,7 +122,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Shin',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Shin/refs/heads/main/public/readme_icon.png',
         langs: ['Vue'],
-        main: true,
       },
       {
         title: 'YT Downloader',
@@ -159,7 +153,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/eWybory',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/eWybory/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
-        main: true,
       },
 
       {
@@ -182,7 +175,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/PastoLatarnia',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PastoLatarnia/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
-        main: true,
       },
       {
         title: 'Polistats',
@@ -190,7 +182,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Polistats',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Polistats/refs/heads/main/public/readme_icon.png',
         langs: ['TypeScript', 'Vue'],
-        main: true,
       },
       {
         title: 'Resizer',
@@ -198,13 +189,12 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Resizer',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resizer/refs/heads/main/public/readme_icon.png',
         langs: ['C'],
-        main: true,
       },
       {
         title: 'Volt',
         description: `Simply resizes your icons.`,
         github: 'https://github.com/mslotwinski-dev/Volt',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Volt/refs/heads/main/public/readme_icon.png',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Volt/refs/heads/master/public/readme_icon.png',
         langs: ['C'],
         main: true,
       },
@@ -254,7 +244,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/BlackJack',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/BlackJack/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
-        main: true,
       },
     ],
   },
@@ -271,7 +260,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/CodeHub/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
-        main: true,
       },
       {
         title: 'Milk',
@@ -280,7 +268,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Milk',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Milk/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
-        main: true,
       },
       {
         title: 'Dash',
@@ -314,6 +301,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Neon',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Neon/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
+        main: true,
       },
 
       {
@@ -357,6 +345,7 @@ export default [
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NumC/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
         main: true,
+        tags: ['C++', 'Data Engineering', 'Numerical Methods'],
       },
 
       {
@@ -366,6 +355,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Echo',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Echo/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
+        main: true,
       },
 
       {
@@ -375,6 +365,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Resist',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resist/refs/heads/main/public/readme_icon.png',
         langs: ['Rust'],
+        main: true,
       },
 
       {
@@ -392,7 +383,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NuclearBomb/refs/heads/main/public/readme_icon.png',
         langs: ['Java'],
-        main: true,
       },
       {
         title: 'Quantum Waves',
@@ -400,7 +390,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/QuantumWave',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/QuantumWave/refs/heads/main/public/readme_icon.png',
         langs: ['Python'],
-        main: true,
       },
     ],
   },

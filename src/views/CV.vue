@@ -19,7 +19,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import Start from '../components/CV/Start.vue'
+import Start from '../components/Shared/Start.vue'
 import Personal from '@/components/CV/Personal.vue'
 import Experience from '@/components/CV/Experience.vue'
 import Education from '@/components/CV/Education.vue'
@@ -29,6 +29,7 @@ import Projects from '@/components/CV/Projects.vue'
 import Languages from '@/components/CV/Languages.vue'
 import Achievements from '@/components/CV/Achievements.vue'
 import Interests from '@/components/CV/Interests.vue'
+
 export default defineComponent({
   name: 'Home',
   components: {

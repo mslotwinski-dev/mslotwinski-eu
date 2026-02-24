@@ -53,7 +53,7 @@ $t: 0.5s;
 
 header {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,11 +93,11 @@ img {
 
   padding: 20px;
   border-radius: 50px;
-  width: 600px;
+  width: $width;
   height: 300px;
   margin: 20px;
   backdrop-filter: blur(10px);
-  border: 3px solid $gray;
+  // border: 3px solid $gray;
   left: calc(50vw - $width / 2);
   top: calc(40vh - 150px);
 
@@ -181,5 +181,11 @@ img {
   opacity: 1;
   transform: scaleX(1);
   font-size: initial;
+}
+
+p {
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
 }
 </style>

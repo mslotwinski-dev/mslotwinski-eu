@@ -5,9 +5,9 @@
     <div class="title">
       {{ article.title }}
     </div>
-    <div class="tags">
+    <!-- <div class="tags">
       <span v-for="tag in article.tags" :key="tag">{{ tag }} </span>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -26,25 +26,30 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .container {
-  width: 400px;
   cursor: pointer;
+  width: 380px;
+  min-width: 380px;
+  padding: 10px;
 }
 .image {
-  height: 250px;
+  width: 100%;
+  height: 225px;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
+  background-color: $main;
 }
 
 .date {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   color: gray;
 }
 .title {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
+  color: $light;
 }
 .tags {
   display: flex;
@@ -52,6 +57,7 @@ export default defineComponent({
   flex-wrap: wrap;
   margin-top: 10px;
   color: $light;
+  font-size: 10px;
 
   span {
     background: $rose;

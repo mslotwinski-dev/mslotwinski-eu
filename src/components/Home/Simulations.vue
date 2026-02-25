@@ -1,20 +1,20 @@
 <template>
   <div class="blog">
-    <div class="section" />
+    <div
+      class="section"
+      :style="{
+        backgroundImage:
+          `url(` +
+          require(`@/assets/screenshots/${simprojets[currentIndex].screenshots[0]}`) +
+          `)`,
+      }"
+    />
     <!-- <div class="checkout">Sprawdź moje wpisy</div> -->
     <div class="abc">
-      <header>Sprawdź moje artykuły!</header>
+      <header>Zanurkuj w świat symulacji!</header>
       <div class="container">
-        <div class="articles" :style="{ left: `-${currentIndex * 420}px` }">
-          <Article
-            v-for="article in articles.sort(
-              (a, b) =>
-                parseInt(b.id.match(/\d+$/)[0]) -
-                parseInt(a.id.match(/\d+$/)[0])
-            )"
-            :key="article.id"
-            :article="article"
-          />
+        <div class="articles" :style="{ left: `-${currentIndex * 1240}px` }">
+          <Simulation v-for="sim in simprojets" :key="sim.title" :sim="sim" />
         </div>
       </div>
       <div class="barcont">
@@ -26,7 +26,7 @@
             class="dot"
             icon="circle"
             :class="{ active: i === currentIndex + 1 }"
-            v-for="i in articles.length > 3 ? articles.length - 2 : 1"
+            v-for="i in simprojets.length"
             :key="i"
           />
         </div>
@@ -40,40 +40,40 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Article from './Article.vue'
-import articles from '@/data/blog/articles'
+import Simulation from './Simulation.vue'
+import projects from '@/data/projects'
 
 export default defineComponent({
   data() {
     return {
-      articles,
+      simprojets: projects
+        .map((c) => c.projects)
+        .reverse()
+        .flat()
+        .filter((p) => p.simulation),
       currentIndex: 0,
       slideMoveTime: 0,
     }
   },
   components: {
-    Article,
+    Simulation,
   },
   methods: {
     left() {
       this.currentIndex =
-        (this.currentIndex - 1 + this.articles.length) %
-        (this.articles.length > 3 ? this.articles.length - 2 : 1)
+        (this.currentIndex - 1 + this.simprojets.length) %
+        this.simprojets.length
       this.slideMoveTime = 0
     },
     right() {
-      this.currentIndex =
-        (this.currentIndex + 1) %
-        (this.articles.length > 3 ? this.articles.length - 2 : 1)
+      this.currentIndex = (this.currentIndex + 1) % this.simprojets.length
       this.slideMoveTime = 0
     },
     autoSlide() {
       setInterval(() => {
         this.slideMoveTime++
         if (this.slideMoveTime >= 6) {
-          this.currentIndex =
-            (this.currentIndex + 1) %
-            (this.articles.length > 3 ? this.articles.length - 2 : 1)
+          this.currentIndex = (this.currentIndex + 1) % this.simprojets.length
           this.slideMoveTime = 0
         }
       }, 1000)
@@ -114,6 +114,18 @@ export default defineComponent({
   position: absolute;
   top: 0;
   background: $dark;
+  background-size: cover;
+  background-position: center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #28353abb;
+    backdrop-filter: blur(10px);
+  }
 }
 
 .abc {

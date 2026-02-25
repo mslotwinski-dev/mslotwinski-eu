@@ -13,6 +13,7 @@ export default [
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/eDirac/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
         main: true,
+        simulation: false,
       },
       {
         title: 'Cloudy',
@@ -35,7 +36,7 @@ export default [
         description:
           'AnalyseMe is a platform with many psychological, political and philosophical tests. Answer honestly!',
         github: 'https://github.com/Analyse-Me',
-        icon: 'https://avatars.githubusercontent.com/u/95831259?s=200&v=4',
+        icon: 'https://github.com/Analyse-Me/AnalyseMe/blob/main/public/readme_icon.png?raw=true',
         langs: ['Vue', 'C#'],
         main: true,
       },
@@ -60,6 +61,7 @@ export default [
         github: 'https://github.com/mslotwinski-dev/HorizonAI',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/HorizonAI/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript', 'Python'],
+        main: true,
       },
     ],
   },
@@ -355,6 +357,7 @@ export default [
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Echo/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
         main: true,
+        tags: ['C++', 'Signal Processing', 'Audio Analysis', 'Electronics'],
       },
 
       {
@@ -365,6 +368,7 @@ export default [
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resist/refs/heads/main/public/readme_icon.png',
         langs: ['Rust'],
         main: true,
+        tags: ['Rust', 'Circuit Simulation', 'Compiler Design', 'Electronics'],
       },
 
       {
@@ -376,19 +380,34 @@ export default [
         langs: ['Python'],
       },
       {
+        title: 'Au6 Cluster Optimization',
+        description:
+          'Goal: Find the most stable geometry of an Au6 cluster adsorbed on a hexagonal boron nitride (h-BN) surface using a Genetic Algorithm (GA) in the ASE environment.',
+        github: 'https://github.com/quiklii/gold-hbn-optimization',
+        icon: 'https://raw.githubusercontent.com/quiklii/gold-hbn-optimization/refs/heads/main/public/readme_icon.png',
+        langs: ['Python'],
+        simulation: true,
+        screenshots: ['hbn-1.png'],
+      },
+      {
         title: 'Nuclear Bomb',
         description:
-          'Physical simulation of a nuclear bomb, providing a model to simulate and analyze its effects. It is implemented in Java and comes with instructions for setup and running the simulation.',
+          'Physical simulation of a nuclear bomb implemented in Java, providing a model to simulate and analyze its behavior. The model demonstrates that low uranium density leads to a steady increase in energy, while higher density results in rapid energy growth and an explosive regime.',
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NuclearBomb/refs/heads/main/public/readme_icon.png',
         langs: ['Java'],
+        simulation: true,
+        screenshots: ['nuclear-bomb-1.png'],
       },
       {
         title: 'Quantum Waves',
-        description: 'Simple simulation of quantum waves in custom potentials.',
+        description:
+          'Simple simulation of quantum waves by solving the Schrödinger equation in custom potentials. The project allows users to visualize and explore the behavior of quantum waves under different potential configurations, providing insights into fundamental principles of quantum mechanics.',
         github: 'https://github.com/mslotwinski-dev/QuantumWave',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/QuantumWave/refs/heads/main/public/readme_icon.png',
         langs: ['Python'],
+        simulation: true,
+        screenshots: ['quantum-waves-1.png'],
       },
     ],
   },

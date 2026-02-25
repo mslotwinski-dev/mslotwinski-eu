@@ -91,9 +91,9 @@ export default defineComponent({
       this.activeproject = project
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      this.currentproject = this.projects[category].projects.filter(
-        (p: any) => p.main
-      )[project]
+      // this.currentproject = this.projects[category].projects.filter(
+      //   (p: any) => p.main
+      // )[project]
     },
     open(a: string) {
       window.open(a, '_blank')

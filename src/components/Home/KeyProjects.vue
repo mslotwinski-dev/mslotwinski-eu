@@ -1,7 +1,29 @@
 <template>
   <div class="projects">
     <header>Kluczowe projekty</header>
-    <div class="container">
+    <section class="container">
+      <div class="grid-layout">
+        <div
+          :class="`item-${i + 1}`"
+          class="item"
+          v-for="(project, i) in mainprojects"
+          :key="i"
+        >
+          <img :src="project.icon" />
+          <!--  <div class="text">
+            <div class="name">{{ int.name }}</div>
+            <div class="desc">{{ int.description }}</div>
+          </div> -->
+
+          <div
+            class="name"
+            v-html="project.title"
+            @click="open(project.github)"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- <div class="container">
       <div class="list">
         <div
           class="item"
@@ -61,7 +83,7 @@
 
         <div class="screenshots">SCREENSHOTS</div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -98,7 +120,7 @@ export default defineComponent({
 
 .container {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
 }
 
@@ -155,7 +177,7 @@ export default defineComponent({
     img {
       width: 70px;
       height: 70px;
-      border-radius: 10px;
+      // border-radius: 10px;
     }
     .icon {
       font-size: 40px;
@@ -231,5 +253,85 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  gap: 0.75rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  min-height: 450px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+
+  .name {
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'One';
+  }
+}
+
+.item {
+  background-color: $light;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 15px #00647d88;
+  }
+}
+
+.item-1 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+.item-2 {
+  grid-column: 4 / 6;
+  grid-row: 1 / 3;
+}
+.item-3 {
+  grid-column: 6 / 8;
+  grid-row: 1 / 4;
+}
+
+.item-4 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 5;
+}
+.item-5 {
+  grid-column: 3 / 6;
+  grid-row: 3 / 5;
+}
+
+.item-6 {
+  grid-column: 6 / 8;
+  grid-row: 4 / 7;
+}
+
+.item-7 {
+  grid-column: 1 / 4;
+  grid-row: 5 / 7;
+}
+
+.item-8 {
+  grid-column: 4 / 6;
+  grid-row: 5 / 7;
 }
 </style>

@@ -4,12 +4,17 @@
       <component :is="Component" />
     </transition>
   </router-view>
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Footer from '@/components/Shared/Footer/Index.vue'
 
 export default defineComponent({
+  components: {
+    Footer,
+  },
   mounted() {
     document.title = 'Mateusz Słotwiński'
   },

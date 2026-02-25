@@ -196,7 +196,6 @@ export default [
         github: 'https://github.com/mslotwinski-dev/Volt',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Volt/refs/heads/master/public/readme_icon.png',
         langs: ['C'],
-        main: true,
       },
       {
         title: 'vQuery',

@@ -59,18 +59,18 @@ export default defineComponent({
       this.currentIndex =
         (this.currentIndex - 1 + this.articles.length) %
         (this.articles.length > 3 ? this.articles.length - 2 : 1)
-      this.slideMoveTime = 0
+      this.slideMoveTime = -5
     },
     right() {
       this.currentIndex =
         (this.currentIndex + 1) %
         (this.articles.length > 3 ? this.articles.length - 2 : 1)
-      this.slideMoveTime = 0
+      this.slideMoveTime = -5
     },
     autoSlide() {
       setInterval(() => {
         this.slideMoveTime++
-        if (this.slideMoveTime >= 6) {
+        if (this.slideMoveTime >= 7) {
           this.currentIndex =
             (this.currentIndex + 1) %
             (this.articles.length > 3 ? this.articles.length - 2 : 1)

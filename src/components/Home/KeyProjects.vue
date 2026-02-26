@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <header>Kluczowe projekty</header>
+    <header>Software? Proszę bardzo! - kilka kluczowych projektów</header>
     <section class="container">
       <div class="grid-layout">
         <div
@@ -8,6 +8,7 @@
           class="item"
           v-for="(project, i) in mainprojects"
           :key="i"
+          @click="showModal(i)"
         >
           <img :src="project.icon" />
           <!--  <div class="text">
@@ -15,25 +16,12 @@
             <div class="desc">{{ int.description }}</div>
           </div> -->
 
-          <div
-            class="name"
-            v-html="project.title"
-            @click="open(project.github)"
-          />
+          <div class="name" v-html="project.title" />
         </div>
       </div>
     </section>
-    <!-- <div class="container">
-      <div class="list">
-        <div
-          class="item"
-          v-for="(project, index) in mainprojects"
-          :key="project.title"
-          v-html="project.title"
-          :class="{ active: active === index }"
-          @click="active = index"
-        />
-      </div>
+
+    <Modal ref="modal">
       <div class="content">
         <div class="head">
           <div class="flex">
@@ -58,7 +46,7 @@
 
         <div class="bar" />
 
-        <div class="desc">{{ mainprojects[active].description }}</div>
+        <div class="desc" v-html="mainprojects[active].description" />
 
         <div class="bottom">
           <div class="langs">
@@ -83,6 +71,21 @@
 
         <div class="screenshots">SCREENSHOTS</div>
       </div>
+    </Modal>
+    <!-- <div class="container">
+      <div class="list">
+        <div
+          class="item"
+          v-for="(project, index) in mainprojects"
+          :key="project.title"
+          v-html="project.title"
+          :class="{ active: active === index }"
+          @click="active = index"
+        />
+      </div>
+      <div class="content">
+        
+      </div>
     </div> -->
   </div>
 </template>
@@ -91,6 +94,7 @@
 import { defineComponent } from 'vue'
 import projects from '@/data/projects'
 import { colors } from '@/data/colors'
+import Modal from '@/components/Shared/modals/Modal.vue'
 
 export default defineComponent({
   data() {
@@ -104,6 +108,16 @@ export default defineComponent({
         .flat()
         .filter((p) => p.main),
     }
+  },
+  components: {
+    Modal,
+  },
+  methods: {
+    showModal(i: number) {
+      this.active = i
+      const modal = this.$refs.modal as InstanceType<typeof Modal>
+      if (modal) modal.toggleModal()
+    },
   },
 })
 </script>
@@ -214,6 +228,7 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  margin-top: 20px;
   div {
     background: $dark;
     color: $light;

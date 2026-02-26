@@ -11,7 +11,7 @@
     />
     <!-- <div class="checkout">Sprawdź moje wpisy</div> -->
     <div class="abc">
-      <header>Zanurkuj w świat symulacji!</header>
+      <header>Zanurkuj w świat fizyki komputerowej!</header>
       <div class="container">
         <div class="articles" :style="{ left: `-${currentIndex * 1240}px` }">
           <Simulation v-for="sim in simprojets" :key="sim.title" :sim="sim" />
@@ -63,16 +63,16 @@ export default defineComponent({
       this.currentIndex =
         (this.currentIndex - 1 + this.simprojets.length) %
         this.simprojets.length
-      this.slideMoveTime = 0
+      this.slideMoveTime = -5
     },
     right() {
       this.currentIndex = (this.currentIndex + 1) % this.simprojets.length
-      this.slideMoveTime = 0
+      this.slideMoveTime = -5
     },
     autoSlide() {
       setInterval(() => {
         this.slideMoveTime++
-        if (this.slideMoveTime >= 6) {
+        if (this.slideMoveTime >= 7) {
           this.currentIndex = (this.currentIndex + 1) % this.simprojets.length
           this.slideMoveTime = 0
         }

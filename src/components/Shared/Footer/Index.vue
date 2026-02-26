@@ -20,7 +20,7 @@
 import { defineComponent } from 'vue'
 import { socialMedia } from '@/data/misc/footer'
 import Social from './Social.vue'
-import Brands from './Brands.vue'
+// import Brands from './Brands.vue'
 
 export default defineComponent({
   data() {

@@ -8,9 +8,9 @@
   >
     <div class="grow"></div>
     <div class="bottom">
-      <div class="title">
+      <a class="title" :href="sim.github" target="_blank">
         {{ sim.title }}
-      </div>
+      </a>
       <div class="date">{{ sim.description }}</div>
     </div>
     <!-- <div class="tags">

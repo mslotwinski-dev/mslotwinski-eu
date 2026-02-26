@@ -1,16 +1,20 @@
 <template>
   <nav>
-    <router-link to="/">Blog</router-link>
+    <router-link to="/">Home</router-link>
     <router-link to="/cv">CV</router-link>
-    <router-link to="/projects">Projects</router-link>
-    <router-link to="/contact">Contact</router-link>
+    <LanguageSelector class="light" />
   </nav>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import LanguageSelector from '@/components/Shared/LanguageSelector.vue'
 
-export default defineComponent({})
+export default defineComponent({
+  components: {
+    LanguageSelector,
+  },
+})
 </script>
 
 <style lang="scss" scoped>
@@ -23,6 +27,7 @@ nav {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  align-items: center;
 
   a {
     color: $dark;
@@ -50,5 +55,11 @@ nav {
       width: 100%;
     }
   }
+}
+
+.light {
+  color: $light !important;
+  background: $dark;
+  border-radius: 5px;
 }
 </style>

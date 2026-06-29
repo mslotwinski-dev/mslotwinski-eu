@@ -27,11 +27,11 @@ const routes: Array<RouteRecordRaw> = [
     component: BlogArticle,
   },
   {
-    path: '/xyz',
-    beforeEnter() {
-      window.location.href =
-        'https://drive.google.com/drive/folders/11VYMDlSXkkD7rI9yJN7ZSAMuE_Lz7pD1'
-    },
+  path: '/xyz',
+  beforeEnter: () => {
+    window.location.href = 'https://drive.google.com/drive/folders/11VYMDlSXkkD7rI9yJN7ZSAMuE_Lz7pD1';
+  },
+},
 ]
 
 const router = createRouter({

@@ -318,6 +318,16 @@ Dodatkowo projekt umożliwia rozbudowę o panel administracyjny w czasie rzeczyw
         github: 'https://github.com/mslotwinski-dev/Neon',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Neon/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
+        main: false, // true
+      },
+
+      {
+        title: 'Pixel',
+        description:
+          'Pixel is a fast and lightweight image editor written in Rust, available with both a GUI and CLI. It provides powerful yet simple tools for image processing – from basic operations (resize, crop, rotate) to built-in Instagram-style filters.',
+        github: 'https://github.com/mslotwinski-dev/Pixel',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Pixel/refs/heads/main/public/readme_icon.png',
+        langs: ['Rust'],
         main: true,
       },
 
@@ -377,8 +387,24 @@ Echo jest zaprojektowane jako baza do eksperymentów DSP i tworzenia zaawansowan
         github: 'https://github.com/mslotwinski-dev/Echo',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Echo/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
-        main: true,
+        main: false, // true
         tags: ['Signal Processing', 'Audio Analysis', 'Electronics'],
+      },
+
+       {
+        title: 'PoCHATo',
+        description: `poCHATo is a comprehensive computer networks project designed to provide secure, real-time messaging between users. Built entirely in Go, it features a robust client-server architecture utilizing a RESTful API for standard operations and WebSockets (TCP/IP) for low-latency, bi-directional communication.
+<ul>
+  <li>End-to-End Encryption (E2EE)</li>
+  <li>Friend System.</li>
+  <li>Real-Time WebSockets</li>
+</ul>
+Security and privacy are at the core of poCHATo. Direct communication is restricted to mutually accepted friends, and every single message is secured using End-to-End Encryption (E2EE)..`,
+        github: 'https://github.com/mslotwinski-dev/PoCHATo',
+        icon: 'https://minecraft.wiki/images/Potato_JE3_BE2.png',
+        langs: ['Go'],
+        main: true, // true
+        tags: ['Computer Networks', 'Security'],
       },
 
       {
@@ -393,8 +419,18 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
         github: 'https://github.com/mslotwinski-dev/Resist',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resist/refs/heads/main/public/readme_icon.png',
         langs: ['Rust'],
-        main: true,
+        main: false, // true,
         tags: ['Circuit Simulation', 'Compiler Design', 'Electronics'],
+      },
+
+            {
+        title: 'Flow',
+        description: `Flow is an advanced Bash shell daemon that automates the real-time synchronization of local directories with Google Drive. It eliminates the need for manual backups by silently watching your filesystem for changes and pushing them to the cloud the moment they happen, keeping your data safe without interrupting your workflow.`,
+        github: 'https://github.com/mslotwinski-dev/Flow',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Flow/refs/heads/main/public/readme_icon.png',
+        langs: ['Shell'],
+        main: true,
+        tags: ['File Synchronization', 'Cloud Storage', 'Automation'],
       },
 
       {
@@ -406,6 +442,28 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
         langs: ['Python'],
         simulation: true,
         screenshots: ['hbn-1.png'],
+      },
+
+    {
+        title: 'Ionic conductivity of titanium dopped Bi₂O₃',
+        description:
+          'Symulacja dynamiki molekularnej dla tlenku bizmutu Bi₂O₃ : TiO₂ z użyciem potencjału uczenia maszynowego MACE i środowiska ASE.',
+        github: 'https://github.com/mslotwinski-dev/Bi2O3-conductivity',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Bi2O3-conductivity/refs/heads/main/public/readme_icon.png',
+        langs: ['Python'],
+        simulation: true,
+        screenshots: ['bi2o3-1.png'],
+      },
+
+      {
+        title: 'Argon molecular dynamics',
+        description:
+          'Molecular dynamics of noble gas crystals made from scratch.',
+        github: 'https://github.com/mslotwinski-dev/Argon',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Argon/refs/heads/main/public/readme_icon.png',
+        langs: ['c++'],
+        simulation: true,
+        screenshots: ['argon-1.png'],
       },
       {
         title: 'Nuclear Bomb',

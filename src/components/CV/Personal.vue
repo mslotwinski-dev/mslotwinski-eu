@@ -23,13 +23,15 @@
         </div>
       </div>
       <div class="me">
-        Student fizyki technicznej i wszechstronny programista, łączący dogłębną
-        wiedzę naukową z praktyką w tworzeniu nowoczesnych rozwiązań IT. Dzięki
-        szerokiemu T-shaped profile mogę łączyć fizykę, elektronikę i sztuczną
-        inteligencję, by tworzyć systemy, które potrafią mierzyć, analizować i
-        reagować oraz efektywnie komunikować się z ekspertami z innych dziedzin
-        i integrować ich pracę. Szukam wyzwań, w których mogę wykorzystać swoje
-        interdyscyplinarne umiejętności do budowania innowacyjnych produktów.
+        Student fizyki technicznej i wszechstronny inżynier, łączący dogłębną
+        wiedzę naukową z jej praktycznym zastosowaniem w nowoczesnej
+        technologii. Posiadam szeroką wiedzę i umiejętności z zakresu
+        programowania, informatyki, elektroniki, optoelektroniki oraz
+        technologii półprzewodnikowych, co pozwala mi tworzyć systemy mierzące,
+        analizujące i reagujące na zmiany otoczenia, oraz efektywnie komunikować
+        się z ekspertami z innych dziedzin i integrować ich pracę. Szukam
+        miejsca, w którym mogę wykorzystać swoje interdyscyplinarne kompetencje
+        do tworzenia innowacyjnych rozwiązań dla nauki i technologii.
       </div>
     </div>
   </div>

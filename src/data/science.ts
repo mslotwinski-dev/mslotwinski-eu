@@ -1,6 +1,6 @@
 export default [
   {
-    name: 'Metale ziem rzadkich',
+    name: 'Właściwości optyczne szkieł domieszkowanych europem',
     description:
       'Metale ziem rzadkich to grupa 17 pierwiastków chemicznych o unikalnych właściwościach magnetycznych, luminescencyjnych i katalitycznych. Są one kluczowe dla rozwoju współczesnej technologii, w szczególności takich jak produkcja magnesów trwałych, katalizatorów samochodowych, baterii litowo-jonowych oraz w przemyśle elektronicznym i energetycznym. W ramach pracy inżynierskiej zajmowałem się syntezą oraz charakteryzacją właściwości optycznych wybranych związków tych metali, a następnie własnoręczną konstrukcją lampy LED.',
     time: '2025+',

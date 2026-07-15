@@ -4,16 +4,17 @@
       <div class="text">
         Fizyka techniczna daje mi unikalne spojrzenie na problemy i możliwości
         ich rozwiązania, a jednocześnie naturalnie łączy wszystkie zagadnienia,
-        którymi się zajmuję — od elektroniki przez symulacje po AI i technologie
-        przyszłości.
+        którymi się zajmuję — od elektroniki przez symulacje zjawisk fizycznych
+        po półprzewodnikowe i jonowe technologie przyszłości.
       </div>
       <div class="text">
         Na co dzień zajmuje się fizyką zaawansowanych materiałów badając ich
-        właściwości pod kątem zastosowania w nowoczesnych technologiach.
-        Interesuje mnie fizyka procesów jonowych, szczególnie w kontekście
-        technologii przetwarzania i magazynowania energii. Do innych moich
-        zainteresowań naukowych należą fizyka i elektronika półprzewodnikowa, a
-        także stosowana fizyka jądrowa.
+        właściwości pod kątem zastosowania we współczesnym świecie. Specjalizuję
+        się w jonice, optyce i elektronice ciała stałego, ze szczególnym
+        uwzględnieniem materiałów szklistych, kompozytów szklisto-ceramicznych
+        oraz technologii przetwarzania i magazynowania energii. Do innych moich
+        zainteresowań naukowych należą również elektronika, a także stosowana
+        fizyka jądrowa.
       </div>
     </div>
     <div class="graph">

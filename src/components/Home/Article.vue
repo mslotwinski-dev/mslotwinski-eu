@@ -8,6 +8,7 @@
     <!-- <div class="tags">
       <span v-for="tag in article.tags" :key="tag">{{ tag }} </span>
     </div> -->
+    <div v-html="article.content" />
   </div>
 </template>
 

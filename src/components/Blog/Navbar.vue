@@ -7,10 +7,10 @@
       </div>
     </div>
     <nav>
-      <router-link to="/">Blog</router-link>
-      <router-link to="/cv">CV</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/">{{ $t('nav.blog') }}</router-link>
+      <router-link to="/cv">{{ $t('nav.cv') }}</router-link>
+      <router-link to="/projects">{{ $t('nav.projects') }}</router-link>
+      <router-link to="/contact">{{ $t('nav.contact') }}</router-link>
     </nav>
   </div>
 </template>

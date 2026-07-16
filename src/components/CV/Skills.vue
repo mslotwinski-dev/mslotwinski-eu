@@ -1,8 +1,8 @@
 <template>
-  <h2 class="header">Umiejętności</h2>
+  <h2 class="header">{{ $t('cv.skills') }}</h2>
   <section class="container">
     <article>
-      <h3>PROGRAMISTYCZNE</h3>
+      <h3>{{ $t('cv.skillsProgramming') }}</h3>
       <div class="languages">
         <div
           v-for="(skill, index) in skills.programming.languages.good"
@@ -35,7 +35,7 @@
       </div>
     </article>
     <article>
-      <h3>TECHNICZNE</h3>
+      <h3>{{ $t('cv.skillsTechnical') }}</h3>
       <div class="list">
         <div
           class="listitem"
@@ -53,7 +53,7 @@
       </div>
     </article>
     <article>
-      <h3>NAUKOWE</h3>
+      <h3>{{ $t('cv.skillsScience') }}</h3>
       <div class="list">
         <div
           class="listitem"
@@ -72,7 +72,7 @@
     </article>
 
     <article>
-      <h3>MIĘKKIE</h3>
+      <h3>{{ $t('cv.skillsSoft') }}</h3>
       <div class="list">
         <div
           class="listitem"
@@ -88,16 +88,52 @@
     </article>
   </section>
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue'
-import skills from '@/data/skills'
+
+// 1. Importujemy dane dla obu języków
+import skillsPl from '@/data/pl/skills'
+import skillsEn from '@/data/en/skills'
+
+// 2. Definiujemy typy na podstawie Twojego szablonu
+interface SkillCategoryWithSpace {
+  list: string[]
+  space: number[]
+}
+
+interface ProgrammingCategory extends SkillCategoryWithSpace {
+  languages: {
+    good: string[]
+    ok: string[]
+  }
+}
+
+interface SoftCategory {
+  list: string[]
+}
+
+interface SkillsData {
+  programming: ProgrammingCategory
+  technical: SkillCategoryWithSpace
+  science: SkillCategoryWithSpace
+  soft: SoftCategory
+}
+
+// 3. Tworzymy mapę języków
+const skillsMap: Record<string, SkillsData> = {
+  pl: skillsPl,
+  en: skillsEn,
+}
 
 export default defineComponent({
-  data() {
-    return {
-      skills,
-    }
+  computed: {
+    // 4. Computed zajmie się dynamicznym przełączaniem
+    skills(): SkillsData {
+      const locale = this.$i18n.locale as string
+
+      // Zwracamy polski, angielski lub awaryjnie angielski
+      return skillsMap[locale] || skillsMap['en']
+    },
   },
 })
 </script>

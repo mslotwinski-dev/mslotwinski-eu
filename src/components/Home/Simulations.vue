@@ -5,13 +5,13 @@
       :style="{
         backgroundImage:
           `url(` +
-          require(`@/assets/screenshots/${simprojets[currentIndex].screenshots[0]}`) +
+          require(`@/assets/screenshots/${simprojets[currentIndex].screenshots![0]}`) +
           `)`,
       }"
     />
     <!-- <div class="checkout">Sprawdź moje wpisy</div> -->
     <div class="abc">
-      <header>Zanurkuj w świat fizyki komputerowej!</header>
+      <header>{{ $t('home.simulationsHeader') }}</header>
       <div class="container">
         <div class="articles" :style="{ left: `-${currentIndex * 1240}px` }">
           <Simulation v-for="sim in simprojets" :key="sim.title" :sim="sim" />
@@ -41,7 +41,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Simulation from './Simulation.vue'
-import projects from '@/data/projects'
+import projects from '@/data/pl/projects'
 
 export default defineComponent({
   data() {

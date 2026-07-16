@@ -37,7 +37,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { colors } from '@/data/colors'
+import { colors } from '@/data/pl/colors'
 
 export default defineComponent({
   props: {

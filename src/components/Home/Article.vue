@@ -8,7 +8,6 @@
     <!-- <div class="tags">
       <span v-for="tag in article.tags" :key="tag">{{ tag }} </span>
     </div> -->
-    <div v-html="article.content" />
   </div>
 </template>
 
@@ -19,7 +18,7 @@ export default defineComponent({
   props: ['article'],
   methods: {
     open(url: string) {
-      this.$router.push(url)
+      ;(this as any).$router.push(url)
     },
   },
 })

@@ -2,7 +2,7 @@
   <article>
     <h1>{{ link.charAt(0).toUpperCase() + link.toLowerCase().slice(1) }}</h1>
     <section>
-      <p>Click here to check my {{ link }}!</p>
+      <p>{{ $t('shared.clickCheck', { link }) }}</p>
       <router-link :to="'/' + link">
         <LinkButton icon="projects.png" />
       </router-link>

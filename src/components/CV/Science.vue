@@ -1,7 +1,7 @@
 <template>
-  <h2 class="header">Działalność naukowa</h2>
+  <h2 class="header">{{ $t('cv.science') }}</h2>
   <div class="container">
-    <article v-for="proj in sp" :key="proj">
+    <article v-for="proj in sp" :key="proj.name">
       <div class="header">
         <div class="name">
           <span v-html="proj.name" />
@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import sp from '@/data/science'
+import sp from '@/data/pl/science'
 
 export default defineComponent({
   data() {

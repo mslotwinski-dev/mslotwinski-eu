@@ -1,5 +1,5 @@
 <template>
-  <h2 class="header">Zainteresowania</h2>
+  <h2 class="header">{{ $t('cv.interests') }}</h2>
   <section class="container">
     <div class="grid-layout">
       <div
@@ -17,16 +17,37 @@
     </div>
   </section>
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue'
-import interests from '@/data/interests'
+
+// Importujemy dane dla obu języków
+import interestsPl from '@/data/pl/interests'
+import interestsEn from '@/data/en/interests'
+
+// Zdefiniuj interfejs zgodnie z tym, co masz w pliku (np. name, icon, description)
+// Jeśli Twoje interests to po prostu tablica tekstów, możesz pominąć ten interfejs
+// i w mapie użyć Record<string, string[]>
+interface Interest {
+  name: string
+  // dodaj pozostałe pola, jeśli istnieją
+  [key: string]: any
+}
+
+// Tworzymy mapę (słownik) języków
+const interestsMap: Record<string, Interest[]> = {
+  pl: interestsPl,
+  en: interestsEn,
+}
 
 export default defineComponent({
-  data() {
-    return {
-      interests,
-    }
+  computed: {
+    // Computed automatycznie reaguje na zmiany $i18n.locale
+    interests(): Interest[] {
+      const locale = this.$i18n.locale as string
+
+      // Zwracamy odpowiednią tablicę (z angielskim jako awaryjnym fallbackiem)
+      return interestsMap[locale] || interestsMap['en']
+    },
   },
 })
 </script>

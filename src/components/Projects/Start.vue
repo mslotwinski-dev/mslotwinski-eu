@@ -4,7 +4,7 @@
     <Navbar />
     <div class="body">
       <!-- <h2>Mateusz Słotwiński</h2> -->
-      <h3>Wybrane projekty</h3>
+      <h3>{{ $t('projects.selected') }}</h3>
       <div class="split">
         <div class="container">
           <div class="content">
@@ -68,8 +68,8 @@
 import { defineComponent } from 'vue'
 import Hero from '@/components/Shared/styled/Hero.vue'
 import Navbar from '@/components/Shared/Navbar.vue'
-import projects from '@/data/projects'
-import { colors } from '@/data/colors'
+import projects from '@/data/pl/projects'
+import { colors } from '@/data/pl/colors'
 
 export default defineComponent({
   data() {

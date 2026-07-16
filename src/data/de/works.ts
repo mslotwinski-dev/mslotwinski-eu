@@ -1,4 +1,4 @@
-import { Work } from './types/interfaces'
+import { Work } from '../types/interfaces'
 
 export const works: Work[] = [
   {

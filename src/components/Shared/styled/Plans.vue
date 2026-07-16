@@ -1,11 +1,11 @@
 <template>
   <div class="cont">
-    <span v-on:click="renderModal(true)">Any plans?</span>
+    <span v-on:click="renderModal(true)">{{ $t('shared.anyPlans') }}</span>
     <Modal
       @closeModal="renderModal(false)"
       v-if="showModal"
       ref="modal"
-      title="Education plans"
+      :title="$t('shared.educationPlans')"
       content="plans"
     />
   </div>

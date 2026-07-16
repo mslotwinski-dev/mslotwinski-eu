@@ -1,4 +1,8 @@
 export default [
+    {
+    text: 'Udział w międzynarodowej konferencji naukowej <a href="https://openreadings.eu/">OpenReadings</a> w Wilnie.',
+    year: '2026',
+  },
   {
     text: 'Członkostwo w <a href="https://home.cern/about/who-we-are/our-governance">CERN</a> przez wakacje 2024 roku.',
     year: '2024',

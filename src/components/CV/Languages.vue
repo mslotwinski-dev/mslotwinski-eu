@@ -1,5 +1,5 @@
 <template>
-  <h2 class="header">Języki</h2>
+  <h2 class="header">{{ $t('cv.languages') }}</h2>
   <section class="language-section">
     <div class="languages">
       <div class="lang-card" v-for="lang in languages" :key="lang.name">
@@ -20,9 +20,9 @@
         </div>
         <div
           class="cert"
-          v-html="`Certyfikat ${cert.level}`"
+          v-html="`${$t('cv.certificate')} ${cert.level}`"
           v-for="cert in lang.certs"
-          :key="cert"
+          :key="cert.link"
           @click="open(cert.link)"
         />
       </div>
@@ -31,13 +31,38 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import languages from '@/data/langs'
+
+// Importujemy dane z odpowiednich folderów
+import languagesPl from '@/data/pl/langs'
+import languagesEn from '@/data/en/langs'
+
+// Interfejs dla danych językowych (dopasuj do tego, co masz w plikach)
+interface LanguageItem {
+  // Przykładowe pola, np.:
+  // name: string
+  // level: string
+  // link: string
+  [key: string]: any
+}
+
+// Mapa języków – łatwa do rozbudowy o kolejne języki (np. 'de', 'fr')
+const languagesMap: Record<string, LanguageItem[]> = {
+  pl: languagesPl,
+  en: languagesEn,
+}
 
 export default defineComponent({
-  data() {
-    return { languages }
+  computed: {
+    // Właściwość obliczeniowa nasłuchująca $i18n.locale
+    languages(): LanguageItem[] {
+      const locale = this.$i18n.locale as string
+
+      // Zwracamy tablicę dla wybranego języka, z angielskim jako awaryjnym
+      return languagesMap[locale] || languagesMap['en']
+    },
   },
   methods: {
+    // Twoje metody zostają bez zmian
     open(link: string) {
       window.open(link, '_blank')
     },

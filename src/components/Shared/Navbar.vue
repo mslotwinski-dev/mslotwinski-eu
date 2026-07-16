@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/cv">CV</router-link>
+    <router-link to="/">{{ $t('nav.home') }}</router-link>
+    <router-link to="/cv">{{ $t('nav.cv') }}</router-link>
     <LanguageSelector class="light" />
   </nav>
 </template>

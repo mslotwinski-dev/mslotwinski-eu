@@ -2,19 +2,10 @@
   <div class="flex">
     <div>
       <div class="text">
-        Fizyka techniczna daje mi unikalne spojrzenie na problemy i możliwości
-        ich rozwiązania, a jednocześnie naturalnie łączy wszystkie zagadnienia,
-        którymi się zajmuję — od elektroniki przez symulacje zjawisk fizycznych
-        po półprzewodnikowe i jonowe technologie przyszłości.
+        {{ $t('cv.bio2') }}
       </div>
       <div class="text">
-        Na co dzień zajmuje się fizyką zaawansowanych materiałów badając ich
-        właściwości pod kątem zastosowania we współczesnym świecie. Specjalizuję
-        się w jonice, optyce i elektronice ciała stałego, ze szczególnym
-        uwzględnieniem materiałów szklistych, kompozytów szklisto-ceramicznych
-        oraz technologii przetwarzania i magazynowania energii. Do innych moich
-        zainteresowań naukowych należą również elektronika, a także stosowana
-        fizyka jądrowa.
+        {{ $t('cv.bio3') }}
       </div>
     </div>
     <div class="graph">

@@ -2,7 +2,7 @@
   <article>
     <h1>{{ link.charAt(0).toUpperCase() + link.toLowerCase().slice(1) }}</h1>
     <section>
-      <p>Click here to check my {{ link }}!</p>
+      <p>{{ $t('shared.clickCheck', { link }) }}</p>
       <a href="//github.com/mslotwinski-dev">
         <LinkButton icon="projects.png" />
       </a>

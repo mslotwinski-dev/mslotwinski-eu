@@ -23,15 +23,7 @@
         </div>
       </div>
       <div class="me">
-        Student fizyki technicznej i wszechstronny inżynier, łączący dogłębną
-        wiedzę naukową z jej praktycznym zastosowaniem w nowoczesnej
-        technologii. Posiadam szeroką wiedzę i umiejętności z zakresu
-        programowania, informatyki, elektroniki, optoelektroniki oraz
-        technologii półprzewodnikowych, co pozwala mi tworzyć systemy mierzące,
-        analizujące i reagujące na zmiany otoczenia, oraz efektywnie komunikować
-        się z ekspertami z innych dziedzin i integrować ich pracę. Szukam
-        miejsca, w którym mogę wykorzystać swoje interdyscyplinarne kompetencje
-        do tworzenia innowacyjnych rozwiązań dla nauki i technologii.
+        {{ $t('cv.bio') }}
       </div>
     </div>
   </div>
@@ -41,7 +33,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import TShaped from './TShaped.vue'
-import { personal } from '@/data/personal'
+import { personal } from '@/data/pl/personal'
 
 export default defineComponent({
   data() {

@@ -3,7 +3,7 @@
     <div class="section" />
     <!-- <div class="checkout">Sprawdź moje wpisy</div> -->
     <div class="abc">
-      <header>Sprawdź moje artykuły!</header>
+      <header>{{ $t('home.blogHeader') }}</header>
       <div class="container">
         <div class="articles" :style="{ left: `-${currentIndex * 420}px` }">
           <Article

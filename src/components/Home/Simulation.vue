@@ -26,7 +26,7 @@ export default defineComponent({
   props: ['sim'],
   methods: {
     open(url: string) {
-      this.$router.push(url)
+      ;(this as any).$router.push(url)
     },
   },
 })

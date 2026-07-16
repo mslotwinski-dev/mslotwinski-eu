@@ -4,11 +4,11 @@
       <router-link to="/">
         <LinkButton icon="projects.png" class="rotate" />
       </router-link>
-      <p>Back to my CV</p>
+      <p>{{ $t('shared.backToCv') }}</p>
     </div>
-    <span v-on:click="emit" class="hidedumb" v-if="$route.name === 'Skills'"
-      >Hide unlearned</span
-    >
+    <span v-on:click="emit" class="hidedumb" v-if="$route.name === 'Skills'">{{
+      $t('shared.hideUnlearned')
+    }}</span>
   </nav>
 </template>
 

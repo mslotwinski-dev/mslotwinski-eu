@@ -2,6 +2,10 @@
   <div>
     <Navbar />
     <Hero :article="article" />
+
+    <div class="articlecontent">
+      <div v-html="article.content" />
+    </div>
   </div>
 </template>
 
@@ -20,14 +24,21 @@ export default defineComponent({
   data() {
     return {
       articles,
-      article: {},
+      article: {} as any,
     }
   },
   created() {
-    const articleId = this.$route.params.id
+    const articleId = (this as any).$route.params.id
     this.article = this.articles.find((a) => a.id === articleId) || {}
   },
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.articlecontent {
+  padding: 40px 20px;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+</style>

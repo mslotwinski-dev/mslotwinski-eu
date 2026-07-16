@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="loader"></div>
-    <div class="text">Ładowanie</div>
+    <div class="text">{{ $t('shared.loading') }}</div>
   </div>
 </template>
 

@@ -2,24 +2,13 @@
   <div class="container">
     <div class="content" :style="{ height: lockHeight + 'px' }">
       <div class="student">
-        I would like to study several faculties, but it is not about money or
-        finding a job - I just enjoy science and learning new things. My first
-        and most important plan is finishing <b>physics</b> with a nuclear or
-        quantum specialty. Discovering our universe and the laws by which it
-        works has been my passion since I was a child. My favorite branches are
-        the previously mentioned quantum and nuclear physics belonging to modern
-        physics, but not only. I love astrophysics and topics related to
-        electrodynamics, which leads to another major that I intend to finish.
+        {{ $t('shared.plans.p1') }}
       </div>
       <div class="student">
-        When I finish physics my next goal will be <b>electronics</b> and
-        <b>computer science</b>. Programming gives me a lot of joy, and issues
-        related to electronics are among my favorite topics of physics research.
-        Both sciences are inextricably linked.
+        {{ $t('shared.plans.p2') }}
       </div>
       <div class="student">
-        I do not rule out that my future interests will go in a different
-        direction, but in the end you have to have some plans.
+        {{ $t('shared.plans.p3') }}
       </div>
     </div>
   </div>

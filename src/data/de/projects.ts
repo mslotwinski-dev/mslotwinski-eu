@@ -1,4 +1,23 @@
-export default [
+export interface Project {
+  title: string
+  description: string
+  github: string
+  icon: string
+  langs: string[]
+  main?: boolean
+  simulation?: boolean
+  screenshots?: string[]
+  tags?: string[]
+}
+
+export interface ProjectGroup {
+  title: string
+  icon: string
+  description: string
+  projects: Project[]
+}
+
+const projectdata: ProjectGroup[] = [
   {
     title: 'Modular Projects',
     icon: 'puzzle-piece',
@@ -391,7 +410,7 @@ Echo jest zaprojektowane jako baza do eksperymentów DSP i tworzenia zaawansowan
         tags: ['Signal Processing', 'Audio Analysis', 'Electronics'],
       },
 
-       {
+      {
         title: 'PoCHATo',
         description: `poCHATo is a comprehensive computer networks project designed to provide secure, real-time messaging between users. Built entirely in Go, it features a robust client-server architecture utilizing a RESTful API for standard operations and WebSockets (TCP/IP) for low-latency, bi-directional communication.
 <ul>
@@ -423,7 +442,7 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
         tags: ['Circuit Simulation', 'Compiler Design', 'Electronics'],
       },
 
-            {
+      {
         title: 'Flow',
         description: `Flow is an advanced Bash shell daemon that automates the real-time synchronization of local directories with Google Drive. It eliminates the need for manual backups by silently watching your filesystem for changes and pushing them to the cloud the moment they happen, keeping your data safe without interrupting your workflow.`,
         github: 'https://github.com/mslotwinski-dev/Flow',
@@ -444,7 +463,7 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
         screenshots: ['hbn-1.png'],
       },
 
-    {
+      {
         title: 'Ionic conductivity of titanium dopped Bi₂O₃',
         description:
           'Symulacja dynamiki molekularnej dla tlenku bizmutu Bi₂O₃ : TiO₂ z użyciem potencjału uczenia maszynowego MACE i środowiska ASE.',
@@ -499,3 +518,5 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
     ],
   },
 ]
+
+export default projectdata

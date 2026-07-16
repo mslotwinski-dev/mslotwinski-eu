@@ -23,53 +23,39 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
-const LOCALE_STORAGE_KEY = 'locale'
+import { LOCALE_STORAGE_KEY, SUPPORTED_LOCALES, type AppLocale } from '@/i18n'
+import i18n from '@/i18n'   
 
 export default defineComponent({
   data() {
     return {
-      languages: [
-        'en',
-        // 'fr',
-        'pl',
-        'jp',
-        'de',
-        'es',
-        // 'it',
-        'ru',
-        // 'cn',
-        // 'in',
-        // 'no',
-        // 'nl',
-      ],
-      selectedLanguage: 'en',
+      languages: ['pl', 'en', 'jp', 'de', 'es', 'ru'],
+      selectedLanguage: 'pl',
     }
   },
 
   methods: {
     getLanguageIcon(lang: string): string {
-      // Free Russia
-      if (lang === 'ru') {
-        return 'https://upload.wikimedia.org/wikipedia/commons/6/6f/White-blue-white_flag.svg'
-      }
-
-      // Variations
       if (lang === 'en') lang = 'us'
-
+      if (lang === 'ru') return `https://upload.wikimedia.org/wikipedia/commons/6/6f/White-blue-white_flag.svg`
       return `https://flagcdn.com/w40/${lang}.png`
     },
-    selectLanguage(lang: string) {
+    selectLanguage(lang: AppLocale) {
       this.selectedLanguage = lang
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      // ;(this as any).$i18n.locale = lang
+      i18n.global.locale = lang
       localStorage.setItem(LOCALE_STORAGE_KEY, lang)
     },
   },
 
   mounted() {
-    const savedLocale = localStorage.getItem(LOCALE_STORAGE_KEY)
-    const initialLang = savedLocale || 'en'
+    const savedLocale = localStorage.getItem(
+      LOCALE_STORAGE_KEY
+    ) as AppLocale | null
+    const initialLang =
+      savedLocale && SUPPORTED_LOCALES.includes(savedLocale)
+        ? savedLocale
+        : (i18n.global.locale as AppLocale) || 'pl'
+
     this.selectLanguage(initialLang)
   },
 })

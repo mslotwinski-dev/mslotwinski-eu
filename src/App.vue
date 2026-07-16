@@ -10,13 +10,24 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Footer from '@/components/Shared/Footer/Index.vue'
+import i18n from '@/i18n'
 
 export default defineComponent({
   components: {
     Footer,
   },
+  methods: {
+    updateDocumentTitle() {
+      document.title = i18n.global.t('app.documentTitle')
+    },
+  },
+  watch: {
+    '$i18n.locale'() {
+      this.updateDocumentTitle()
+    },
+  },
   mounted() {
-    document.title = 'Mateusz Słotwiński'
+    this.updateDocumentTitle()
   },
 })
 </script>

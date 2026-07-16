@@ -1,5 +1,5 @@
-import { Degree } from './types/enums'
-import { Education } from './types/interfaces'
+import { Degree } from '../types/enums'
+import { Education } from '../types/interfaces'
 
 export default [
   {
@@ -11,6 +11,8 @@ export default [
         Spec: 'Specjalizacja: Materiały i Nanostruktury',
         Year: '2023 - obecnie',
         Degree: Degree.BACHELOR,
+        Thesis:
+          'Praca inżynierska: Prototyp białej diody LED ze szklistym luminoforem NaF-Al₂O₃-P₂O₅ : Eu',
       },
       // {
       //   Spec: 'Specjalizacja: Fizyka i Technika Jądrowa',
@@ -41,3 +43,32 @@ export default [
     ],
   },
 ] as Education[]
+
+export const courses = [
+  {
+    Name: 'Podstawy sztucznej inteligencji',
+    Place: 'Ośrodek Przetwarzania Informacji – Państwowy Instytut Badawczy',
+  },
+  {
+    Name: 'Wprowadzenie do programowania sensorów',
+    Place: 'Politechnika białostocka',
+  },
+]
+
+export const publications = [
+  // {
+  //   Name: 'Wykorzystanie metod komputerowej inżynierii materiałowej do badania właściwości szklistych luminoforów NaF-Al₂O₃-P₂O₅ : Eu',
+  //   Authors: 'M. Słotwiński, M. Kaczmarek, A. Węgrzyn',
+  //   Journal: 'Materiały Elektroniczne, 2024, 52(1), 1-6',
+  // },
+]
+
+export const conferences = [
+  {
+    Name: 'Openreadings',
+    Subname:
+      '69th International Conference for Students of Physics and Natural Sciences',
+    Place: 'Wilno, Litwa',
+    Year: '2026',
+  },
+]

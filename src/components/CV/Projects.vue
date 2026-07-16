@@ -1,5 +1,5 @@
 <template>
-  <h2 class="header" id="projects">Projekty</h2>
+  <h2 class="header" id="projects">{{ $t('cv.projects') }}</h2>
   <section class="container">
     <div class="filter">
       <div
@@ -34,13 +34,13 @@
       </div>
       <div class="description">{{ proj.description }}</div>
       <div class="links">
-        <a
+        <!-- <a
           v-for="link in proj.links"
           :key="link.href"
           :href="link.href"
           target="_blank"
           v-html="link.text"
-        />
+        /> -->
       </div>
     </article>
   </section>
@@ -50,24 +50,72 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Languages from '@/components/Details/Languages.vue'
-import projects from '@/data/projects'
-import { colors } from '@/data/colors'
+
+// 1. Importujemy projekty
+import projectsPl from '@/data/pl/projects'
+import projectsEn from '@/data/en/projects'
+
+// 2. Importujemy kolory (zwróć uwagę na aliasy as, jeśli importujesz konkretną stałą)
+import { colors as colorsPl } from '@/data/pl/colors'
+import { colors as colorsEn } from '@/data/en/colors'
+
+// Interfejsy (skopiowane z naszego pierwszego rozwiązania dla projektów)
+interface Project {
+  title: string
+  description: string
+  github: string
+  icon: string
+  langs: string[]
+  main?: boolean
+  simulation?: boolean
+  screenshots?: string[]
+  tags?: string[]
+}
+
+interface ProjectGroup {
+  title: string
+  icon: string
+  description: string
+  projects: Project[]
+}
+
+// Mapy języków
+const projectsMap: Record<string, ProjectGroup[]> = {
+  pl: projectsPl,
+  en: projectsEn,
+}
+
+// Zakładam, że kolory to prosty obiekt typu { "Vue": "#42b883", "React": "#61dafb" }
+const colorsMap: Record<string, Record<string, string>> = {
+  pl: colorsPl,
+  en: colorsEn,
+}
 
 export default defineComponent({
+  components: {
+    Languages,
+  },
+  // W data() zostawiamy tylko to, co może się dynamicznie zmieniać w trakcie używania komponentu
   data() {
     return {
-      projects,
-      colors,
       activecategory: 0,
     }
+  },
+  computed: {
+    // Dynamiczne dane na podstawie języka
+    projects(): ProjectGroup[] {
+      const locale = this.$i18n.locale as string
+      return projectsMap[locale] || projectsMap['en']
+    },
+    colors(): Record<string, string> {
+      const locale = this.$i18n.locale as string
+      return colorsMap[locale] || colorsMap['en']
+    },
   },
   methods: {
     open(a: string) {
       window.open(a, '_blank')
     },
-  },
-  components: {
-    Languages,
   },
 })
 </script>

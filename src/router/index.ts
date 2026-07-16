@@ -14,14 +14,14 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cv',
     component: CV,
   },
-  {
-    path: '/projects',
-    component: Projects,
-  },
-  {
-    path: '/contact',
-    components: Contact,
-  },
+  // {
+  //   path: '/projects',
+  //   component: Projects,
+  // },
+  // {
+  //   path: '/contact',
+  //   components: Contact,
+  //},
   {
     path: '/blog/:id',
     component: BlogArticle,

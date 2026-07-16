@@ -1,5 +1,5 @@
 <template>
-  <div>Sprawdź moje wpisy na blogu!</div>
+  <div>{{ $t('home.checkoutBlog') }}</div>
 </template>
 
 <script lang="ts">

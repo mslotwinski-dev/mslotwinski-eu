@@ -1,5 +1,5 @@
 <template>
-  <h3>Podsumowanie kodu</h3>
+  <h3>{{ $t('details.codeSummary') }}</h3>
   <div class="langcont" :key="key">
     <div class="loading" v-if="langarray.length < 2"><Loading /></div>
     <Display v-else :langs="langarray" />
@@ -13,7 +13,7 @@ import { Endpoints } from '@octokit/types'
 import Loading from '@/components/Shared/Loader.vue'
 import Display from '@/components/Details/Display.vue'
 
-import idontlikeu from '@/data/idontlikeu'
+import idontlikeu from '@/data/pl/idontlikeu'
 
 export default defineComponent({
   data() {

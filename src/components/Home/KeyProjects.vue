@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <header>Software? Proszę bardzo! - kilka kluczowych projektów</header>
+    <header>{{ $t('home.keyProjectsHeader') }}</header>
     <section class="container">
       <div class="grid-layout">
         <div
@@ -69,7 +69,7 @@
           </div>
         </div>
 
-        <div class="screenshots">SCREENSHOTS</div>
+        <div class="screenshots">{{ $t('projects.screenshots') }}</div>
       </div>
     </Modal>
     <!-- <div class="container">
@@ -92,8 +92,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import projects from '@/data/projects'
-import { colors } from '@/data/colors'
+import projects from '@/data/pl/projects'
+import { colors } from '@/data/pl/colors'
 import Modal from '@/components/Shared/modals/Modal.vue'
 
 export default defineComponent({

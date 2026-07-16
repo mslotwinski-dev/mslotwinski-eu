@@ -8,7 +8,7 @@
           <img src="@/assets/logo.png" />
           <h2>Mateusz Słotwiński</h2>
         </div>
-        <h3>Inżynier • Fizyk • Programista</h3>
+        <h3>{{ $t('home.role') }}</h3>
       </div>
       <RelativeNavbar class="only-active" />
     </div>

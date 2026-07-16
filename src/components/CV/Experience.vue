@@ -1,7 +1,7 @@
 <template>
-  <h2 class="header">Doświadczenie</h2>
+  <h2 class="header">{{ $t('cv.experience') }}</h2>
   <div class="container">
-    <article v-for="work in works" :key="work">
+    <article v-for="work in works" :key="work.Name">
       <div class="header">
         <div class="name" v-html="work.Name" />
         <div class="year" v-html="work.HowLong" />
@@ -15,16 +15,39 @@
     </article>
   </div>
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { works } from '@/data/works'
+
+// Importujemy dane
+import { works as worksPl } from '@/data/pl/works'
+import { works as worksEn } from '@/data/en/works'
+
+// Jeśli masz ten interfejs w osobnym pliku, możesz go zaimportować:
+// import { Work } from '@/data/types/interfaces'
+// W przeciwnym razie definiujemy go tutaj:
+interface Work {
+  Name: string
+  Position: string
+  HowLong: string
+  Tasks: string[]
+}
+
+// Tworzymy naszą mapę (słownik) języków
+const worksMap: Record<string, Work[]> = {
+  pl: worksPl,
+  en: worksEn,
+  // fr: worksFr, <- tutaj w przyszłości łatwo dodasz kolejne
+}
 
 export default defineComponent({
-  data() {
-    return {
-      works,
-    }
+  computed: {
+    // Zwracamy tablicę Work[] z naszej mapy
+    works(): Work[] {
+      const locale = this.$i18n.locale as string
+
+      // Bezpieczny fallback do angielskiego w razie nieznanego języka
+      return worksMap[locale] || worksMap['en']
+    },
   },
 })
 </script>

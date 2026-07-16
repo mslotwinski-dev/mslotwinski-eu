@@ -24,13 +24,19 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { LOCALE_STORAGE_KEY, SUPPORTED_LOCALES, type AppLocale } from '@/i18n'
-import i18n from '@/i18n'   
+import i18n from '@/i18n'
 
 export default defineComponent({
   data() {
     return {
       languages: ['pl', 'en', 'jp', 'de', 'es', 'ru'],
-      selectedLanguage: 'pl',
+    }
+  },
+
+  computed: {
+    // Zamiast trzymać język w data, pobieramy go na żywo z i18n
+    selectedLanguage(): string {
+      return i18n.global.locale || 'en' // Domyślnie angielski, jeśli coś pójdzie nie tak
     }
   },
 
@@ -40,23 +46,21 @@ export default defineComponent({
       if (lang === 'ru') return `https://upload.wikimedia.org/wikipedia/commons/6/6f/White-blue-white_flag.svg`
       return `https://flagcdn.com/w40/${lang}.png`
     },
+    
     selectLanguage(lang: AppLocale) {
-      this.selectedLanguage = lang
+      // Zmieniamy język globalnie
       i18n.global.locale = lang
+      // Zapisujemy do pamięci
       localStorage.setItem(LOCALE_STORAGE_KEY, lang)
     },
   },
 
   mounted() {
-    const savedLocale = localStorage.getItem(
-      LOCALE_STORAGE_KEY
-    ) as AppLocale | null
-    const initialLang =
-      savedLocale && SUPPORTED_LOCALES.includes(savedLocale)
-        ? savedLocale
-        : (i18n.global.locale as AppLocale) || 'pl'
-
-    this.selectLanguage(initialLang)
+    // Synchronizacja po załadowaniu strony
+    const savedLocale = localStorage.getItem(LOCALE_STORAGE_KEY) as AppLocale | null
+    if (savedLocale && SUPPORTED_LOCALES.includes(savedLocale)) {
+      this.selectLanguage(savedLocale)
+    }
   },
 })
 </script>

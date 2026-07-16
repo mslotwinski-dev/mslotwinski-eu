@@ -47,7 +47,8 @@ export default [
 export const courses = [
   {
     Name: 'Grundlagen der Künstlichen Intelligenz',
-    Place: 'Nationales Institut für Informationsverarbeitung – Nationales Forschungsinstitut',
+    Place:
+      'Nationales Institut für Informationsverarbeitung – Nationales Forschungsinstitut',
   },
   {
     Name: 'Einführung in die Sensorprogrammierung',
@@ -66,7 +67,8 @@ export const publications = [
 export const conferences = [
   {
     Name: 'Openreadings',
-    Subname: '69th International Conference for Students of Physics and Natural Sciences',
+    Subname:
+      '69th International Conference for Students of Physics and Natural Sciences',
     Place: 'Vilnius, Litauen',
     Year: '2026',
   },

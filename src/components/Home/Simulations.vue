@@ -104,7 +104,7 @@ export default defineComponent({
         .reverse()
         .flat()
         .filter((p) => p.simulation)
-    }
+    },
   },
   methods: {
     left() {

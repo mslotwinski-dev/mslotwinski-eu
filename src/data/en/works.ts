@@ -58,7 +58,7 @@ export const works: Work[] = [
     Position: 'Creator and project leader, front-end developer',
     HowLong: '11.2020 - 07.2021',
     Tasks: [
-      'Creating and developing a platform for political tests, allowing analysis of users\' views.',
+      "Creating and developing a platform for political tests, allowing analysis of users' views.",
       'Managing a team of 20 people, organizing youth debates and interviews with politicians.',
       'Achieving tens of thousands of visits daily.',
       'Online platform presence – tests are still available at <a href="https://soulgraphy.me">Soulgraphy</a>.',

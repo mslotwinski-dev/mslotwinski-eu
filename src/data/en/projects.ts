@@ -167,10 +167,11 @@ Security and privacy are at the core of poCHATo. Direct communication is restric
     projects: [
       {
         title: 'Assistant',
-        description: 'Modern web app designed for interactive browsing of study programs and departmental structures. Here with placeholder - Royal Institute of Technology in Polish-Lithuanian Commonwealth.',
+        description:
+          'Modern web app designed for interactive browsing of study programs and departmental structures. Here with placeholder - Royal Institute of Technology in Polish-Lithuanian Commonwealth.',
         github: 'https://github.com/mslotwinski-dev/Assistant',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Assistant/refs/heads/master/public/static/icon.png',
-        langs: ['Vue', 'Python'], 
+        langs: ['Vue', 'Python'],
       },
       {
         title: 'Boson',
@@ -261,10 +262,10 @@ Security and privacy are at the core of poCHATo. Direct communication is restric
       },
       {
         title: 'Snake',
-        description: 'Classic implementation of the Snake game in Rust.', 
+        description: 'Classic implementation of the Snake game in Rust.',
         github: 'https://github.com/mslotwinski-dev/Snake',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Snake/refs/heads/main/public/readme_icon.png',
-        langs: ['Rust'], 
+        langs: ['Rust'],
       },
     ],
   },
@@ -284,8 +285,7 @@ Security and privacy are at the core of poCHATo. Direct communication is restric
       },
       {
         title: 'Milk',
-        description:
-          'Simple front-end framework written in Go. No more JS!',
+        description: 'Simple front-end framework written in Go. No more JS!',
         github: 'https://github.com/mslotwinski-dev/Milk',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Milk/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
@@ -309,7 +309,8 @@ Additionally, the project allows for the expansion of a real-time administrative
       },
       {
         title: 'Neon',
-        description:'Neon is a distributed computing platform designed for simulating and processing scientific data in HPC environments.',
+        description:
+          'Neon is a distributed computing platform designed for simulating and processing scientific data in HPC environments.',
         longdescription:
           'Neon is a distributed computing platform designed for simulating and processing scientific data in HPC environments. The system allows defining computational tasks, automatically distributing the load in a cluster, monitoring resources, and aggregating results in real-time. The project focuses on:<ul><li>scalability and fault tolerance,</li><li>effective communication and parallelism in Go,</li><li>a modular architecture with a master/worker and a queue system.</li></ul>Neon is meant to be the foundation for comprehensive computational systems — from physical simulations to analyzing large data sets — with full control over the flow of computations and cluster resources.',
         github: 'https://github.com/mslotwinski-dev/Neon',
@@ -335,10 +336,11 @@ Additionally, the project allows for the expansion of a real-time administrative
     projects: [
       {
         title: 'Arctic',
-        description: 'A minimal, modular 32-bit operating system written in C and NASM, targeting the x86 architecture.', 
+        description:
+          'A minimal, modular 32-bit operating system written in C and NASM, targeting the x86 architecture.',
         github: 'https://github.com/mslotwinski-dev/Arctic',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Arctic/refs/heads/main/public/icon.png',
-        langs: ['C'], 
+        langs: ['C'],
       },
       {
         title: 'NumC',
@@ -354,7 +356,8 @@ Additionally, the project allows for the expansion of a real-time administrative
       },
       {
         title: 'Echo',
-        description: 'Echo is a modular framework for processing and analyzing digital signals. It allows loading data from various sources, filtering, time-frequency transformations, and visualizing waveforms in real-time or offline.',
+        description:
+          'Echo is a modular framework for processing and analyzing digital signals. It allows loading data from various sources, filtering, time-frequency transformations, and visualizing waveforms in real-time or offline.',
         longdescription: `Echo is a modular framework for processing and analyzing digital signals. It allows loading data from various sources, filtering, time-frequency transformations, and visualizing waveforms in real-time or offline. The project focuses on:
 <ul>
   <li>performance and module flexibility,</li>

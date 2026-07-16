@@ -13,7 +13,8 @@ export const messages = {
     home: {
       role: 'Inżynier • Fizyk • Programista',
       blogHeader: 'Sprawdź moje artykuły!',
-      keyProjectsHeader: 'Software? Proszę bardzo! - kilka kluczowych projektów',
+      keyProjectsHeader:
+        'Software? Proszę bardzo! - kilka kluczowych projektów',
       simulationsHeader: 'Zanurkuj w świat fizyki komputerowej!',
       checkoutBlog: 'Sprawdź moje wpisy na blogu!',
     },

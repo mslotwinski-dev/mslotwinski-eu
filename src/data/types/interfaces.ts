@@ -39,15 +39,15 @@ export interface Project {
 }
 
 export interface ScienceLabel {
-  text: string;
-  color: string;
+  text: string
+  color: string
 }
 
 export interface ScienceProject {
-  name: string;
-  description: string;
-  time: string;
-  label?: ScienceLabel;
+  name: string
+  description: string
+  time: string
+  label?: ScienceLabel
 }
 
 export interface ProjectGroup {
@@ -56,7 +56,6 @@ export interface ProjectGroup {
   description: string
   projects: Project[]
 }
-
 
 //
 

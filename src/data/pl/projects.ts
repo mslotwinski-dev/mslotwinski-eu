@@ -1,4 +1,3 @@
-
 import { ProjectGroup } from '../types/interfaces'
 
 const projectdata: ProjectGroup[] = [
@@ -168,10 +167,11 @@ Bezpieczeństwo i prywatność są sercem poCHATo. Bezpośrednia komunikacja jes
     projects: [
       {
         title: 'Assistant',
-        description: 'Nowoczesna aplikacja webowa przeznaczona do interaktywnego przeglądania programów studiów i struktur wydziałowych. Tutaj z danymi zastępczymi - Królewski Instytut Technologiczny w Rzeczypospolitej Obojga Narodów.',
+        description:
+          'Nowoczesna aplikacja webowa przeznaczona do interaktywnego przeglądania programów studiów i struktur wydziałowych. Tutaj z danymi zastępczymi - Królewski Instytut Technologiczny w Rzeczypospolitej Obojga Narodów.',
         github: 'https://github.com/mslotwinski-dev/Assistant',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Assistant/refs/heads/master/public/static/icon.png',
-        langs: ['Vue', 'Python'], 
+        langs: ['Vue', 'Python'],
       },
       {
         title: 'Boson',
@@ -262,10 +262,10 @@ Bezpieczeństwo i prywatność są sercem poCHATo. Bezpośrednia komunikacja jes
       },
       {
         title: 'Snake',
-        description: 'Klasyczna implementacja gry Snake w Rust.', 
+        description: 'Klasyczna implementacja gry Snake w Rust.',
         github: 'https://github.com/mslotwinski-dev/Snake',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Snake/refs/heads/main/public/readme_icon.png',
-        langs: ['Rust'], 
+        langs: ['Rust'],
       },
     ],
   },
@@ -310,7 +310,8 @@ Dodatkowo projekt umożliwia rozbudowę o panel administracyjny w czasie rzeczyw
       },
       {
         title: 'Neon',
-        description:'Neon to rozproszona platforma obliczeniowa zaprojektowana do symulacji i przetwarzania danych naukowych w środowiskach HPC.',
+        description:
+          'Neon to rozproszona platforma obliczeniowa zaprojektowana do symulacji i przetwarzania danych naukowych w środowiskach HPC.',
         longdescription:
           'Neon to rozproszona platforma obliczeniowa zaprojektowana do symulacji i przetwarzania danych naukowych w środowiskach HPC. System umożliwia definiowanie zadań obliczeniowych, automatyczne rozdzielanie obciążenia w klastrze, monitorowanie zasobów i agregowanie wyników w czasie rzeczywistym. Projekt stawia na:<ul><li>skalowalność i odporność na awarie,</li><li>efektywną komunikację i równoległość w Go,</li><li>modularną architekturę z master/worker i systemem kolejkowym.</li></ul>Neon ma być fundamentem pod kompleksowe systemy obliczeniowe — od symulacji fizycznych po analizę dużych zbiorów danych — z pełną kontrolą nad przepływem obliczeń i zasobami klastra.',
         github: 'https://github.com/mslotwinski-dev/Neon',
@@ -336,10 +337,11 @@ Dodatkowo projekt umożliwia rozbudowę o panel administracyjny w czasie rzeczyw
     projects: [
       {
         title: 'Arctic',
-        description: 'Minimalistyczny, modularny 32-bitowy system operacyjny napisany w C i NASM, przeznaczony na architekturę x86.', 
+        description:
+          'Minimalistyczny, modularny 32-bitowy system operacyjny napisany w C i NASM, przeznaczony na architekturę x86.',
         github: 'https://github.com/mslotwinski-dev/Arctic',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Arctic/refs/heads/main/public/icon.png',
-        langs: ['C'], 
+        langs: ['C'],
       },
       {
         title: 'NumC',
@@ -355,7 +357,8 @@ Dodatkowo projekt umożliwia rozbudowę o panel administracyjny w czasie rzeczyw
       },
       {
         title: 'Echo',
-        description: 'Echo to modularny framework do przetwarzania i analizy sygnałów cyfrowych. Umożliwia wczytywanie danych z różnych źródeł, filtrowanie i transformacje.',
+        description:
+          'Echo to modularny framework do przetwarzania i analizy sygnałów cyfrowych. Umożliwia wczytywanie danych z różnych źródeł, filtrowanie i transformacje.',
         longdescription: `Echo to modularny framework do przetwarzania i analizy sygnałów cyfrowych. Umożliwia wczytywanie danych z różnych źródeł, filtrowanie, transformacje czasowo-częstotliwościowe oraz wizualizację przebiegów w czasie rzeczywistym lub offline. Projekt stawia na:
 <ul>
   <li>wydajność i elastyczność modułów,</li>

@@ -1,5 +1,5 @@
 export default [
-    {
+  {
     text: 'Udział w międzynarodowej konferencji naukowej <a href="https://openreadings.eu/">OpenReadings</a> w Wilnie.',
     year: '2026',
   },

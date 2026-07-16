@@ -47,7 +47,8 @@ export default [
 export const courses = [
   {
     Name: 'Fundamentals of Artificial Intelligence',
-    Place: 'National Information Processing Institute – National Research Institute',
+    Place:
+      'National Information Processing Institute – National Research Institute',
   },
   {
     Name: 'Introduction to Sensor Programming',
@@ -66,7 +67,8 @@ export const publications = [
 export const conferences = [
   {
     Name: 'Openreadings',
-    Subname: '69th International Conference for Students of Physics and Natural Sciences',
+    Subname:
+      '69th International Conference for Students of Physics and Natural Sciences',
     Place: 'Vilnius, Lithuania',
     Year: '2026',
   },

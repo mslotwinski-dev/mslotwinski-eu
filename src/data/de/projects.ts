@@ -166,10 +166,11 @@ Sicherheit und Datenschutz stehen bei poCHATo im Mittelpunkt. Die direkte Kommun
     projects: [
       {
         title: 'Assistant',
-        description: 'Moderne Web-App für das interaktive Durchsuchen von Studienprogrammen und Abteilungsstrukturen. Hier mit Platzhalter - Königliches Institut für Technologie in der polnisch-litauischen Räterepublik.',
+        description:
+          'Moderne Web-App für das interaktive Durchsuchen von Studienprogrammen und Abteilungsstrukturen. Hier mit Platzhalter - Königliches Institut für Technologie in der polnisch-litauischen Räterepublik.',
         github: 'https://github.com/mslotwinski-dev/Assistant',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Assistant/refs/heads/master/public/static/icon.png',
-        langs: ['Vue', 'Python'], 
+        langs: ['Vue', 'Python'],
       },
       {
         title: 'Boson',
@@ -260,10 +261,10 @@ Sicherheit und Datenschutz stehen bei poCHATo im Mittelpunkt. Die direkte Kommun
       },
       {
         title: 'Snake',
-        description: 'Klassische Implementierung des Snake-Spiels in Rust.', 
+        description: 'Klassische Implementierung des Snake-Spiels in Rust.',
         github: 'https://github.com/mslotwinski-dev/Snake',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Snake/refs/heads/main/public/readme_icon.png',
-        langs: ['Rust'], 
+        langs: ['Rust'],
       },
     ],
   },
@@ -308,7 +309,8 @@ Darüber hinaus ermöglicht das Projekt die Erweiterung eines Echtzeit-Administr
       },
       {
         title: 'Neon',
-        description:'Neon ist eine verteilte Computing-Plattform, die für die Simulation und Verarbeitung wissenschaftlicher Daten in HPC-Umgebungen entwickelt wurde.',
+        description:
+          'Neon ist eine verteilte Computing-Plattform, die für die Simulation und Verarbeitung wissenschaftlicher Daten in HPC-Umgebungen entwickelt wurde.',
         longdescription:
           'Neon ist eine verteilte Computing-Plattform, die für die Simulation und Verarbeitung wissenschaftlicher Daten in HPC-Umgebungen entwickelt wurde. Das System ermöglicht die Definition von Rechenaufgaben, die automatische Verteilung der Last in einem Cluster, die Überwachung von Ressourcen und die Aggregation von Ergebnissen in Echtzeit. Das Projekt konzentriert sich auf:<ul><li>Skalierbarkeit und Fehlertoleranz,</li><li>effektive Kommunikation und Parallelität in Go,</li><li>eine modulare Architektur mit Master/Worker und einem Warteschlangensystem.</li></ul>Neon soll das Fundament für umfassende Rechensysteme sein — von physikalischen Simulationen bis hin zur Analyse großer Datensätze — mit voller Kontrolle über den Rechenfluss und die Cluster-Ressourcen.',
         github: 'https://github.com/mslotwinski-dev/Neon',
@@ -334,10 +336,11 @@ Darüber hinaus ermöglicht das Projekt die Erweiterung eines Echtzeit-Administr
     projects: [
       {
         title: 'Arctic',
-        description: 'Ein minimales, modulares 32-Bit-Betriebssystem, geschrieben in C und NASM, das auf die x86-Architektur abzielt.', 
+        description:
+          'Ein minimales, modulares 32-Bit-Betriebssystem, geschrieben in C und NASM, das auf die x86-Architektur abzielt.',
         github: 'https://github.com/mslotwinski-dev/Arctic',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Arctic/refs/heads/main/public/icon.png',
-        langs: ['C'], 
+        langs: ['C'],
       },
       {
         title: 'NumC',
@@ -353,7 +356,8 @@ Darüber hinaus ermöglicht das Projekt die Erweiterung eines Echtzeit-Administr
       },
       {
         title: 'Echo',
-        description: 'Echo ist ein modulares Framework zur Verarbeitung und Analyse digitaler Signale. Es ermöglicht das Laden von Daten aus verschiedenen Quellen, Filterung, Zeit-Frequenz-Transformationen und die Visualisierung von Wellenformen in Echtzeit oder offline.',
+        description:
+          'Echo ist ein modulares Framework zur Verarbeitung und Analyse digitaler Signale. Es ermöglicht das Laden von Daten aus verschiedenen Quellen, Filterung, Zeit-Frequenz-Transformationen und die Visualisierung von Wellenformen in Echtzeit oder offline.',
         longdescription: `Echo ist ein modulares Framework zur Verarbeitung und Analyse digitaler Signale. Es ermöglicht das Laden von Daten aus verschiedenen Quellen, Filterung, Zeit-Frequenz-Transformationen und die Visualisierung von Wellenformen in Echtzeit oder offline. Das Projekt konzentriert sich auf:
 <ul>
   <li>Leistung und Modulflexibilität,</li>

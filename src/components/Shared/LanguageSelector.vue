@@ -37,16 +37,17 @@ export default defineComponent({
     // Zamiast trzymać język w data, pobieramy go na żywo z i18n
     selectedLanguage(): string {
       return i18n.global.locale || 'en' // Domyślnie angielski, jeśli coś pójdzie nie tak
-    }
+    },
   },
 
   methods: {
     getLanguageIcon(lang: string): string {
       if (lang === 'en') lang = 'us'
-      if (lang === 'ru') return `https://upload.wikimedia.org/wikipedia/commons/6/6f/White-blue-white_flag.svg`
+      if (lang === 'ru')
+        return `https://upload.wikimedia.org/wikipedia/commons/6/6f/White-blue-white_flag.svg`
       return `https://flagcdn.com/w40/${lang}.png`
     },
-    
+
     selectLanguage(lang: AppLocale) {
       // Zmieniamy język globalnie
       i18n.global.locale = lang
@@ -57,7 +58,9 @@ export default defineComponent({
 
   mounted() {
     // Synchronizacja po załadowaniu strony
-    const savedLocale = localStorage.getItem(LOCALE_STORAGE_KEY) as AppLocale | null
+    const savedLocale = localStorage.getItem(
+      LOCALE_STORAGE_KEY
+    ) as AppLocale | null
     if (savedLocale && SUPPORTED_LOCALES.includes(savedLocale)) {
       this.selectLanguage(savedLocale)
     }

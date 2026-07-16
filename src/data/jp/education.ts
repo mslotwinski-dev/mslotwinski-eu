@@ -66,7 +66,8 @@ export const publications = [
 export const conferences = [
   {
     Name: 'Openreadings',
-    Subname: '69th International Conference for Students of Physics and Natural Sciences',
+    Subname:
+      '69th International Conference for Students of Physics and Natural Sciences',
     Place: 'ビリニュス、リトアニア',
     Year: '2026',
   },

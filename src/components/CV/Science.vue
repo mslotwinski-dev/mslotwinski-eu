@@ -32,15 +32,15 @@ import scienceJp from '@/data/jp/science'
 
 // Definiujemy interfejsy dla bezpieczeństwa typów
 interface ScienceLabel {
-  text: string;
-  color: string;
+  text: string
+  color: string
 }
 
 interface ScienceProject {
-  name: string;
-  description: string;
-  time: string;
-  label?: ScienceLabel;
+  name: string
+  description: string
+  time: string
+  label?: ScienceLabel
 }
 
 // Tworzymy mapę języków
@@ -60,8 +60,8 @@ export default defineComponent({
       const locale = (this as any).$i18n.locale as string
 
       return scienceMap[locale] || scienceMap['en']
-    }
-  }
+    },
+  },
 })
 </script>
 

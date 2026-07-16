@@ -1,42 +1,52 @@
+import { ScienceProject } from '../types/interfaces'
+
 export default [
   {
-    name: 'Właściwości optyczne szkieł domieszkowanych europem',
+    name: 'Física y tecnología de materiales vítreos',
     description:
-      'Metale ziem rzadkich to grupa 17 pierwiastków chemicznych o unikalnych właściwościach magnetycznych, luminescencyjnych i katalitycznych. Są one kluczowe dla rozwoju współczesnej technologii, w szczególności takich jak produkcja magnesów trwałych, katalizatorów samochodowych, baterii litowo-jonowych oraz w przemyśle elektronicznym i energetycznym. W ramach pracy inżynierskiej zajmowałem się syntezą oraz charakteryzacją właściwości optycznych wybranych związków tych metali, a następnie własnoręczną konstrukcją lampy LED.',
+      'Los materiales vítreos basados en óxidos de silicio y fósforo forman la base de la optoelectrónica moderna. Su estructura única y amorfa permite una amplia modificación de las propiedades fisicoquímicas. Como parte de mi actividad científica, sintetizo vidrios innovadores de silicato y fosfato y estudio de manera integral sus propiedades eléctricas y ópticas, lo cual es crucial para diseñar una nueva generación de fibras ópticas y sensores.',
     time: '2025+',
-    label: {
-      text: 'Praca inżynierska',
-      color: '#00647d',
-    },
   },
   {
-    name: 'Akceleratory i aparatura jądrowa',
+    name: 'Conductividad iónica en compuestos vitrocerámicos',
     description:
-      'Akceleratory to urządzenia służące do przyspieszania cząstek i emisji promieniowania. Znajdują one wiele zastosowań w przemyśle i badaniach naukowych, gdzie służą m.in. do implantacji jonów czy wykrywania defektów w materiałach. Wykorzystuje się je także w radioterapii nowotworów. Konstrukcja aparatury jądrowej wiąże się zarówno z wykorzystaniem elektroniki przemysłowej, jak i z poznaniem takich technik jak pompy jonowe, piece próżniowe i systemy chłodzenia hydraulicznego. W ramach praktyk poznałem budowę i możliwości akceleratorów oraz tworzyłem oprogramowanie pozwalające je kontrolować. ',
+      'Los compuestos vitrocerámicos que exhiben alta conductividad iónica (Li+, Na+, K+, O2-) son un elemento clave de la revolución en el almacenamiento y conversión de energía. Son una alternativa segura a los componentes líquidos en baterías de estado sólido de próxima generación y pilas de combustible. Mi investigación se centra en optimizar el transporte de iones en estas estructuras mediante el análisis de su microestructura y mediciones de impedancia.',
+    time: '2025+',
+  },
+  {
+    name: 'Modelado de procesos iónicos',
+    description:
+      'La aplicación de inteligencia artificial está revolucionando la ingeniería de materiales moderna. El uso de redes neuronales y aprendizaje automático (potenciales de ML) permite simular la dinámica molecular y el transporte de iones en materiales vítreos con precisión cuántica a un costo computacional mínimo. El proyecto implica la implementación de algoritmos de aprendizaje automático para predecir las propiedades estructurales y difusivas de los vidrios.',
+    time: '2026+',
+  },
+  {
+    name: 'Aceleradores y aparatos nucleares',
+    description:
+      'Los aceleradores son dispositivos utilizados para acelerar partículas y emitir radiación. Encuentran muchas aplicaciones en la industria y la investigación científica, donde se utilizan, entre otros, para la implantación de iones o la detección de defectos en materiales. También se utilizan en la radioterapia del cáncer. La construcción de aparatos nucleares implica tanto el uso de la electrónica industrial como el aprendizaje de técnicas como bombas de iones, hornos de vacío y sistemas de refrigeración hidráulica. Durante mis prácticas, aprendí sobre la construcción y las capacidades de los aceleradores y creé software para controlarlos.',
     time: '2025',
-    // label: {
-    // text: '',
-    // color: '',
-    // },
+    label: {
+      text: 'Prácticas',
+      color: '#00647D',
+    },
   },
   {
-    name: 'Przewodniki superjonowe',
+    name: 'Conductores superiónicos',
     description:
-      'Przewodniki superjonowe to materiały, które wykazują wysokie przewodnictwo jonowe, co czyni je obiecującymi dla zastosowań w bateriach i ogniwach paliwowych. W ramach mini-praktyk wakacyjnych w Centrum Zaawansowanych Materiałów i Technologii CEZAMAT, wyprodukowaliśmy próbki takich materiałów, a następnie zajęliśmy się badaniem ich właściwości takimi technikami jak np. dyfrakcja rentgenowska (XRD).',
-    time: 'Wakacje 2024',
+      'Los conductores superiónicos son materiales que exhiben alta conductividad iónica, lo que los hace prometedores para aplicaciones en baterías y pilas de combustible. Durante unas miniprácticas de verano en el Centro de Materiales y Tecnologías Avanzadas CEZAMAT, produjimos muestras de dichos materiales y luego estudiamos sus propiedades utilizando técnicas como la difracción de rayos X (XRD).',
+    time: 'Verano de 2024',
     label: {
-      text: 'Projekt wakacyjny',
+      text: 'Proyecto de verano',
       color: '',
     },
   },
   {
-    name: 'Szkło bizmutowe',
+    name: 'Vidrio de bismuto',
     description:
-      'W ramach mini-praktyk wakacyjnych na Wydziale Fizyki Politechniki Warszawskiej, zajmowaliśmy się syntezą szkła bizmutowego oraz poznaniem właściwości materiałów o strukturze krystalicznej i amorficznej. Następnie dokonaliśmy badań jego właściwości elektrycznych, termicznych czy strukturalnych ze szczególnym naciskiem na przejścia fazowe, którym za pośrednictwem temperatury ten materiał ulega np. krystalizację.',
-    time: 'Wakacje 2024',
+      'Durante unas miniprácticas de verano en la Facultad de Física de la Universidad Tecnológica de Varsovia, nos ocupamos de la síntesis del vidrio de bismuto y de aprender sobre las propiedades de los materiales con estructuras cristalinas y amorfas. Luego examinamos sus propiedades eléctricas, térmicas y estructurales, con especial énfasis en las transiciones de fase, que este material experimenta debido a la temperatura, por ejemplo, la cristalización.',
+    time: 'Verano de 2024',
     label: {
-      text: 'Projekt wakacyjny',
+      text: 'Proyecto de verano',
       color: '',
     },
   },
-]
+] as ScienceProject[]

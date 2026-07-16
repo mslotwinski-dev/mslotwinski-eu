@@ -1,38 +1,22 @@
-export interface Project {
-  title: string
-  description: string
-  github: string
-  icon: string
-  langs: string[]
-  main?: boolean
-  simulation?: boolean
-  screenshots?: string[]
-  tags?: string[]
-}
-
-export interface ProjectGroup {
-  title: string
-  icon: string
-  description: string
-  projects: Project[]
-}
-
+import { ProjectGroup } from '../types/interfaces'
 const projectdata: ProjectGroup[] = [
   {
     title: 'Modular Projects',
     icon: 'puzzle-piece',
     description:
-      'Największe, modułowe projekty, w których każdy element stanowi odrębną część większej całości.',
+      'Die größten, modularen Website-Projekte, bei denen jedes Element einen eigenständigen Teil eines größeren Ganzen bildet.',
     projects: [
       {
         title: 'eDirac',
-        description: `eDirac to innowacyjny projekt edukacyjny non-profit, którego celem jest zapewnienie bezpłatnego dostępu do kompleksowej wiedzy naukowej. Projekt skupia się na:
+        description:
+          'eDirac ist ein gemeinnütziges Projekt, das Bildung durch kostenlose, umfassende und leicht zugängliche Lehrbücher zugänglicher machen soll.',
+        longdescription: `eDirac ist ein innovatives gemeinnütziges Bildungsprojekt, das den kostenlosen Zugang zu umfassendem wissenschaftlichem Wissen ermöglichen soll. Das Projekt konzentriert sich auf:
 <ul>
-  <li>tworzeniu darmowych podręczników z fizyki, inżynierii, matematyki i innych dziedzin,</li>
-  <li>upowszechnianiu wiedzy niezależnie od pochodzenia czy zamożności użytkowników,</li>
-  <li>planach rozwoju obejmujących tłumaczenia podręczników na wiele języków świata, aby każdy miał równe szanse w edukacji.</li>
+  <li>die Erstellung kostenloser Lehrbücher in Physik, Ingenieurwesen, Mathematik und anderen Bereichen,</li>
+  <li>die Verbreitung von Wissen unabhängig von Herkunft oder Wohlstand der Benutzer,</li>
+  <li>Entwicklungspläne einschließlich der Übersetzung von Lehrbüchern in viele Weltsprachen, damit jeder die gleichen Bildungschancen hat.</li>
 </ul>
-Platforma eDirac łączy w sobie przystępny interfejs, łatwy dostęp do materiałów oraz misję globalnej edukacji, stawiając na transparentność i pełną dostępność zasobów dla każdego.`,
+Die eDirac-Plattform kombiniert eine barrierefreie Benutzeroberfläche, einfachen Zugriff auf Materialien und die Mission der globalen Bildung mit Fokus auf Transparenz und vollständige Verfügbarkeit von Ressourcen für alle.`,
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/eDirac/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
@@ -42,7 +26,7 @@ Platforma eDirac łączy w sobie przystępny interfejs, łatwy dostęp do materi
       {
         title: 'Cloudy',
         description:
-          'Simple file sharing system written in Vue, Node, Nest and MongoDB.',
+          'Einfaches Dateifreigabesystem, geschrieben in Vue, Node, Nest und MongoDB.',
         github: 'https://github.com/Cloudy-APP',
         icon: 'https://avatars.githubusercontent.com/u/95831075?s=400&u=b908e3c984b3068a4fa0dd3d0bfde5f9fe054aab&v=4',
         langs: ['Vue', 'TypeScript'],
@@ -50,20 +34,22 @@ Platforma eDirac łączy w sobie przystępny interfejs, łatwy dostęp do materi
       {
         title: 'mLib',
         description:
-          'mLib is a personal website that offers access to a collection of e-books and PDF files. It serves as a platform for sharing educational and other resources, possibly for academic or personal use.',
-        github: 'https://github.com/mLib-Project',
-        icon: 'https://avatars.githubusercontent.com/u/95831174?s=200&v=4',
+          'mLib ist eine persönliche Website, die Zugriff auf eine Sammlung von E-Books und PDF-Dateien bietet. Sie dient als Plattform zum Teilen von Bildungs- und anderen Ressourcen, möglicherweise für den akademischen oder persönlichen Gebrauch.',
+        github: 'https://github.com/mslotwinski-dev/mLib',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/mLib/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'Go'],
       },
       {
         title: 'AnalyseMe',
-        description: `AnalyseMe to lekka, nowoczesna platforma webowa przeznaczona do diagnozowania i analizy własnych poglądów oraz przekonań. Serwis dostarcza zestaw rozbudowanych quizów (takich jak Political Compass czy 9Axes), intuicyjne narzędzia do filtrowania kategorii oraz przejrzysty system tagowania. Projekt stawia na:
+        description:
+          'AnalyseMe ist eine Plattform mit vielen psychologischen, politischen und philosophischen Tests. Antworte ehrlich!',
+        longdescription: `AnalyseMe ist eine leichte, moderne Webplattform zur Diagnose und Analyse deiner eigenen Ansichten und Überzeugungen. Die Website bietet eine Reihe umfangreicher Quizfragen (wie Political Compass oder 9Axes), intuitive Werkzeuge zur Kategoriefilterung und ein klares Tagging-System. Das Projekt konzentriert sich auf:
 <ul>
-<li>różnorodność tematyczną (od polityki i ekonomii po filozofię),</li>
-<li>przejrzysty, minimalistyczny interfejs użytkownika,</li>
-<li>otwarty charakter i integrację ze społecznością (GitHub),</li>
+<li>thematische Vielfalt (von Politik und Wirtschaft bis zur Philosophie),</li>
+<li>eine klare, minimalistische Benutzeroberfläche,</li>
+<li>einen offenen Charakter und Integration mit der Community (GitHub).</li>
 </ul>
-AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych analiz politycznych po testy wolności osobistej — bez zbędnego skomplikowania i bez barier w dostępie do wyników`,
+AnalyseMe soll dein persönliches Zentrum zur Selbstfindung sein — von mehrachsigen politischen Analysen bis hin zu Tests der persönlichen Freiheit — ohne unnötige Komplikationen und Barrieren beim Zugriff auf Ergebnisse.`,
         github: 'https://github.com/Analyse-Me',
         icon: 'https://github.com/Analyse-Me/AnalyseMe/blob/main/public/readme_icon.png?raw=true',
         langs: ['Vue', 'C#'],
@@ -72,21 +58,23 @@ AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych anal
       {
         title: 'Note Keeper',
         description:
-          'Simple app for keeping notes written in Nuxt.js and Nest.js.',
-        github: 'https://github.com/Note-Keeper',
-        icon: 'https://avatars.githubusercontent.com/u/98667308?s=200&v=4',
+          'Einfache App zum Notizenmachen, geschrieben in Nuxt.js und Nest.js.',
+        github: 'https://github.com/mslotwinski-dev/NoteKeeper',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NoteKeeper/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript', 'Go'],
       },
       {
-        title: 'Bullet',
-        description: 'Simple App for keeping and shorting your links',
-        github: 'https://github.com/URLeaf',
-        icon: 'https://avatars.githubusercontent.com/u/98991330?s=200&v=4',
+        title: 'Lightning',
+        description: 'Einfache App zum Speichern und Kürzen deiner Links.',
+        github: 'https://github.com/mslotwinski-dev/Lightning',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Lightning/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'Go'],
       },
       {
         title: 'ThinklineAI',
-        description: `ThinklineAI to inteligentna platforma do generowania spersonalizowanych projektów programistycznych. System analizuje zainteresowania użytkownika, preferowane języki oraz poziom trudności, aby proponować unikalne i praktyczne pomysły do nauki, eksperymentów i prototypowania. Projekt stawia na:<ul><li>modularną i skalowalną architekturę AI,</li><li>intuicyjny interfejs użytkownika,</li><li>łatwą integrację z różnymi technologiami i językami programowania,</li></ul>ThinklineAI ma wspierać rozwój umiejętności programistycznych, eksplorację nowych rozwiązań oraz szybkie prototypowanie projektów — bez zbędnej komplikacji i nadmiaru abstrakcji.`,
+        description:
+          'ThinklineAI ist eine intelligente Plattform zur Generierung personalisierter Programmierprojekte.',
+        longdescription: `ThinklineAI ist eine intelligente Plattform zur Generierung personalisierter Programmierprojekte. Das System analysiert die Interessen, bevorzugten Sprachen und den Schwierigkeitsgrad des Benutzers, um einzigartige und praktische Ideen zum Lernen, Experimentieren und Prototyping vorzuschlagen. Das Projekt konzentriert sich auf:<ul><li>eine modulare und skalierbare KI-Architektur,</li><li>eine intuitive Benutzeroberfläche,</li><li>einfache Integration in verschiedene Technologien und Programmiersprachen.</li></ul>ThinklineAI soll die Entwicklung von Programmierfähigkeiten, die Erforschung neuer Lösungen und schnelles Projekt-Prototyping unterstützen – ohne unnötige Komplikationen und übermäßige Abstraktion.`,
         github: 'https://github.com/mslotwinski-dev/ThinklineAI',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/ThinklineAI/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript', 'Python'],
@@ -94,62 +82,68 @@ AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych anal
       },
     ],
   },
-
   {
     title: 'Grand Designs',
     icon: 'microchip',
     description:
-      'Rozbudowane i skomplikowane projekty, które wymagają dużo planowania, wysiłku oraz użycia zaawansowanych narzędzi.',
+      'Umfangreiche und komplexe Projekte, die viel Planung, Mühe und den Einsatz fortschrittlicher Werkzeuge erfordern.',
     projects: [
-      {
-        title: 'Aero',
-        description:
-          'Console game developed in C++ where players control a capybara navigating through a jungle. The game involves various challenges and interactions set in a jungle environment, providing an engaging and fun experience.',
-        github: 'https://github.com/mslotwinski-dev/Aero',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Aero/refs/heads/main/public/readme_icon.png',
-        langs: ['Go'],
-      },
       {
         title: 'Ancient Paws',
         description:
-          'Console game developed in C++ where players control a capybara navigating through a jungle. The game involves various challenges and interactions set in a jungle environment, providing an engaging and fun experience.',
+          'Konsolenspiel in C++, bei dem die Spieler ein Wasserschwein steuern, das durch einen Dschungel navigiert. Das Spiel beinhaltet verschiedene Herausforderungen und Interaktionen in einer Dschungelumgebung und bietet ein fesselndes und unterhaltsames Erlebnis.',
         github: 'https://github.com/mslotwinski-dev/AncientPaws',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/AncientPaws/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
       },
       {
+        title: 'Flow',
+        description: `Flow ist ein fortschrittlicher Bash-Shell-Daemon, der die Echtzeitsynchronisierung lokaler Verzeichnisse mit Google Drive automatisiert. Er macht manuelle Backups überflüssig, indem er dein Dateisystem im Hintergrund auf Änderungen überwacht und diese sofort in die Cloud hochlädt, sodass deine Daten sicher bleiben, ohne deinen Arbeitsablauf zu unterbrechen.`,
+        longdescription: `Flow ist ein fortschrittlicher Bash-Shell-Daemon, der die Echtzeitsynchronisierung lokaler Verzeichnisse mit Google Drive automatisiert. Er macht manuelle Backups überflüssig, indem er dein Dateisystem im Hintergrund auf Änderungen überwacht und diese sofort in die Cloud hochlädt, sodass deine Daten sicher bleiben, ohne deinen Arbeitsablauf zu unterbrechen.`,
+        github: 'https://github.com/mslotwinski-dev/Flow',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Flow/refs/heads/main/public/readme_icon.png',
+        langs: ['Shell'],
+        main: true,
+        tags: ['File Synchronization', 'Cloud Storage', 'Automation'],
+      },
+      {
         title: 'PiWo',
-        description: 'Ja liczę sprawozdania ty pijesz piwo.',
+        description: 'Ich berechne die Berichte, du trinkst das Bier.',
         github: 'https://github.com/mslotwinski-dev/PiWo',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PiWo/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
       },
       {
         title: 'Pixel',
-        description: 'Ja liczę sprawozdania ty pijesz piwo.',
+        description:
+          'Pixel ist ein schneller und leichter Bildeditor, geschrieben in Rust, verfügbar sowohl mit GUI als auch mit CLI. Er bietet leistungsstarke, aber einfache Werkzeuge zur Bildbearbeitung – von grundlegenden Operationen (Größe ändern, zuschneiden, drehen) bis hin zu integrierten Filtern im Instagram-Stil.',
+        longdescription:
+          'Pixel ist ein schneller und leichter Bildeditor, geschrieben in Rust, verfügbar sowohl mit GUI als auch mit CLI. Er bietet leistungsstarke, aber einfache Werkzeuge zur Bildbearbeitung – von grundlegenden Operationen (Größe ändern, zuschneiden, drehen) bis hin zu integrierten Filtern im Instagram-Stil.',
         github: 'https://github.com/mslotwinski-dev/Pixel',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Pixel/refs/heads/main/public/readme_icon.png',
         langs: ['Rust'],
+        main: true,
       },
       {
-        title: 'Triply',
-        description: 'Ja liczę sprawozdania ty pijesz piwo.',
-        github: 'https://github.com/mslotwinski-dev/Triply',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Triply/refs/heads/main/public/readme_icon.png',
-        langs: ['Vue', 'TypeScript'],
-      },
-      {
-        title: 'QDot',
-        description:
-          'Scientific calculator built with the Quasar framework. It provides a user-friendly interface for performing various advanced mathematical operations.',
-        github: 'https://github.com/mslotwinski-dev/QDot',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/QDot/refs/heads/main/public/readme_icon.png',
-        langs: ['Vue', 'TypeScript'],
+        title: 'PoCHATo',
+        description: `poCHATo ist ein umfassendes Computernetzwerkprojekt, das für sicheres Echtzeit-Messaging zwischen Benutzern entwickelt wurde. Es wurde vollständig in Go geschrieben und verfügt über eine robuste Client-Server-Architektur, die eine RESTful-API für Standardvorgänge und WebSockets (TCP/IP) für bidirektionale Kommunikation mit geringer Latenz nutzt.`,
+        longdescription: `poCHATo ist ein umfassendes Computernetzwerkprojekt, das für sicheres Echtzeit-Messaging zwischen Benutzern entwickelt wurde. Es wurde vollständig in Go geschrieben und verfügt über eine robuste Client-Server-Architektur, die eine RESTful-API für Standardvorgänge und WebSockets (TCP/IP) für bidirektionale Kommunikation mit geringer Latenz nutzt.
+<ul>
+  <li>Ende-zu-Ende-Verschlüsselung (E2EE)</li>
+  <li>Freundesystem</li>
+  <li>Echtzeit-WebSockets</li>
+</ul>
+Sicherheit und Datenschutz stehen bei poCHATo im Mittelpunkt. Die direkte Kommunikation ist auf gegenseitig akzeptierte Freunde beschränkt und jede einzelne Nachricht wird mittels Ende-zu-Ende-Verschlüsselung (E2EE) gesichert.`,
+        github: 'https://github.com/mslotwinski-dev/PoCHATo',
+        icon: 'https://minecraft.wiki/images/Potato_JE3_BE2.png',
+        langs: ['Go'],
+        main: true,
+        tags: ['Computer Networks', 'Security'],
       },
       {
         title: 'Shin',
         description:
-          'An application that generates a graph displaying the programming languages that you use. It helps visualize which languages you like the most.',
+          'Eine Anwendung, die ein Diagramm der von dir verwendeten Programmiersprachen generiert. Sie hilft dabei zu visualisieren, welche Sprachen dir am besten gefallen.',
         github: 'https://github.com/mslotwinski-dev/Shin',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Shin/refs/heads/main/public/readme_icon.png',
         langs: ['Vue'],
@@ -157,80 +151,78 @@ AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych anal
       {
         title: 'YT Downloader',
         description:
-          'Simple electron app designed for downloading YouTube videos.',
+          'Einfache Electron-App zum Herunterladen von YouTube-Videos.',
         github: 'https://github.com/mslotwinski-dev/YT-Downloader',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/YT-Downloader/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
       },
     ],
   },
-
   {
     title: 'Quick Bytes',
     icon: 'dragon',
     description:
-      'Szybkie, pomysłowe projekty skupione na rozwiązywaniu problemów i swobodnym eksperymentowaniu.',
+      'Schnelle, einfallsreiche Projekte, die sich auf das Lösen von Problemen und freies Experimentieren konzentrieren.',
     projects: [
       {
+        title: 'Assistant',
+        description: 'Moderne Web-App für das interaktive Durchsuchen von Studienprogrammen und Abteilungsstrukturen. Hier mit Platzhalter - Königliches Institut für Technologie in der polnisch-litauischen Räterepublik.',
+        github: 'https://github.com/mslotwinski-dev/Assistant',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Assistant/refs/heads/master/public/static/icon.png',
+        langs: ['Vue', 'Python'], 
+      },
+      {
         title: 'Boson',
-        description: `Boson is a flexible cellular automaton simulator with configurable rules, enabling the modeling of complex phenomena such as fires, crystallization, or pattern evolution.`,
+        description: `Boson ist ein flexibler zellulärer Automaten-Simulator mit konfigurierbaren Regeln, der die Modellierung komplexer Phänomene wie Brände, Kristallisation oder Musterentwicklung ermöglicht.`,
         github: 'https://github.com/mslotwinski-dev/Boson',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Boson/refs/heads/main/public/readme_icon.png',
         langs: ['C'],
       },
       {
         title: 'eWybory',
-        description: `eWybory is an application designed to record voting data and keep track of how users voted in elections. It provides a secure and organized way to document election results for personal use.`,
+        description: `eWybory ist eine Anwendung, die entwickelt wurde, um Wahldaten aufzuzeichnen und zu verfolgen, wie Benutzer bei Wahlen abgestimmt haben. Sie bietet eine sichere und organisierte Möglichkeit, Wahlergebnisse für den persönlichen Gebrauch zu dokumentieren.`,
         github: 'https://github.com/mslotwinski-dev/eWybory',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/eWybory/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
       },
-
       {
         title: 'Game of Life',
-        description: `Go implementation of Conway's Game of Life, a cellular automaton that simulates the evolution of cells based on simple rules.`,
+        description: `Go-Implementierung von Conways Game of Life, einem zellulären Automaten, der die Entwicklung von Zellen basierend auf einfachen Regeln simuliert.`,
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/GameOfLife/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
       },
       {
         title: 'MangoUI',
-        description: `Veeeeeery light CSS library for styling default elements. No classes, no js - just better look.`,
+        description: `Sehr leichte CSS-Bibliothek zum Stylen von Standardelementen. Keine Klassen, kein JS – einfach besseres Aussehen.`,
         github: 'https://github.com/mslotwinski-dev/MangoUI',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/MangoUI/refs/heads/main/public/readme_icon.png',
         langs: ['SCSS'],
       },
       {
         title: 'PastoLatarnia',
-        description: `The "PastoLatarnia" project is a platform for sharing and reading "pasta" stories, typically humorous or light-hearted internet tales. The site allows users to enjoy a variety of stories that are meant to entertain and amuse.`,
+        description: `Das Projekt "PastoLatarnia" ist eine Plattform zum Teilen und Lesen von "Pasta"-Geschichten (lustige Internetgeschichten). Die Seite ermöglicht es Benutzern, eine Vielzahl von Geschichten zu genießen, die unterhalten und amüsieren sollen.`,
         github: 'https://github.com/mslotwinski-dev/PastoLatarnia',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PastoLatarnia/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
       },
       {
         title: 'Polistats',
-        description: `Interactive map of Poland with custom election results and many ways to explore statistics about them.`,
+        description: `Interaktive Karte von Polen mit benutzerdefinierten Wahlergebnissen und vielen Möglichkeiten, Statistiken darüber zu erkunden.`,
         github: 'https://github.com/mslotwinski-dev/Polistats',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Polistats/refs/heads/main/public/readme_icon.png',
         langs: ['TypeScript', 'Vue'],
       },
       {
         title: 'Resizer',
-        description: `Simply resizes your icons.`,
+        description: `Ändert einfach die Größe deiner Symbole.`,
         github: 'https://github.com/mslotwinski-dev/Resizer',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resizer/refs/heads/main/public/readme_icon.png',
         langs: ['C'],
       },
       {
-        title: 'Volt',
-        description: `Simply resizes your icons.`,
-        github: 'https://github.com/mslotwinski-dev/Volt',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Volt/refs/heads/master/public/readme_icon.png',
-        langs: ['C'],
-      },
-      {
         title: 'vQuery',
-        description: `vQuery is a modern version of jQuery, written in TypeScript. It provides a lightweight alternative to jQuery, focusing on simplicity and modern web development practices.`,
+        description: `vQuery ist eine moderne Version von jQuery, geschrieben in TypeScript. Es bietet eine leichtgewichtige Alternative zu jQuery, die sich auf Einfachheit und moderne Webentwicklungspraktiken konzentriert.`,
         github: 'https://github.com/mslotwinski-dev/vQuery',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/vQuery/refs/heads/main/public/readme_icon.png',
         langs: ['TypeScript'],
@@ -241,39 +233,37 @@ AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych anal
     title: 'Pixel Zone',
     icon: 'ghost',
     description:
-      'Szybkie projekty w tematyce gier, gdzie liczy się przede wszystkim dobra zabawa i kreatywność.',
+      'Schnelle Spiele-Projekte, bei denen Spaß und Kreativität im Vordergrund stehen.',
     projects: [
       {
         title: 'Actually',
         description:
-          'SudokuSolver is a C# application designed to solve Sudoku puzzles. The project provides the implementation of an algorithm to automatically solve Sudoku grids.',
+          'SudokuSolver ist eine C#-Anwendung zur Lösung von Sudoku-Rätseln. Das Projekt bietet die Implementierung eines Algorithmus zur automatischen Lösung von Sudoku-Gittern.',
         github: 'https://github.com/mslotwinski-dev/Actually-SudokuSolver',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Actually-SudokuSolver/refs/heads/main/public/readme_icon.png',
         langs: ['C#'],
       },
-
       {
         title: 'Multiply',
         description:
-          'Multiply is an educational application designed to help users learn multiplication tables.',
+          'Multiply ist eine Bildungsanwendung, die Benutzern hilft, das Einmaleins zu lernen.',
         github: 'https://github.com/mslotwinski-dev/Multiply',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Multiply/refs/heads/main/public/readme_icon.png',
         langs: ['Vue'],
       },
       {
-        title: 'Racist',
-        description:
-          'Racist is a web-based game where players are challenged to select the wrong color as part of the game mechanics.',
-        github: 'https://github.com/mslotwinski-dev/RacistTheGame',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/RacistTheGame/refs/heads/main/public/readme_icon.png',
-        langs: ['Vue'],
-      },
-      {
         title: 'Zeus Casino',
-        description: `Simple parody of cheap casino pages. Including black jack game.`,
+        description: `Einfache Parodie auf billige Casino-Seiten. Inklusive Black-Jack-Spiel.`,
         github: 'https://github.com/mslotwinski-dev/BlackJack',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/BlackJack/refs/heads/main/public/readme_icon.png',
         langs: ['Vue', 'TypeScript'],
+      },
+      {
+        title: 'Snake',
+        description: 'Klassische Implementierung des Snake-Spiels in Rust.', 
+        github: 'https://github.com/mslotwinski-dev/Snake',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Snake/refs/heads/main/public/readme_icon.png',
+        langs: ['Rust'], 
       },
     ],
   },
@@ -281,12 +271,12 @@ AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych anal
     title: 'Get Pro with Go',
     icon: 'carrot',
     description:
-      'Praktyczne projekty stworzone z myślą o lepszym zrozumieniu kluczowych cech języka Go i poznaniu dobrych praktyk.',
+      'Praktische Projekte, die erstellt wurden, um die Hauptfunktionen der Programmiersprache Go besser zu verstehen und Best Practices zu erlernen.',
     projects: [
       {
         title: 'CodeHub',
         description:
-          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+          'Dein persönlicher Projektmanager, entwickelt, um deine Programmierprojekte einfach zu organisieren, zu verfolgen und anzuzeigen.',
         github: 'https://github.com/mslotwinski-dev/eDirac',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/CodeHub/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
@@ -294,190 +284,129 @@ AnalyseMe ma być Twoim osobistym centrum samopoznania — od wieloosiowych anal
       {
         title: 'Milk',
         description:
-          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+          'Einfaches Front-End-Framework, geschrieben in Go. Kein JS mehr!',
         github: 'https://github.com/mslotwinski-dev/Milk',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Milk/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
       },
       {
         title: 'Dash',
-        description: `Dash to własny serwer reverse proxy z obsługą HTTP/HTTPS, SSL, balansowaniem obciążenia i cache statycznych zasobów. Projekt stawia na:
+        description:
+          'Dash ist ein persönlicher Reverse-Proxy-Server mit Unterstützung für HTTP/HTTPS, SSL, Load Balancing und Zwischenspeicherung statischer Ressourcen.',
+        longdescription: `Dash ist ein eigener Reverse-Proxy-Server mit Unterstützung für HTTP/HTTPS, SSL, Load Balancing und Zwischenspeicherung statischer Ressourcen. Das Projekt konzentriert sich auf:
 <ul>
-  <li>automatyczne wystawianie certyfikatów SSL,</li>
-  <li>różne algorytmy balansowania (round-robin, least connections),</li>
-  <li>kompresję danych i cache,</li>
-  <li>monitorowanie i logowanie ruchu.</li>
+  <li>automatische Ausstellung von SSL-Zertifikaten,</li>
+  <li>verschiedene Balancing-Algorithmen (Round-Robin, Least Connections),</li>
+  <li>Datenkomprimierung und Caching,</li>
+  <li>Verkehrsüberwachung und Protokollierung.</li>
 </ul>
-Dodatkowo projekt umożliwia rozbudowę o panel administracyjny w czasie rzeczywistym oraz reguły routingu oparte na nagłówkach HTTP, tworząc solidną bazę pod skalowalne rozwiązania sieciowe.`,
+Darüber hinaus ermöglicht das Projekt die Erweiterung eines Echtzeit-Administrationsbereichs und Routing-Regeln auf Basis von HTTP-Headern, wodurch eine solide Grundlage für skalierbare Netzwerklösungen geschaffen wird.`,
         github: 'https://github.com/mslotwinski-dev/Dash',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Dash/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
         main: true,
       },
       {
-        title: 'Iceberg',
-        description:
-          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
-        github: 'https://github.com/mslotwinski-dev/Iceberg',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Iceberg/refs/heads/main/public/readme_icon.png',
-        langs: ['Go'],
-      },
-      {
-        title: 'LabSYNC',
-        description:
-          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
-        github: 'https://github.com/mslotwinski-dev/LabSYNC',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/LabSYNC/refs/heads/main/public/readme_icon.png',
-        langs: ['Go'],
-      },
-      {
         title: 'Neon',
-        description:
-          'Neon to rozproszona platforma obliczeniowa zaprojektowana do symulacji i przetwarzania danych naukowych w środowiskach HPC. System umożliwia definiowanie zadań obliczeniowych, automatyczne rozdzielanie obciążenia w klastrze, monitorowanie zasobów i agregowanie wyników w czasie rzeczywistym. Projekt stawia na:<ul><li>skalowalność i odporność na awarie,</li><li>efektywną komunikację i równoległość w Go,</li><li>modularną architekturę z master/worker i systemem kolejkowym,</li></ul>Neon ma być fundamentem pod kompleksowe systemy obliczeniowe — od symulacji fizycznych po analizę dużych zbiorów danych — z pełną kontrolą nad przepływem obliczeń i zasobami klastra.',
+        description:'Neon ist eine verteilte Computing-Plattform, die für die Simulation und Verarbeitung wissenschaftlicher Daten in HPC-Umgebungen entwickelt wurde.',
+        longdescription:
+          'Neon ist eine verteilte Computing-Plattform, die für die Simulation und Verarbeitung wissenschaftlicher Daten in HPC-Umgebungen entwickelt wurde. Das System ermöglicht die Definition von Rechenaufgaben, die automatische Verteilung der Last in einem Cluster, die Überwachung von Ressourcen und die Aggregation von Ergebnissen in Echtzeit. Das Projekt konzentriert sich auf:<ul><li>Skalierbarkeit und Fehlertoleranz,</li><li>effektive Kommunikation und Parallelität in Go,</li><li>eine modulare Architektur mit Master/Worker und einem Warteschlangensystem.</li></ul>Neon soll das Fundament für umfassende Rechensysteme sein — von physikalischen Simulationen bis hin zur Analyse großer Datensätze — mit voller Kontrolle über den Rechenfluss und die Cluster-Ressourcen.',
         github: 'https://github.com/mslotwinski-dev/Neon',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Neon/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
-        main: false, // true
-      },
-
-      {
-        title: 'Pixel',
-        description:
-          'Pixel is a fast and lightweight image editor written in Rust, available with both a GUI and CLI. It provides powerful yet simple tools for image processing – from basic operations (resize, crop, rotate) to built-in Instagram-style filters.',
-        github: 'https://github.com/mslotwinski-dev/Pixel',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Pixel/refs/heads/main/public/readme_icon.png',
-        langs: ['Rust'],
-        main: true,
-      },
-
-      {
-        title: 'PandaDB',
-        description:
-          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
-        github: 'https://github.com/mslotwinski-dev/PandaDB',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/PandaDB/refs/heads/main/public/readme_icon.png',
-        langs: ['Go'],
+        main: false,
       },
       {
         title: 'Shield',
         description:
-          'Your personal project manager, designed to organize, track, and display your coding projects with ease.',
+          'Dein persönlicher Projektmanager, entwickelt, um deine Programmierprojekte einfach zu organisieren, zu verfolgen und anzuzeigen.',
         github: 'https://github.com/mslotwinski-dev/Shield',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Shield/refs/heads/main/public/readme_icon.png',
         langs: ['Go'],
       },
     ],
   },
-
   {
     title: 'Entropy Logs',
     icon: 'dna',
     description:
-      'Projekty stworzone w trakcie studiów, odzwierciedlające wiedzę teoretyczną i jej praktyczne zastosowanie.',
+      'Projekte, die im Kontext von Wissenschaft und Ingenieurwesen erstellt wurden und theoretisches Wissen sowie dessen praktische Anwendung widerspiegeln.',
     projects: [
       {
-        title: 'Engineering Physics',
-        description:
-          'This repository contains code from computer laboratory courses during my studies. It likely includes various assignments and experiments related to engineering physics.',
-        github: 'https://github.com/mslotwinski-dev/EngineeringPhysics',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/EngineeringPhysics/refs/heads/main/public/readme_icon.png',
-        langs: ['C', 'C++', 'Java'],
+        title: 'Arctic',
+        description: 'Ein minimales, modulares 32-Bit-Betriebssystem, geschrieben in C und NASM, das auf die x86-Architektur abzielt.', 
+        github: 'https://github.com/mslotwinski-dev/Arctic',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Arctic/refs/heads/main/public/icon.png',
+        langs: ['C'], 
       },
       {
         title: 'NumC',
         description:
-          'NumC to lekki, modularny silnik obliczeniowy przeznaczony do zastosowań inżynierskich, statystycznych i naukowych. Biblioteka dostarcza zoptymalizowane implementacje metod numerycznych, narzędzia do analizy danych oraz podstawowe mechanizmy wizualizacji wyników. Projekt stawia na:<ul><li>wysoką wydajność i kontrolę pamięci,</li><li>stabilność numeryczną i przewidywalność obliczeń,</li><li>czyste, minimalistyczne API w C++,</li></ul>NumC ma być fundamentem pod większe systemy obliczeniowe — od symulacji fizycznych po analizę danych eksperymentalnych — bez ukrytej magii i bez zbędnej warstwy abstrakcji.',
+          'Numc ist eine leichte, modulare Berechnungs-Engine, die für technische, statistische und wissenschaftliche Anwendungen entwickelt wurde.',
+        longdescription:
+          'NumC ist eine leichte, modulare Berechnungs-Engine, die für technische, statistische und wissenschaftliche Anwendungen entwickelt wurde. Die Bibliothek bietet optimierte Implementierungen numerischer Methoden, Datenanalysewerkzeuge und grundlegende Mechanismen zur Ergebnisvisualisierung. Das Projekt konzentriert sich auf:<ul><li>hohe Leistung und Speicherkontrolle,</li><li>numerische Stabilität und Vorhersehbarkeit von Berechnungen,</li><li>eine saubere, minimalistische API in C++.</li></ul>NumC soll das Fundament für größere Rechensysteme sein — von physikalischen Simulationen bis hin zur Analyse experimenteller Daten — ohne versteckte Magie und unnötige Abstraktionsschichten.',
         github: 'https://github.com/mslotwinski-dev/NumC',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NumC/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
         main: true,
         tags: ['Data Engineering', 'Data Visualization', 'Numerical Methods'],
       },
-
       {
         title: 'Echo',
-        description: `Echo to modularny framework do przetwarzania i analizy sygnałów cyfrowych. Umożliwia wczytywanie danych z różnych źródeł, filtrowanie, transformacje czasowo-częstotliwościowe oraz wizualizację przebiegów w czasie rzeczywistym lub offline. Projekt stawia na:
+        description: 'Echo ist ein modulares Framework zur Verarbeitung und Analyse digitaler Signale. Es ermöglicht das Laden von Daten aus verschiedenen Quellen, Filterung, Zeit-Frequenz-Transformationen und die Visualisierung von Wellenformen in Echtzeit oder offline.',
+        longdescription: `Echo ist ein modulares Framework zur Verarbeitung und Analyse digitaler Signale. Es ermöglicht das Laden von Daten aus verschiedenen Quellen, Filterung, Zeit-Frequenz-Transformationen und die Visualisierung von Wellenformen in Echtzeit oder offline. Das Projekt konzentriert sich auf:
 <ul>
-  <li>wydajność i elastyczność modułów,</li>
-  <li>przejrzysty, minimalistyczny interfejs,</li>
-  <li>przydatność w edukacji i badaniach naukowych.</li>
+  <li>Leistung und Modulflexibilität,</li>
+  <li>eine klare, minimalistische Schnittstelle,</li>
+  <li>Nützlichkeit in Bildung und wissenschaftlicher Forschung.</li>
 </ul>
-Echo jest zaprojektowane jako baza do eksperymentów DSP i tworzenia zaawansowanych łańcuchów przetwarzania sygnałów — od analizy audio po projekty telekomunikacyjne.`,
+Echo ist als Basis für DSP-Experimente und die Erstellung fortschrittlicher Signalverarbeitungsketten konzipiert — von der Audioanalyse bis hin zu Telekommunikationsprojekten.`,
         github: 'https://github.com/mslotwinski-dev/Echo',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Echo/refs/heads/main/public/readme_icon.png',
         langs: ['C++'],
-        main: false, // true
+        main: false,
         tags: ['Signal Processing', 'Audio Analysis', 'Electronics'],
       },
-
-      {
-        title: 'PoCHATo',
-        description: `poCHATo is a comprehensive computer networks project designed to provide secure, real-time messaging between users. Built entirely in Go, it features a robust client-server architecture utilizing a RESTful API for standard operations and WebSockets (TCP/IP) for low-latency, bi-directional communication.
-<ul>
-  <li>End-to-End Encryption (E2EE)</li>
-  <li>Friend System.</li>
-  <li>Real-Time WebSockets</li>
-</ul>
-Security and privacy are at the core of poCHATo. Direct communication is restricted to mutually accepted friends, and every single message is secured using End-to-End Encryption (E2EE)..`,
-        github: 'https://github.com/mslotwinski-dev/PoCHATo',
-        icon: 'https://minecraft.wiki/images/Potato_JE3_BE2.png',
-        langs: ['Go'],
-        main: true, // true
-        tags: ['Computer Networks', 'Security'],
-      },
-
       {
         title: 'Resist',
-        description: `Resist to lekki język DSL, napisany w Rust, służący do symulacji obwodów elektrycznych. Umożliwia deklaratywne definiowanie obwodów, modelowanie elementów (rezystory, kondensatory, cewki, źródła, diody, tranzystory) oraz wykonywanie symulacji DC, AC. Projekt stawia na:
+        description: `Resist ist eine leichte DSL-Sprache, geschrieben in Rust, die zur Simulation elektrischer Schaltkreise verwendet wird. Sie ermöglicht die deklarative Schaltkreisdefinition, die Modellierung von Elementen (Widerstände, Kondensatoren, Spulen, Quellen, Dioden, Transistoren) und die Durchführung von DC- und AC-Simulationen.`,
+        longdescription: `Resist ist eine leichte DSL-Sprache, geschrieben in Rust, die zur Simulation elektrischer Schaltkreise verwendet wird. Sie ermöglicht die deklarative Schaltkreisdefinition, die Modellierung von Elementen (Widerstände, Kondensatoren, Spulen, Quellen, Dioden, Transistoren) und die Durchführung von DC- und AC-Simulationen. Das Projekt konzentriert sich auf:
 <ul>
-  <li>integrację z wydajnym solverem numerycznym w Rust,</li>
-  <li>prostotę deklaratywnego opisu obwodów,</li>
-  <li>przydatność edukacyjną w nauce symulacji i algebry numerycznej.</li>
+  <li>Integration mit einem effizienten numerischen Solver in Rust,</li>
+  <li>die Einfachheit der deklarativen Schaltkreisbeschreibung,</li>
+  <li>pädagogischen Nutzen beim Erlernen von Simulation und numerischer Algebra.</li>
 </ul>
-Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnych narzędzi analitycznych w Rust.`,
+Resist ist das Fundament für Experimente in der Schaltungssimulation und die Entwicklung benutzerdefinierter Analysetools in Rust.`,
         github: 'https://github.com/mslotwinski-dev/Resist',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Resist/refs/heads/main/public/readme_icon.png',
         langs: ['Rust'],
-        main: false, // true,
+        main: false,
         tags: ['Circuit Simulation', 'Compiler Design', 'Electronics'],
       },
-
-      {
-        title: 'Flow',
-        description: `Flow is an advanced Bash shell daemon that automates the real-time synchronization of local directories with Google Drive. It eliminates the need for manual backups by silently watching your filesystem for changes and pushing them to the cloud the moment they happen, keeping your data safe without interrupting your workflow.`,
-        github: 'https://github.com/mslotwinski-dev/Flow',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Flow/refs/heads/main/public/readme_icon.png',
-        langs: ['Shell'],
-        main: true,
-        tags: ['File Synchronization', 'Cloud Storage', 'Automation'],
-      },
-
       {
         title: 'Au6 Cluster Optimization',
         description:
-          'Goal: Find the most stable geometry of an Au6 cluster adsorbed on a hexagonal boron nitride (h-BN) surface using a Genetic Algorithm (GA) in the ASE environment.',
+          'Ziel: Finden der stabilsten Geometrie eines auf einer hexagonalen Bornitrid (h-BN)-Oberfläche adsorbierten Au6-Clusters unter Verwendung eines Genetischen Algorithmus (GA) in der ASE-Umgebung.',
         github: 'https://github.com/quiklii/gold-hbn-optimization',
-        icon: 'https://raw.githubusercontent.com/quiklii/gold-hbn-optimization/refs/heads/main/public/readme_icon.png',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/gold-hbn-optimization/refs/heads/master/public/readme_icon.png',
         langs: ['Python'],
         simulation: true,
         screenshots: ['hbn-1.png'],
       },
-
       {
         title: 'Ionic conductivity of titanium dopped Bi₂O₃',
         description:
-          'Symulacja dynamiki molekularnej dla tlenku bizmutu Bi₂O₃ : TiO₂ z użyciem potencjału uczenia maszynowego MACE i środowiska ASE.',
+          'Molekulardynamiksimulation für Wismutoxid Bi₂O₃ : TiO₂ unter Verwendung des MACE-Maschinellen-Lern-Potenzials und der ASE-Umgebung.',
         github: 'https://github.com/mslotwinski-dev/Bi2O3-conductivity',
-        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Bi2O3-conductivity/refs/heads/main/public/readme_icon.png',
+        icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Bi2O3-conductivity/refs/heads/main/img/material.png',
         langs: ['Python'],
         simulation: true,
         screenshots: ['bi2o3-1.png'],
       },
-
       {
         title: 'Argon molecular dynamics',
         description:
-          'Molecular dynamics of noble gas crystals made from scratch.',
+          'Molekulardynamik von Edelgaskristallen, von Grund auf neu erstellt.',
         github: 'https://github.com/mslotwinski-dev/Argon',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Argon/refs/heads/main/public/readme_icon.png',
         langs: ['c++'],
@@ -487,8 +416,8 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
       {
         title: 'Nuclear Bomb',
         description:
-          'Physical simulation of a nuclear bomb implemented in Java, providing a model to simulate and analyze its behavior. The model demonstrates that low uranium density leads to a steady increase in energy, while higher density results in rapid energy growth and an explosive regime.',
-        github: 'https://github.com/mslotwinski-dev/eDirac',
+          'In Java implementierte physikalische Simulation einer Atombombe, die ein Modell zur Simulation und Analyse ihres Verhaltens liefert. Das Modell zeigt, dass eine geringe Urandichte zu einem stetigen Energieanstieg führt, während eine höhere Dichte zu einem schnellen Energiewachstum und einem explosiven Regime führt.',
+        github: 'https://github.com/mslotwinski-dev/NuclearBomb',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/NuclearBomb/refs/heads/main/public/readme_icon.png',
         langs: ['Java'],
         simulation: true,
@@ -497,18 +426,17 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
       {
         title: 'Quantum Waves',
         description:
-          'Simple simulation of quantum waves by solving the Schrödinger equation in custom potentials. The project allows users to visualize and explore the behavior of quantum waves under different potential configurations, providing insights into fundamental principles of quantum mechanics.',
+          'Einfache Simulation von Quantenwellen durch Lösen der Schrödinger-Gleichung in benutzerdefinierten Potenzialen. Das Projekt ermöglicht es Benutzern, das Verhalten von Quantenwellen unter verschiedenen Potenzialkonfigurationen zu visualisieren und zu untersuchen und Einblicke in grundlegende Prinzipien der Quantenmechanik zu geben.',
         github: 'https://github.com/mslotwinski-dev/QuantumWave',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/QuantumWave/refs/heads/main/public/readme_icon.png',
         langs: ['Python'],
         simulation: true,
         screenshots: ['quantum-waves-1.png'],
       },
-
       {
         title: 'Laplace',
         description:
-          'Simple solar system simulation, showing gravitational interactions between celestial bodies, allowing users to visualize the dynamics of a solar system. ',
+          'Einfache Sonnensystemsimulation, die gravitative Wechselwirkungen zwischen Himmelskörpern zeigt und es Benutzern ermöglicht, die Dynamik eines Sonnensystems zu visualisieren.',
         github: 'https://github.com/mslotwinski-dev/Laplace',
         icon: 'https://raw.githubusercontent.com/mslotwinski-dev/Laplace/refs/heads/main/public/readme_icon.png',
         langs: ['Python'],
@@ -517,6 +445,6 @@ Resist jest fundamentem pod eksperymenty w symulacji obwodów i rozwój własnyc
       },
     ],
   },
-]
+] as ProjectGroup[]
 
 export default projectdata

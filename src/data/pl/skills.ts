@@ -44,8 +44,8 @@ export default {
     list: [
       'Łatwość w <b>przyswajaniu wiedzy</b>. Błyskawiczne <b>uczenie się</b>, <b>elastyczność</b> i <b>adaptacja</b> do zmian.',
       'Umiejętność <b>zarządzania projektami</b> i <b>pracą zespołową</b>. Doświadczenie w roli lidera i członka zespołu.',
-      'Dobre <b>umiejętności komunikacyjne</b> i organizacyjne. Otwartość i <b>doświadczenie w kontaktach</b> z ludźmi.',
-      'Doświadczenie w komunikacji w języku <b>angielskim</b> C1 - umiejętność czytania dokumentacji technicznej i obsługi klienta.',
+      'Dobre <b>umiejętności komunikacyjne</b> i organizacyjne. <b>Otwartość w kontaktach</b> z ludźmi.',
+      'Doświadczenie w specjalistycznej komunikacji w języku <b>angielskim</b> potwierdzona udziałem w konferencjach naukowych.',
       'Umiejętność <b>logicznego, kreatywnego i krytycznego myślenia</b>.',
     ],
   },

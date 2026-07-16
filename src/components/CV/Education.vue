@@ -42,7 +42,7 @@
               - {{ conf.Subname }}</span
             >
             —
-            <span>{{ conf.Place }}, {{ conf.Year }}</span>
+            <span>{{ conf.Place }} - {{ conf.Year }}</span>
           </li>
         </ul>
       </article>
@@ -75,6 +75,29 @@ import educationEn, {
   conferences as conferencesEn,
 } from '@/data/en/education'
 
+import educationDe, {
+  courses as coursesDe,
+  publications as publicationsDe,
+  conferences as conferencesDe,
+} from '@/data/de/education'
+
+import educationEs, {
+  courses as coursesEs,
+  publications as publicationsEs,
+  conferences as conferencesEs,
+} from '@/data/es/education'
+
+import educationRu, {
+  courses as coursesRu,
+  publications as publicationsRu,
+  conferences as conferencesRu,
+} from '@/data/ru/education'
+
+import educationJp, {
+  courses as coursesJp,
+  publications as publicationsJp,
+  conferences as conferencesJp,
+} from '@/data/jp/education'
 // Definiujemy interfejsy dla edukacji
 interface EduDetail {
   Spec: string
@@ -113,21 +136,37 @@ interface Conference {
 const educationMap: Record<string, Education[]> = {
   pl: educationPl,
   en: educationEn,
+  de: educationDe,
+  es: educationEs,
+  ru: educationRu,
+  jp: educationJp,
 }
 
 const coursesMap: Record<string, Course[]> = {
   pl: coursesPl,
   en: coursesEn,
+  de: coursesDe,
+  es: coursesEs,
+  ru: coursesRu,
+  jp: coursesJp,
 }
 
 const publicationsMap: Record<string, Publication[]> = {
   pl: publicationsPl,
   en: publicationsEn,
+  de: publicationsDe,
+  es: publicationsEs,
+  ru: publicationsRu,
+  jp: publicationsJp,
 }
 
 const conferencesMap: Record<string, Conference[]> = {
   pl: conferencesPl,
   en: conferencesEn,
+  de: conferencesDe,
+  es: conferencesEs,
+  ru: conferencesRu,
+  jp: conferencesJp,
 }
 
 export default defineComponent({
@@ -234,12 +273,18 @@ export default defineComponent({
   max-width: 900px;
   margin: 20px auto 0;
 
+  strong {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
   .extra-item {
     margin-bottom: 25px;
 
     h3 {
       font-size: 18px;
       margin-bottom: 10px;
+      text-transform: uppercase;
     }
   }
 

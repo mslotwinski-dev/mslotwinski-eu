@@ -1,42 +1,52 @@
+import { ScienceProject } from '../types/interfaces'
+
 export default [
   {
-    name: 'Właściwości optyczne szkieł domieszkowanych europem',
+    name: 'ガラス材料の物理学と技術',
     description:
-      'Metale ziem rzadkich to grupa 17 pierwiastków chemicznych o unikalnych właściwościach magnetycznych, luminescencyjnych i katalitycznych. Są one kluczowe dla rozwoju współczesnej technologii, w szczególności takich jak produkcja magnesów trwałych, katalizatorów samochodowych, baterii litowo-jonowych oraz w przemyśle elektronicznym i energetycznym. W ramach pracy inżynierskiej zajmowałem się syntezą oraz charakteryzacją właściwości optycznych wybranych związków tych metali, a następnie własnoręczną konstrukcją lampy LED.',
+      'シリコンとリンの酸化物に基づくガラス材料は、現代のオプトエレクトロニクスの基盤を形成しています。それらのユニークなアモルファス構造は、物理化学的特性の広範な変更を可能にします。科学的活動の一環として、私は革新的なケイ酸塩・リン酸塩ガラスを合成し、その電気的および光学的特性を包括的に研究しています。これは、新世代の光ファイバーやセンサーを設計するために不可欠です。',
     time: '2025+',
-    label: {
-      text: 'Praca inżynierska',
-      color: '#00647d',
-    },
   },
   {
-    name: 'Akceleratory i aparatura jądrowa',
+    name: 'ガラスセラミック複合材料におけるイオン伝導性',
     description:
-      'Akceleratory to urządzenia służące do przyspieszania cząstek i emisji promieniowania. Znajdują one wiele zastosowań w przemyśle i badaniach naukowych, gdzie służą m.in. do implantacji jonów czy wykrywania defektów w materiałach. Wykorzystuje się je także w radioterapii nowotworów. Konstrukcja aparatury jądrowej wiąże się zarówno z wykorzystaniem elektroniki przemysłowej, jak i z poznaniem takich technik jak pompy jonowe, piece próżniowe i systemy chłodzenia hydraulicznego. W ramach praktyk poznałem budowę i możliwości akceleratorów oraz tworzyłem oprogramowanie pozwalające je kontrolować. ',
+      '高いイオン伝導性（Li+、Na+、K+、O2-）を示すガラスセラミック複合材料は、エネルギー貯蔵と変換の分野における革命の重要な要素です。これらは、次世代の全固体電池や燃料電池における液体コンポーネントの安全な代替品となります。私の研究は、それらの微細構造の分析とインピーダンス測定を通じて、これらの構造におけるイオン輸送の最適化に焦点を当てています。',
+    time: '2025+',
+  },
+  {
+    name: 'イオンプロセスのモデリング',
+    description:
+      '人工知能の適用は、現代の材料工学に革命をもたらしています。ニューラルネットワークと機械学習（MLポテンシャル）を使用することで、ガラス材料における分子動力学とイオン輸送を最小限の計算コストで量子精度でシミュレートすることができます。このプロジェクトには、ガラスの構造的および拡散特性を予測するための機械学習アルゴリズムの実装が含まれます。',
+    time: '2026+',
+  },
+  {
+    name: '加速器と原子核装置',
+    description:
+      '加速器は、粒子を加速し、放射線を放出するために使用されるデバイスです。これらは産業や科学研究において多くの用途があり、イオン注入や材料の欠陥検出などに使用されます。また、がんの放射線治療にも使用されます。原子核装置の構築には、産業用電子機器の使用と、イオンポンプ、真空炉、油圧冷却システムなどの技術の習得の両方が含まれます。インターンシップ中に、加速器の構造と機能について学び、それらを制御するソフトウェアを作成しました。',
     time: '2025',
-    // label: {
-    // text: '',
-    // color: '',
-    // },
+    label: {
+      text: 'インターンシップ / 実習',
+      color: '#00647D',
+    },
   },
   {
-    name: 'Przewodniki superjonowe',
+    name: '超イオン伝導体',
     description:
-      'Przewodniki superjonowe to materiały, które wykazują wysokie przewodnictwo jonowe, co czyni je obiecującymi dla zastosowań w bateriach i ogniwach paliwowych. W ramach mini-praktyk wakacyjnych w Centrum Zaawansowanych Materiałów i Technologii CEZAMAT, wyprodukowaliśmy próbki takich materiałów, a następnie zajęliśmy się badaniem ich właściwości takimi technikami jak np. dyfrakcja rentgenowska (XRD).',
-    time: 'Wakacje 2024',
+      '超イオン伝導体は高いイオン伝導性を示す材料であり、電池や燃料電池への応用に有望です。先端材料・技術センターCEZAMATでの夏期ミニインターンシップ中に、私たちはそのような材料のサンプルを作成し、X線回折（XRD）などの技術を使用してその特性を研究しました。',
+    time: '2024年夏',
     label: {
-      text: 'Projekt wakacyjny',
+      text: '夏期プロジェクト',
       color: '',
     },
   },
   {
-    name: 'Szkło bizmutowe',
+    name: 'ビスマスガラス',
     description:
-      'W ramach mini-praktyk wakacyjnych na Wydziale Fizyki Politechniki Warszawskiej, zajmowaliśmy się syntezą szkła bizmutowego oraz poznaniem właściwości materiałów o strukturze krystalicznej i amorficznej. Następnie dokonaliśmy badań jego właściwości elektrycznych, termicznych czy strukturalnych ze szczególnym naciskiem na przejścia fazowe, którym za pośrednictwem temperatury ten materiał ulega np. krystalizację.',
-    time: 'Wakacje 2024',
+      'ワルシャワ工科大学物理学部での夏期ミニインターンシップ中に、ビスマスガラスの合成と、結晶構造およびアモルファス構造を持つ材料の特性について学びました。その後、温度によってこの材料が受ける相転移（例えば結晶化）に特に重点を置いて、その電気的、熱的、構造的特性を調べました。',
+    time: '2024年夏',
     label: {
-      text: 'Projekt wakacyjny',
+      text: '夏期プロジェクト',
       color: '',
     },
   },
-]
+] as ScienceProject[]

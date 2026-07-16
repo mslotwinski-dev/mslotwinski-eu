@@ -1,23 +1,33 @@
+import { ScienceProject } from '../types/interfaces' // dostosuj ścieżkę
+
 export default [
   {
-    name: 'Właściwości optyczne szkieł domieszkowanych europem',
+    name: 'Fizyka i technologia materiałów szklistych',
     description:
-      'Metale ziem rzadkich to grupa 17 pierwiastków chemicznych o unikalnych właściwościach magnetycznych, luminescencyjnych i katalitycznych. Są one kluczowe dla rozwoju współczesnej technologii, w szczególności takich jak produkcja magnesów trwałych, katalizatorów samochodowych, baterii litowo-jonowych oraz w przemyśle elektronicznym i energetycznym. W ramach pracy inżynierskiej zajmowałem się syntezą oraz charakteryzacją właściwości optycznych wybranych związków tych metali, a następnie własnoręczną konstrukcją lampy LED.',
+      'Materiały szkliste oparte o tlenki krzemu i fosforu stanowią fundament współczesnej optoelektroniki. Ich unikalna, bezpostaciowa struktura pozwala na szeroką modyfikację właściwości fizykochemicznych. W ramach działalności naukowej zajmuję się syntezą nowatorskich szkieł krzemianowo-fosforanowych oraz kompleksowym badaniem ich właściwości elektrycznych i optycznych, co ma kluczowe znaczenie dla projektowania nowej generacji światłowodów i czujników.',
     time: '2025+',
-    label: {
-      text: 'Praca inżynierska',
-      color: '#00647d',
-    },
+  },
+  {
+    name: 'Przewodnictwo jonowe w kompozytach szklisto-ceramicznych',
+    description:
+      'Kompozyty szklisto-ceramiczne wykazujące wysokie przewodnictwo jonowe (Li+, Na+, K+, O2-) są kluczowym elementem rewolucji w obszarze magazynowania i konwersji energii. Stanowią one bezpieczną alternatywę dla płynnych komponentów w bateriach nowej generacji (solid-state) oraz ogniwach paliwowych. Moje badania koncentrują się na optymalizacji transportu jonów w tych strukturach poprzez analizę ich mikrostruktury oraz pomiary impedancyjne.',
+    time: '2025+',
+  },
+  {
+    name: 'Modelowanie procesów jonowych',
+    description:
+      'Zastosowanie sztucznej inteligencji rewolucjonizuje współczesną inżynierię materiałową. Wykorzystanie sieci neuronowych i uczenia maszynowego (potencjałów ML) pozwala na symulowanie dynamiki molekularnej oraz transportu jonów w materiałach szklistych z dokładnością kwantową przy minimalnym koszcie obliczeniowym. Projekt obejmuje implementację algorytmów uczenia maszynowego do predykcji właściwości strukturalnych i dyfuzyjnych szkieł.',
+    time: '2026+',
   },
   {
     name: 'Akceleratory i aparatura jądrowa',
     description:
-      'Akceleratory to urządzenia służące do przyspieszania cząstek i emisji promieniowania. Znajdują one wiele zastosowań w przemyśle i badaniach naukowych, gdzie służą m.in. do implantacji jonów czy wykrywania defektów w materiałach. Wykorzystuje się je także w radioterapii nowotworów. Konstrukcja aparatury jądrowej wiąże się zarówno z wykorzystaniem elektroniki przemysłowej, jak i z poznaniem takich technik jak pompy jonowe, piece próżniowe i systemy chłodzenia hydraulicznego. W ramach praktyk poznałem budowę i możliwości akceleratorów oraz tworzyłem oprogramowanie pozwalające je kontrolować. ',
+      'Akceleratory to urządzenia służące do przyspieszania cząstek i emisji promieniowania. Znajdują one wiele zastosowań w przemyśle i badaniach naukowych, gdzie służą m.in. do implantacji jonów czy wykrywania defektów w materiałach. Wykorzystuje się je także w radioterapii nowotworów. Konstrukcja aparatury jądrowej wiąże się zarówno z wykorzystaniem elektroniki przemysłowej, jak i z poznaniem takich technik jak pompy jonowe, piece próżniowe i systemy chłodzenia hydraulicznego. W ramach praktyk poznałem budowę i możliwości akceleratorów oraz tworzyłem oprogramowanie pozwalające je kontrolować.',
     time: '2025',
-    // label: {
-    // text: '',
-    // color: '',
-    // },
+    label: {
+      text: 'Staż / Praktyki',
+      color: '#00647D',
+    },
   },
   {
     name: 'Przewodniki superjonowe',
@@ -39,4 +49,4 @@ export default [
       color: '',
     },
   },
-]
+] as ScienceProject[]

@@ -21,6 +21,10 @@ import { defineComponent } from 'vue'
 // Importujemy dane
 import { works as worksPl } from '@/data/pl/works'
 import { works as worksEn } from '@/data/en/works'
+import { works as worksDe } from '@/data/de/works'
+import { works as worksEs } from '@/data/es/works'
+import { works as worksRu } from '@/data/ru/works'
+import { works as worksJp } from '@/data/jp/works'
 
 // Jeśli masz ten interfejs w osobnym pliku, możesz go zaimportować:
 // import { Work } from '@/data/types/interfaces'
@@ -36,6 +40,10 @@ interface Work {
 const worksMap: Record<string, Work[]> = {
   pl: worksPl,
   en: worksEn,
+  de: worksDe,
+  es: worksEs,
+  ru: worksRu,
+  jp: worksJp,
   // fr: worksFr, <- tutaj w przyszłości łatwo dodasz kolejne
 }
 

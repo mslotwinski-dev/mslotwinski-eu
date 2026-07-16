@@ -35,6 +35,10 @@ import { defineComponent } from 'vue'
 // Importujemy dane z odpowiednich folderów
 import languagesPl from '@/data/pl/langs'
 import languagesEn from '@/data/en/langs'
+import languagesDe from '@/data/de/langs'
+import languagesEs from '@/data/es/langs'
+import languagesRu from '@/data/ru/langs'
+import languagesJp from '@/data/jp/langs'
 
 // Interfejs dla danych językowych (dopasuj do tego, co masz w plikach)
 interface LanguageItem {
@@ -49,6 +53,10 @@ interface LanguageItem {
 const languagesMap: Record<string, LanguageItem[]> = {
   pl: languagesPl,
   en: languagesEn,
+  de: languagesDe,
+  es: languagesEs,
+  ru: languagesRu,
+  jp: languagesJp,
 }
 
 export default defineComponent({

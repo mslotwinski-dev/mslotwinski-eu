@@ -54,10 +54,18 @@ import Languages from '@/components/Details/Languages.vue'
 // 1. Importujemy projekty
 import projectsPl from '@/data/pl/projects'
 import projectsEn from '@/data/en/projects'
+import projectsDe from '@/data/de/projects'
+import projectsEs from '@/data/es/projects'
+import projectsRu from '@/data/ru/projects'
+import projectsJp from '@/data/jp/projects'
 
 // 2. Importujemy kolory (zwróć uwagę na aliasy as, jeśli importujesz konkretną stałą)
 import { colors as colorsPl } from '@/data/pl/colors'
 import { colors as colorsEn } from '@/data/en/colors'
+import { colors as colorsDe } from '@/data/de/colors'
+import { colors as colorsEs } from '@/data/es/colors'
+import { colors as colorsRu } from '@/data/ru/colors'
+import { colors as colorsJp } from '@/data/jp/colors'
 
 // Interfejsy (skopiowane z naszego pierwszego rozwiązania dla projektów)
 interface Project {
@@ -83,12 +91,20 @@ interface ProjectGroup {
 const projectsMap: Record<string, ProjectGroup[]> = {
   pl: projectsPl,
   en: projectsEn,
+  de: projectsDe,
+  es: projectsEs,
+  ru: projectsRu,
+  jp: projectsJp,
 }
 
 // Zakładam, że kolory to prosty obiekt typu { "Vue": "#42b883", "React": "#61dafb" }
 const colorsMap: Record<string, Record<string, string>> = {
   pl: colorsPl,
   en: colorsEn,
+  de: colorsDe,
+  es: colorsEs,
+  ru: colorsRu,
+  jp: colorsJp,
 }
 
 export default defineComponent({

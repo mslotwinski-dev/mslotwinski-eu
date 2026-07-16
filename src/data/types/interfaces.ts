@@ -25,6 +25,39 @@ export interface Language {
   Certificate?: string
 }
 
+export interface Project {
+  title: string
+  description: string
+  longdescription?: string
+  github: string
+  icon: string
+  langs: string[]
+  main?: boolean
+  simulation?: boolean
+  screenshots?: string[]
+  tags?: string[]
+}
+
+export interface ScienceLabel {
+  text: string;
+  color: string;
+}
+
+export interface ScienceProject {
+  name: string;
+  description: string;
+  time: string;
+  label?: ScienceLabel;
+}
+
+export interface ProjectGroup {
+  title: string
+  icon: string
+  description: string
+  projects: Project[]
+}
+
+
 //
 
 export interface University {

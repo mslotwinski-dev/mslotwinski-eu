@@ -21,14 +21,47 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import sp from '@/data/pl/science'
+
+// Importujemy wszystkie języki (dodałem brakujący angielski)
+import sciencePl from '@/data/pl/science'
+import scienceEn from '@/data/en/science'
+import scienceDe from '@/data/de/science'
+import scienceEs from '@/data/es/science'
+import scienceRu from '@/data/ru/science'
+import scienceJp from '@/data/jp/science'
+
+// Definiujemy interfejsy dla bezpieczeństwa typów
+interface ScienceLabel {
+  text: string;
+  color: string;
+}
+
+interface ScienceProject {
+  name: string;
+  description: string;
+  time: string;
+  label?: ScienceLabel;
+}
+
+// Tworzymy mapę języków
+const scienceMap: Record<string, ScienceProject[]> = {
+  pl: sciencePl,
+  en: scienceEn,
+  de: scienceDe,
+  es: scienceEs,
+  ru: scienceRu,
+  jp: scienceJp,
+}
 
 export default defineComponent({
-  data() {
-    return {
-      sp,
+  computed: {
+    // Nazwałem to 'sp', żeby pasowało do tego, czego używasz w <template>
+    sp(): ScienceProject[] {
+      const locale = (this as any).$i18n.locale as string
+
+      return scienceMap[locale] || scienceMap['en']
     }
-  },
+  }
 })
 </script>
 

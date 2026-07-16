@@ -46,7 +46,7 @@
 
         <div class="bar" />
 
-        <div class="desc" v-html="mainprojects[active].description" />
+        <div class="desc" v-html="mainprojects[active].longdescription" />
 
         <div class="bottom">
           <div class="langs">
@@ -92,27 +92,96 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import projects from '@/data/pl/projects'
-import { colors } from '@/data/pl/colors'
 import Modal from '@/components/Shared/modals/Modal.vue'
 
+// 1. Importujemy projekty ze wszystkich języków
+import projectsPl from '@/data/pl/projects'
+import projectsEn from '@/data/en/projects'
+import projectsDe from '@/data/de/projects'
+import projectsEs from '@/data/es/projects'
+import projectsRu from '@/data/ru/projects'
+import projectsJp from '@/data/jp/projects'
+
+// 2. Importujemy kolory ze wszystkich języków
+import { colors as colorsPl } from '@/data/pl/colors'
+import { colors as colorsEn } from '@/data/en/colors'
+import { colors as colorsDe } from '@/data/de/colors'
+import { colors as colorsEs } from '@/data/es/colors'
+import { colors as colorsRu } from '@/data/ru/colors'
+import { colors as colorsJp } from '@/data/jp/colors'
+
+// Interfejsy dla TypeScriptu
+interface Project {
+  title: string
+  description: string
+  longdescription?: string
+  github: string
+  icon: string
+  langs: string[]
+  main?: boolean
+  simulation?: boolean
+  screenshots?: string[]
+  tags?: string[]
+}
+
+interface ProjectGroup {
+  title: string
+  icon: string
+  description: string
+  projects: Project[]
+}
+
+// 3. Tworzymy mapy języków
+const projectsMap: Record<string, ProjectGroup[]> = {
+  pl: projectsPl,
+  en: projectsEn,
+  de: projectsDe,
+  es: projectsEs,
+  ru: projectsRu,
+  jp: projectsJp,
+}
+
+const colorsMap: Record<string, Record<string, string>> = {
+  pl: colorsPl,
+  en: colorsEn,
+  de: colorsDe,
+  es: colorsEs,
+  ru: colorsRu,
+  jp: colorsJp,
+}
+
 export default defineComponent({
-  data() {
-    return {
-      active: 0,
-      projects,
-      colors,
-      mainprojects: projects
-        .map((c) => c.projects)
-        .reverse()
-        .flat()
-        .filter((p) => p.main),
-    }
-  },
   components: {
     Modal,
   },
+  // 4. data() przechowuje tylko stan lokalny (aktywny modal)
+  data() {
+    return {
+      active: 0,
+    }
+  },
+  computed: {
+    // 5. Pobieramy projekty w zależności od języka
+    projects(): ProjectGroup[] {
+      const locale = (this as any).$i18n.locale as string
+      return projectsMap[locale] || projectsMap['en']
+    },
+    // 6. Pobieramy kolory w zależności od języka
+    colors(): Record<string, string> {
+      const locale = (this as any).$i18n.locale as string
+      return colorsMap[locale] || colorsMap['en']
+    },
+    // 7. mainprojects korzysta z this.projects, więc jest zawsze w dobrym języku!
+    mainprojects(): Project[] {
+      return this.projects
+        .map((c) => c.projects)
+        .reverse()
+        .flat()
+        .filter((p) => p.main)
+    },
+  },
   methods: {
+    // Twoje metody zostają bez zmian
     showModal(i: number) {
       this.active = i
       const modal = this.$refs.modal as InstanceType<typeof Modal>

@@ -16,12 +16,15 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-// Importujemy dane z obu folderów
+// Importujemy dane ze wszystkich folderów
 import achievementsPl from '@/data/pl/achievements'
 import achievementsEn from '@/data/en/achievements'
+import achievementsDe from '@/data/de/achievements'
+import achievementsEs from '@/data/es/achievements'
+import achievementsRu from '@/data/ru/achievements'
+import achievementsJp from '@/data/jp/achievements'
 
-// Definiujemy szybki interfejs, żeby TypeScript był zadowolony
-// (Jeśli masz go w osobnym pliku, możesz go po prostu zaimportować)
+// Definiujemy interfejs dla TypeScriptu
 interface Achievement {
   text: string
   year: string | number
@@ -31,17 +34,20 @@ interface Achievement {
 const achievementsMap: Record<string, Achievement[]> = {
   pl: achievementsPl,
   en: achievementsEn,
-  // Jeśli kiedyś dodasz nowy folder, np. de/achievements, dopisujesz go tylko tutaj
+  de: achievementsDe,
+  es: achievementsEs,
+  ru: achievementsRu,
+  jp: achievementsJp,
+  // Jeśli kiedyś dodasz nowy język, np. francuski ('fr'), dopisz go po prostu tutaj
 }
 
 export default defineComponent({
   computed: {
-    // Zmieniamy na właściwość obliczeniową
     achievements(): Achievement[] {
-      // Pobieramy aktualny język
-      const locale = this.$i18n.locale as string
+      // Zabezpieczamy się rzutowaniem (this as any), żeby TS nie krzyczał o braku $i18n
+      const locale = (this as any).$i18n.locale as string
 
-      // Zwracamy odpowiednią tablicę, a w razie braku języka dajemy np. angielski jako awaryjny
+      // Zwracamy odpowiednią tablicę, a w razie braku języka dajemy angielski jako awaryjny
       return achievementsMap[locale] || achievementsMap['en']
     },
   },

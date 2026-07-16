@@ -1,42 +1,52 @@
+import { ScienceProject } from '../types/interfaces'
+
 export default [
   {
-    name: 'Właściwości optyczne szkieł domieszkowanych europem',
+    name: 'Physik und Technologie glasartiger Materialien',
     description:
-      'Metale ziem rzadkich to grupa 17 pierwiastków chemicznych o unikalnych właściwościach magnetycznych, luminescencyjnych i katalitycznych. Są one kluczowe dla rozwoju współczesnej technologii, w szczególności takich jak produkcja magnesów trwałych, katalizatorów samochodowych, baterii litowo-jonowych oraz w przemyśle elektronicznym i energetycznym. W ramach pracy inżynierskiej zajmowałem się syntezą oraz charakteryzacją właściwości optycznych wybranych związków tych metali, a następnie własnoręczną konstrukcją lampy LED.',
+      'Glasartige Materialien auf Basis von Silizium- und Phosphoroxiden bilden die Grundlage der modernen Optoelektronik. Ihre einzigartige, amorphe Struktur ermöglicht eine weitreichende Modifikation der physikochemischen Eigenschaften. Im Rahmen meiner wissenschaftlichen Tätigkeit synthetisiere ich neuartige Silikat-Phosphat-Gläser und untersuche umfassend ihre elektrischen und optischen Eigenschaften, was für die Entwicklung einer neuen Generation von Lichtwellenleitern und Sensoren von entscheidender Bedeutung ist.',
     time: '2025+',
-    label: {
-      text: 'Praca inżynierska',
-      color: '#00647d',
-    },
   },
   {
-    name: 'Akceleratory i aparatura jądrowa',
+    name: 'Ionenleitfähigkeit in Glaskeramik-Verbundwerkstoffen',
     description:
-      'Akceleratory to urządzenia służące do przyspieszania cząstek i emisji promieniowania. Znajdują one wiele zastosowań w przemyśle i badaniach naukowych, gdzie służą m.in. do implantacji jonów czy wykrywania defektów w materiałach. Wykorzystuje się je także w radioterapii nowotworów. Konstrukcja aparatury jądrowej wiąże się zarówno z wykorzystaniem elektroniki przemysłowej, jak i z poznaniem takich technik jak pompy jonowe, piece próżniowe i systemy chłodzenia hydraulicznego. W ramach praktyk poznałem budowę i możliwości akceleratorów oraz tworzyłem oprogramowanie pozwalające je kontrolować. ',
+      'Glaskeramik-Verbundwerkstoffe mit hoher Ionenleitfähigkeit (Li+, Na+, K+, O2-) sind ein Schlüsselelement der Revolution im Bereich der Energiespeicherung und -umwandlung. Sie stellen eine sichere Alternative zu flüssigen Komponenten in Festkörperbatterien der nächsten Generation und Brennstoffzellen dar. Meine Forschung konzentriert sich auf die Optimierung des Ionentransports in diesen Strukturen durch die Analyse ihrer Mikrostruktur und Impedanzmessungen.',
+    time: '2025+',
+  },
+  {
+    name: 'Modellierung von Ionenprozessen',
+    description:
+      'Der Einsatz künstlicher Intelligenz revolutioniert die moderne Werkstofftechnik. Die Verwendung von neuronalen Netzen und maschinellem Lernen (ML-Potenziale) ermöglicht die Simulation der Molekulardynamik und des Ionentransports in glasartigen Materialien mit Quantengenauigkeit bei minimalen Rechenkosten. Das Projekt umfasst die Implementierung von Algorithmen für maschinelles Lernen zur Vorhersage der strukturellen und diffusiven Eigenschaften von Gläsern.',
+    time: '2026+',
+  },
+  {
+    name: 'Beschleuniger und nukleare Apparaturen',
+    description:
+      'Beschleuniger sind Geräte, die zur Beschleunigung von Teilchen und zur Emission von Strahlung verwendet werden. Sie finden viele Anwendungen in der Industrie und in der wissenschaftlichen Forschung, wo sie unter anderem zur Ionenimplantation oder zur Erkennung von Materialfehlern eingesetzt werden. Sie werden auch in der Krebstherapie eingesetzt. Die Konstruktion nuklearer Apparaturen beinhaltet sowohl den Einsatz von Industrieelektronik als auch das Erlernen von Techniken wie Ionenpumpen, Vakuumöfen und hydraulischen Kühlsystemen. Während meines Praktikums lernte ich den Aufbau und die Möglichkeiten von Beschleunigern kennen und erstellte Software zu deren Steuerung.',
     time: '2025',
-    // label: {
-    // text: '',
-    // color: '',
-    // },
+    label: {
+      text: 'Praktikum',
+      color: '#00647D',
+    },
   },
   {
-    name: 'Przewodniki superjonowe',
+    name: 'Superionenleiter',
     description:
-      'Przewodniki superjonowe to materiały, które wykazują wysokie przewodnictwo jonowe, co czyni je obiecującymi dla zastosowań w bateriach i ogniwach paliwowych. W ramach mini-praktyk wakacyjnych w Centrum Zaawansowanych Materiałów i Technologii CEZAMAT, wyprodukowaliśmy próbki takich materiałów, a następnie zajęliśmy się badaniem ich właściwości takimi technikami jak np. dyfrakcja rentgenowska (XRD).',
-    time: 'Wakacje 2024',
+      'Superionenleiter sind Materialien, die eine hohe Ionenleitfähigkeit aufweisen, was sie für Anwendungen in Batterien und Brennstoffzellen vielversprechend macht. Während eines Sommer-Minipraktikums am CEZAMAT Zentrum für fortschrittliche Materialien und Technologien stellten wir Proben solcher Materialien her und untersuchten dann ihre Eigenschaften mit Techniken wie der Röntgenbeugung (XRD).',
+    time: 'Sommer 2024',
     label: {
-      text: 'Projekt wakacyjny',
+      text: 'Sommerprojekt',
       color: '',
     },
   },
   {
-    name: 'Szkło bizmutowe',
+    name: 'Wismutglas',
     description:
-      'W ramach mini-praktyk wakacyjnych na Wydziale Fizyki Politechniki Warszawskiej, zajmowaliśmy się syntezą szkła bizmutowego oraz poznaniem właściwości materiałów o strukturze krystalicznej i amorficznej. Następnie dokonaliśmy badań jego właściwości elektrycznych, termicznych czy strukturalnych ze szczególnym naciskiem na przejścia fazowe, którym za pośrednictwem temperatury ten materiał ulega np. krystalizację.',
-    time: 'Wakacje 2024',
+      'Während eines Sommer-Minipraktikums an der Fakultät für Physik der Technischen Universität Warschau befassten wir uns mit der Synthese von Wismutglas und dem Kennenlernen der Eigenschaften von Materialien mit kristalliner und amorpher Struktur. Anschließend untersuchten wir seine elektrischen, thermischen und strukturellen Eigenschaften mit besonderem Schwerpunkt auf Phasenübergängen, die dieses Material temperaturabhängig erfährt, wie z.B. Kristallisation.',
+    time: 'Sommer 2024',
     label: {
-      text: 'Projekt wakacyjny',
+      text: 'Sommerprojekt',
       color: '',
     },
   },
-]
+] as ScienceProject[]

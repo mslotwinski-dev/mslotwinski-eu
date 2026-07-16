@@ -41,22 +41,70 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Simulation from './Simulation.vue'
-import projects from '@/data/pl/projects'
+
+// 1. Importujemy dane ze wszystkich języków
+import projectsPl from '@/data/pl/projects'
+import projectsEn from '@/data/en/projects'
+import projectsDe from '@/data/de/projects'
+import projectsEs from '@/data/es/projects'
+import projectsRu from '@/data/ru/projects'
+import projectsJp from '@/data/jp/projects'
+
+// Zdefiniowane interfejsy dla TypeScriptu (jeśli masz je w pliku interfaces.ts, możesz je zaimportować)
+interface Project {
+  title: string
+  description: string
+  longdescription?: string
+  github: string
+  icon: string
+  langs: string[]
+  main?: boolean
+  simulation?: boolean
+  screenshots?: string[]
+  tags?: string[]
+}
+
+interface ProjectGroup {
+  title: string
+  icon: string
+  description: string
+  projects: Project[]
+}
+
+// 2. Mapa języków
+const projectsMap: Record<string, ProjectGroup[]> = {
+  pl: projectsPl,
+  en: projectsEn,
+  de: projectsDe,
+  es: projectsEs,
+  ru: projectsRu,
+  jp: projectsJp,
+}
 
 export default defineComponent({
+  components: {
+    Simulation,
+  },
+  // 3. W data zostawiamy tylko to, co zmienia się lokalnie w komponencie
   data() {
     return {
-      simprojets: projects
-        .map((c) => c.projects)
-        .reverse()
-        .flat()
-        .filter((p) => p.simulation),
       currentIndex: 0,
       slideMoveTime: 0,
     }
   },
-  components: {
-    Simulation,
+  computed: {
+    // 4. simprojets przeniesione do computed – reaguje na zmianę języka!
+    simprojets(): Project[] {
+      const locale = (this as any).$i18n.locale as string
+      const currentProjects = projectsMap[locale] || projectsMap['en']
+
+      // Wykonujemy Twoją logikę filtrowania na załadowanym języku
+      return currentProjects
+        .map((c) => c.projects)
+        .reverse()
+        .flat()
+        .filter((p) => p.simulation)
+    }
   },
   methods: {
     left() {

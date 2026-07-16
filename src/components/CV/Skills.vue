@@ -94,6 +94,10 @@ import { defineComponent } from 'vue'
 // 1. Importujemy dane dla obu języków
 import skillsPl from '@/data/pl/skills'
 import skillsEn from '@/data/en/skills'
+import skillsDe from '@/data/de/skills'
+import skillsEs from '@/data/es/skills'
+import skillsRu from '@/data/ru/skills'
+import skillsJp from '@/data/jp/skills'
 
 // 2. Definiujemy typy na podstawie Twojego szablonu
 interface SkillCategoryWithSpace {
@@ -123,6 +127,10 @@ interface SkillsData {
 const skillsMap: Record<string, SkillsData> = {
   pl: skillsPl,
   en: skillsEn,
+  de: skillsDe,
+  es: skillsEs,
+  ru: skillsRu,
+  jp: skillsJp,
 }
 
 export default defineComponent({

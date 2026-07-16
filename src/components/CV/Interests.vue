@@ -23,6 +23,10 @@ import { defineComponent } from 'vue'
 // Importujemy dane dla obu języków
 import interestsPl from '@/data/pl/interests'
 import interestsEn from '@/data/en/interests'
+import interestsDe from '@/data/de/interests'
+import interestsEs from '@/data/es/interests'
+import interestsRu from '@/data/ru/interests'
+import interestsJp from '@/data/jp/interests'
 
 // Zdefiniuj interfejs zgodnie z tym, co masz w pliku (np. name, icon, description)
 // Jeśli Twoje interests to po prostu tablica tekstów, możesz pominąć ten interfejs
@@ -37,6 +41,10 @@ interface Interest {
 const interestsMap: Record<string, Interest[]> = {
   pl: interestsPl,
   en: interestsEn,
+  de: interestsDe,
+  es: interestsEs,
+  ru: interestsRu,
+  jp: interestsJp,
 }
 
 export default defineComponent({

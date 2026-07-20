@@ -4,6 +4,7 @@
     <main>
       <Personal />
       <Simulations />
+      <Research />
       <Projects />
       <Blog />
     </main>
@@ -17,6 +18,7 @@ import Personal from '@/components/CV/Personal.vue'
 import Projects from '@/components/Home/KeyProjects.vue'
 import Blog from '@/components/Home/Blog.vue'
 import Simulations from '@/components/Home/Simulations.vue'
+import Research from '@/components/Home/Research.vue'
 
 export default defineComponent({
   components: {
@@ -24,6 +26,7 @@ export default defineComponent({
     Personal,
     Projects,
     Simulations,
+    Research,
     Blog,
   },
 })

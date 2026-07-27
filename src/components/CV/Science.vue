@@ -68,12 +68,18 @@ export default defineComponent({
 <style lang="scss" scoped>
 article {
   margin: 15px auto;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2px;
+  }
 
   .name {
     font-weight: 500;
@@ -81,10 +87,20 @@ article {
     color: $dark;
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
   }
   .year {
     font-size: 15px;
     color: $dark_gray;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
   }
 }
 

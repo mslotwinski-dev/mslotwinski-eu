@@ -12,8 +12,14 @@
     <!-- <div class="checkout">Sprawdź moje wpisy</div> -->
     <div class="abc">
       <header>{{ $t('home.simulationsHeader') }}</header>
-      <div class="container">
-        <div class="articles" :style="{ left: `-${currentIndex * 1240}px` }">
+      <div class="sim-slider-container">
+        <div
+          class="articles"
+          :style="{
+            left: `-${currentIndex * 1260}px`,
+            '--idx': currentIndex,
+          }"
+        >
           <Simulation v-for="sim in simprojets" :key="sim.title" :sim="sim" />
         </div>
       </div>
@@ -137,14 +143,26 @@ export default defineComponent({
 .blog {
   display: flex;
   justify-content: center;
-
   padding: 40px 0;
   margin: 40px 0;
+  width: 100%;
+  position: relative;
+
+  @media (max-width: 1240px) {
+    padding: 20px 0;
+    margin: 20px 0;
+  }
 }
 
-.container {
+.sim-slider-container {
   width: 1220px;
   overflow: hidden;
+  position: relative;
+
+  @media (max-width: 1240px) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .articles {
@@ -152,8 +170,13 @@ export default defineComponent({
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
-  // left: -420px;
+  position: relative;
   transition: left 0.5s ease;
+
+  @media (max-width: 1240px) {
+    gap: 0;
+    left: calc(var(--idx) * -100%) !important;
+  }
 }
 
 .section {
@@ -180,6 +203,12 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
+  @media (max-width: 1240px) {
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
 
   .dot {
     font-size: 10px;
@@ -217,5 +246,11 @@ header {
   color: $light;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
 }
 </style>

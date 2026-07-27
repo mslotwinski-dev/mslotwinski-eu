@@ -35,5 +35,10 @@ export default defineComponent({
   color: $light;
   background: #1b202366;
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 0 5vw;
+    font-size: 1.5rem;
+  }
 }
 </style>

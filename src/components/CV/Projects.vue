@@ -146,7 +146,8 @@ export default defineComponent({
 article {
   margin: 5px auto;
   padding: 5px 0;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   border-bottom: 1px solid $light;
 }
 
@@ -154,16 +155,26 @@ article {
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 6px;
+  }
+
   .name {
     font-weight: 500;
     font-size: 19px;
     color: $dark;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+    }
   }
   .langs {
     font-size: 15px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 
     .lang {
       display: flex;
@@ -208,6 +219,7 @@ img {
   border-radius: 5px;
   overflow: hidden;
   user-select: none;
+  flex-wrap: wrap;
 
   .category {
     display: flex;
@@ -228,19 +240,33 @@ img {
     &.active {
       background-color: $green;
     }
+
+    @media (max-width: 768px) {
+      padding: 8px 6px;
+      font-size: 13px;
+    }
   }
 
   .iconcategory {
     font-size: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   .titlecategory {
     margin-left: 5px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
 .categorydesc {
-  margin: 10px auto;
+  margin: 5px auto;
+  width: 100%;
   max-width: 900px;
   font-size: 15px;
   margin-bottom: 15px;

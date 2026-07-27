@@ -92,12 +92,19 @@ export default defineComponent({
 .langs-container {
   display: flex;
   width: 1000px;
+  max-width: 100%;
   height: 50px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   background-color: #f4f7f9;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+  }
 }
 
 .lang-bar {
@@ -120,6 +127,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .lang {

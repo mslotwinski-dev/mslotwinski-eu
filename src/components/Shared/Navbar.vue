@@ -29,6 +29,16 @@ nav {
   text-transform: uppercase;
   align-items: center;
 
+  @media (max-width: 768px) {
+    right: 0;
+    left: 0;
+    top: 50px;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+    font-size: 14px;
+  }
+
   a {
     color: $dark;
     text-decoration: none;

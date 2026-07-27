@@ -74,6 +74,25 @@ img {
     border: 3px solid $light;
     background: $light;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 8px;
+    margin: 0;
+    border-radius: 0;
+    width: 100vw;
+
+    h2 {
+      font-size: 14px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 .me {
@@ -99,6 +118,13 @@ nav {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+    justify-content: center;
+  }
 
   a {
     color: $light;

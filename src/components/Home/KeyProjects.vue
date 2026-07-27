@@ -199,6 +199,11 @@ export default defineComponent({
 
   padding: 40px 0;
   margin: 40px 0;
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    margin: 20px 0;
+  }
 }
 
 .container {
@@ -241,11 +246,21 @@ export default defineComponent({
   flex-direction: column;
   flex-grow: 1;
 
+  @media (max-width: 768px) {
+    margin: 15px;
+  }
+
   .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
   }
 
   .flex {
@@ -256,11 +271,20 @@ export default defineComponent({
       font-weight: 500;
       font-size: 35px;
       font-family: 'One';
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
     }
     img {
       width: 70px;
       height: 70px;
       // border-radius: 10px;
+
+      @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+      }
     }
     .icon {
       font-size: 40px;
@@ -270,6 +294,13 @@ export default defineComponent({
       &:hover {
         color: $main;
       }
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    @media (max-width: 768px) {
+      gap: 10px;
     }
   }
 }
@@ -280,6 +311,12 @@ header {
   color: $dark;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
 }
 
 .bottom {
@@ -287,6 +324,10 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .desc {
@@ -298,11 +339,16 @@ header {
   justify-content: flex-end;
   gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
   div {
     background: $dark;
     color: $light;
     padding: 10px 20px;
     border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
   }
 }
 
@@ -312,6 +358,7 @@ header {
   display: flex;
   gap: 10px;
   margin: 10px 0;
+  flex-wrap: wrap;
 
   .lang {
     display: flex;
@@ -350,16 +397,32 @@ header {
   margin: auto;
   min-height: 450px;
 
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    gap: 0.5rem;
+  }
+
   img {
     width: 80px;
     height: 80px;
     border-radius: 10px;
+
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .name {
     font-weight: 500;
     font-size: 35px;
     font-family: 'One';
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
   }
 }
 
@@ -379,6 +442,12 @@ header {
 
   &:hover {
     box-shadow: 0 0 15px #00647d88;
+  }
+
+  @media (max-width: 900px) {
+    padding: 1rem;
+    gap: 12px;
+    min-height: 70px;
   }
 }
 

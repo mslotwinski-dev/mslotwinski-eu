@@ -113,15 +113,24 @@ export default defineComponent({
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 }
 
 .text {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   text-align: justify;
   font-size: 17px;
   padding: 10px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    padding: 10px 5px;
+  }
 }
 
 .graph {
@@ -129,6 +138,16 @@ export default defineComponent({
   height: 150px;
   background-size: cover;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 120px;
+    margin: 10px auto;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 
   > img {
     width: 100%;

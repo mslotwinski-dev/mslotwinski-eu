@@ -113,6 +113,7 @@ export default defineComponent({
   top: 100%;
   right: 0;
   width: 305px;
+  max-width: calc(100vw - 30px);
   background-color: $dark;
   border-top: none;
   border-radius: 0 0 5px 5px;

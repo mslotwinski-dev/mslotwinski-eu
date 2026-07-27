@@ -67,11 +67,9 @@ footer {
 }
 
 .flex {
-  margin: 10px auto;
-  width: 1600px;
-  max-width: 95vw;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 10px;
   flex-wrap: wrap;
 }
 

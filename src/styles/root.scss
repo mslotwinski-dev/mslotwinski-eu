@@ -111,4 +111,10 @@ main {
   max-width: 1250px;
   margin: auto;
   min-height: 50vh;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
 }

@@ -70,6 +70,13 @@ export default defineComponent({
   max-width: 1000px;
   margin: auto;
   min-height: 450px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: auto;
+    gap: 0.5rem;
+  }
 }
 
 .item {
@@ -104,6 +111,11 @@ export default defineComponent({
     .text {
       transform: scaleX(1);
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    min-height: 120px;
   }
 }
 
@@ -145,6 +157,11 @@ export default defineComponent({
   .text {
     transform-origin: left;
   }
+
+  @media (max-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
 }
 .item-2 {
   grid-column: 4 / 6;
@@ -152,12 +169,22 @@ export default defineComponent({
   .text {
     transform-origin: right;
   }
+
+  @media (max-width: 768px) {
+    grid-column: 2 / 3;
+    grid-row: auto;
+  }
 }
 .item-3 {
   grid-column: 6 / 8;
   grid-row: 1 / 4;
   .text {
     transform-origin: left;
+  }
+
+  @media (max-width: 768px) {
+    grid-column: 1 / 3;
+    grid-row: auto;
   }
 }
 
@@ -167,12 +194,22 @@ export default defineComponent({
   .text {
     transform-origin: left;
   }
+
+  @media (max-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
 }
 .item-5 {
   grid-column: 3 / 6;
   grid-row: 2 / 4;
   .text {
     transform-origin: right;
+  }
+
+  @media (max-width: 768px) {
+    grid-column: 2 / 3;
+    grid-row: auto;
   }
 }
 
@@ -182,6 +219,11 @@ export default defineComponent({
   .text {
     transform-origin: left;
   }
+
+  @media (max-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
 }
 
 .item-7 {
@@ -189,6 +231,11 @@ export default defineComponent({
   grid-row: 4;
   .text {
     transform-origin: left;
+  }
+
+  @media (max-width: 768px) {
+    grid-column: 2 / 3;
+    grid-row: auto;
   }
 }
 </style>

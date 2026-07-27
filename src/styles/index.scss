@@ -16,6 +16,12 @@ h2.header {
   justify-content: center;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
 }
 
 h2.header:before,
@@ -24,4 +30,8 @@ h2.header:after {
   flex-grow: 1;
   margin: 0 20px;
   border: 1px solid #262626;
+
+  @media (max-width: 768px) {
+    margin: 0 10px;
+  }
 }

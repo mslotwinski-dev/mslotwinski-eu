@@ -50,8 +50,10 @@ export default defineComponent({
   backdrop-filter: blur(3.5px);
 }
 .modal {
-  width: 1000px;
-  height: 600px;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 600px;
   max-height: 80vh;
   max-width: 95vw;
   background: $dark;
@@ -61,8 +63,8 @@ export default defineComponent({
   flex-direction: column;
 
   &.size_3 {
-    width: 1600px;
-    height: 1000px;
+    max-width: 1600px;
+    max-height: 1000px;
 
     max-width: 95vw;
     max-height: 85vh;
@@ -87,9 +89,15 @@ export default defineComponent({
   text-align: left;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 
   &.nopadding {
     padding: 0px;
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 10px;
+    padding: 8px;
   }
 }
 .bgclick {

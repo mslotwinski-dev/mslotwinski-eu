@@ -35,6 +35,10 @@ header {
   align-items: center;
   flex-direction: column;
   color: $dark;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 }
 
 h2 {

@@ -200,6 +200,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .edu-wrap {
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -215,11 +216,21 @@ export default defineComponent({
   align-items: baseline;
   margin-bottom: 5px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
   .edu-name {
     font-size: 19px;
     font-weight: 500;
     color: $dark;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+    }
   }
 
   .edu-place {
@@ -244,6 +255,11 @@ export default defineComponent({
     justify-content: space-between;
     align-items: baseline;
     font-size: 14px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 2px;
+    }
 
     .spec-and-degree {
       display: flex;
@@ -270,6 +286,7 @@ export default defineComponent({
 }
 
 .extra-wrap {
+  width: 100%;
   max-width: 900px;
   margin: 20px auto 0;
 

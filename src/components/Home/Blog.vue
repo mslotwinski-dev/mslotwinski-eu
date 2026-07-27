@@ -5,7 +5,7 @@
     <div class="abc">
       <header>{{ $t('home.blogHeader') }}</header>
       <div class="container">
-        <div class="articles" :style="{ left: `-${currentIndex * 420}px` }">
+        <div class="articles" :style="{ '--idx': currentIndex }">
           <Article
             v-for="article in articles.sort(
               (a, b) =>
@@ -89,13 +89,19 @@ export default defineComponent({
 .blog {
   display: flex;
   justify-content: center;
-
   padding: 40px 0;
   margin: 40px 0;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    margin: 20px 0;
+  }
 }
 
 .container {
-  width: 1220px;
+  width: 100%;
+  max-width: 1220px;
   overflow: hidden;
 }
 
@@ -104,8 +110,10 @@ export default defineComponent({
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
-  // left: -420px;
-  transition: left 0.5s ease;
+  position: relative;
+  /* (min(100vw, 380px) + 40px) shifts exactly one item width plus gap */
+  transform: translateX(calc(var(--idx) * -1 * (min(90vw, 380px) + 40px)));
+  transition: transform 0.5s ease;
 }
 
 .section {
@@ -120,6 +128,11 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 12px;
+  }
 
   .dot {
     font-size: 10px;
@@ -157,5 +170,11 @@ header {
   color: $light;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
 }
 </style>

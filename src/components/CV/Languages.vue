@@ -79,8 +79,9 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .language-section {
+  margin: 10px auto;
+  width: 100%;
   max-width: 900px;
-  margin: 0 auto;
 
   .languages {
     display: flex;
@@ -91,6 +92,10 @@ export default defineComponent({
     padding: 0.5rem 1.25rem;
     border-radius: 1rem;
     transition: box-shadow 0.3s ease;
+
+    @media (max-width: 768px) {
+      padding: 0.4rem 0.75rem;
+    }
 
     .lang-header {
       display: flex;

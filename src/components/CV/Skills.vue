@@ -155,12 +155,18 @@ export default defineComponent({
 }
 article {
   margin: 15px auto;
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
 }
 
 .languages {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    gap: 6px;
+  }
 
   div {
     background: $gray;
@@ -174,6 +180,14 @@ article {
     font-weight: 500;
     flex-grow: 1;
     text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 5px 10px;
+      font-size: 13px;
+      height: auto;
+      min-width: 0;
+    }
+
     &.good {
       background: $violet;
       color: $light;

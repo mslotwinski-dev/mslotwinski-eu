@@ -138,9 +138,16 @@ export default defineComponent({
   margin: 5px auto;
   padding: 5px 0;
   width: 1000px;
+  max-width: 100%;
   height: 150px;
   display: flex;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+  }
 }
 
 .loading {

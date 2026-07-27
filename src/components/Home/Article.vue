@@ -28,8 +28,14 @@ export default defineComponent({
 .container {
   cursor: pointer;
   width: 380px;
-  min-width: 380px;
+  max-width: 90vw;
+  flex-shrink: 0;
   padding: 10px;
+
+  @media (max-width: 768px) {
+    width: 85vw;
+    padding: 8px;
+  }
 }
 .image {
   width: 100%;
@@ -38,6 +44,11 @@ export default defineComponent({
   background-size: cover;
   background-position: center;
   background-color: $main;
+
+  @media (max-width: 768px) {
+    height: 180px;
+    border-radius: 12px;
+  }
 }
 
 .date {

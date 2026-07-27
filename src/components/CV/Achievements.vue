@@ -60,6 +60,12 @@ export default defineComponent({
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
   .name {
     font-size: 15px;
     color: $dark;
@@ -68,6 +74,10 @@ export default defineComponent({
     font-size: 13px;
     color: $dark_gray;
     padding-left: 10px;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -80,7 +90,8 @@ export default defineComponent({
 
 article {
   margin: 10px auto;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .flex {

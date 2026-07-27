@@ -108,13 +108,18 @@ export default defineComponent({
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
+  @media (max-width: 1550px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .body {
   margin-top: 50px;
 }
 .container {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   // border: 3px solid $dark;
   padding: 20px;
   border-radius: 10px;
@@ -128,6 +133,13 @@ header {
   align-items: center;
   flex-direction: column;
   color: $dark;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 10px;
+  }
 }
 
 h2 {
@@ -172,10 +184,19 @@ h4:after {
 }
 
 .list {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: calc(95vh - 250px);
   overflow-y: scroll;
   padding-left: 30px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    max-height: 50vh;
+    padding-left: 0;
+    padding: 0 10px;
+  }
+
   .project-item {
     padding: 5px;
     cursor: pointer;
@@ -199,6 +220,10 @@ h4:after {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .flex {

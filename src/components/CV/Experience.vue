@@ -65,14 +65,27 @@ export default defineComponent({
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2px;
+  }
+
   .name {
     font-weight: 500;
     font-size: 19px;
     color: $dark;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+    }
   }
   .year {
     font-size: 15px;
     color: $dark_gray;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
   }
 }
 
@@ -93,7 +106,8 @@ ul {
 
 article {
   margin: 15px auto;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
 }
 
 li a {

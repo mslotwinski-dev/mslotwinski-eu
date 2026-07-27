@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container"
+    class="sim-card"
     :style="{
       backgroundImage:
         `url(` + require(`@/assets/screenshots/${sim.screenshots[0]}`) + `)`,
@@ -33,7 +33,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.container {
+.sim-card {
   cursor: pointer;
   width: 1220px;
   min-width: 1200px;
@@ -43,6 +43,15 @@ export default defineComponent({
   background-color: $main;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+
+  @media (max-width: 1240px) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 0 100%;
+    height: clamp(280px, 45vh, 450px);
+  }
 }
 .grow {
   flex-grow: 1;
@@ -58,6 +67,11 @@ export default defineComponent({
   margin-top: 10px;
   font-size: 15px;
   color: $light;
+
+  @media (max-width: 1240px) {
+    font-size: 13px;
+    margin-top: 6px;
+  }
 }
 .title {
   font-size: 20px;
@@ -65,6 +79,11 @@ export default defineComponent({
   color: $light;
   text-transform: uppercase;
   font-weight: 500;
+
+  @media (max-width: 1240px) {
+    font-size: 16px;
+    margin-top: 4px;
+  }
 }
 .tags {
   display: flex;

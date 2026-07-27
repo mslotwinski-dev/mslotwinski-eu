@@ -95,16 +95,26 @@ export default defineComponent({
   padding-top: 40px;
   margin-top: 40px;
 
+  @media (max-width: 768px) {
+    padding: 20px 12px 0;
+    margin-top: 20px;
+  }
 }
 
 .container {
   width: 100%;
   max-width: 900px;
-  height: 120px;
+  min-height: 120px;
   display: flex;
   justify-content: center;
   margin-top: 40px;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0 5px;
+  }
 }
 
 .title {
@@ -113,6 +123,10 @@ export default defineComponent({
   color: $dark;
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 header {
@@ -121,6 +135,12 @@ header {
   color: $dark;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .icons {
@@ -128,6 +148,11 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px 0;
+
+  @media (max-width: 768px) {
+    margin: 10px 0;
+    gap: 5px;
+  }
 }
 
 .icon {
@@ -151,6 +176,14 @@ header {
     width: 90%;
     height: 90%;
     object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
   }
 }
 </style>

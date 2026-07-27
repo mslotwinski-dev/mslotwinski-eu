@@ -184,6 +184,7 @@ export default defineComponent({
   height: 100%;
   position: absolute;
   top: 0;
+  left: calc(-50vw + 50%);
   background: $dark;
   background-size: cover;
   background-position: center;

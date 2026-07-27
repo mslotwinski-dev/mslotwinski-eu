@@ -120,6 +120,10 @@ export default defineComponent({
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
   transition: all 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    transform: translateX(102.5px);
+  }
 }
 
 .option {
